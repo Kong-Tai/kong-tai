@@ -5,12 +5,12 @@
                     <div class="row align-items-center">
                         <!-- start slogan -->
                         <div class="col-lg-4 col-md-5 text-center alt-font sm-margin-15px-bottom">
-                            London based highly creative studio
+                            Kenyan based creative center
                         </div>
                         <!-- end slogan -->
                         <!-- start logo -->
                         <div class="col-lg-4 col-md-2 text-center sm-margin-10px-bottom">
-                            <a href="index.html"><img class="footer-logo" src="images/logo-white.png" data-rjs="images/logo-white@2x.png" alt="Pofo"></a>
+                            <a href="index.html"><img class="footer-logo" src="images/kong-tai.png" data-rjs="images/logo-white@2x.png" alt="Pofo"></a>
                         </div>
                         <!-- end logo -->
                         <!-- start social media -->
