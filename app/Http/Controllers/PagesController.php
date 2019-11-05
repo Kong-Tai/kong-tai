@@ -25,6 +25,16 @@ class PagesController extends Controller
         return view('blog');
     }
 
+    /**
+     * Display Work View.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function singlework()
+    {
+        return view('pages.single-work');
+    }
+
     // public function packages()
     // {
     //     $packages = Package::all();

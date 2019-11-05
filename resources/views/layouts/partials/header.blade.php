@@ -5,7 +5,10 @@
                 <div class="container-fluid nav-header-container">
                     <!-- start logo -->
                     <div class="col col-md-auto col-lg-2 pl-0">
-                        <a href="index.html" title="Pofo" class="logo"><img src="images/logo.png" data-rjs="images/logo@2x.png" class="logo-dark" alt="Pofo"><img src="images/logo-white.png" data-rjs="images/logo-white@2x.png" alt="Pofo" class="logo-light default"></a>
+                        <a href="/" title="Pofo" class="logo">
+                            <img src="images/kong-tai.png" data-rjs="images/logo@2x.png" class="logo-dark" alt="Pofo">
+                            <img src="images/kong-tai.png" data-rjs="images/logo-white@2x.png" alt="Pofo" class="logo-light default">
+                        </a>
                     </div>
                     <!-- end logo -->
                     <div class="col col-md accordion-menu pr-0 pr-lg-3">
@@ -18,15 +21,18 @@
                         <div class="navbar-collapse collapse justify-content-center" id="navbar-collapse-toggle-1">
                             <ul class="nav navbar-nav alt-font text-normal">
                                 <!-- start menu item -->
-                                <li><a href="#demos" class="inner-link">Demos</a></li>
+                                <li><a href="#home" class="inner-link">Home</a></li>
                                 <!-- end menu item -->
                                 <!-- start menu item -->
                                 <li><a href="#portfolio" class="inner-link">Portfolio</a></li>
                                 <!-- end menu item -->
                                 <!-- start menu item -->
-                                <li><a href="/blog" class="inner-link">Blog</a></li>
+                                <li><a href="#gallery" class="inner-link">Gallery</a></li>
                                 <!-- end menu item -->
                                 <!-- start menu item -->
+                                <li><a href="#blog" class="inner-link">Blog</a></li>
+                                <!-- end menu item -->
+                                {{-- <!-- start menu item -->
                                 <li><a href="#features" class="inner-link">Features</a></li>
                                 <!-- end menu item -->
                                 <!-- start menu item -->
@@ -34,12 +40,12 @@
                                 <!-- end menu item -->
                                 <!-- start menu item -->
                                 <li><a href="http://www.themezaa.com/support.php" target="_blank">Support</a></li>
-                                <!-- end menu item -->
+                                <!-- end menu item --> --}}
                             </ul>
                         </div>
                     </div>
                     <div class="col col-md-auto col-lg-2 pr-0 text-right">
-                        <a href="https://1.envato.market/g7jrr" target="_blank" class="btn btn-very-small btn-rounded btn-white box-shadow-dark">Buy Now<i class="fas fa-shopping-cart"></i></a>
+                        <a href="#" target="_blank" class="btn btn-very-small btn-rounded btn-white box-shadow-dark">Admin<i class="fas fa-shopping-cart"></i></a>
                     </div>
                 </div>
             </nav>
