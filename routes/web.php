@@ -14,6 +14,7 @@
 Route::get('/', function () {
     return view('home');
 });
+Route::get('/about', 'PagesController@about')->name('about');
 Route::get('/blog', 'PagesController@blog')->name('blog');
 Route::get('/single-work', 'PagesController@singlework')->name('single-work');
 

@@ -34,4 +34,14 @@ class PagesController extends Controller
     {
         return view('pages.single-work');
     }
+
+    /**
+     * Display About View.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function about()
+    {
+        return view('pages.about');
+    }
 }
