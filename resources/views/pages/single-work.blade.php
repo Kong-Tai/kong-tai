@@ -7,14 +7,13 @@
             <div class="swiper-full-screen swiper-container height-100 width-100 black-move">
                 <div class="swiper-wrapper">
                     <!-- start slider item -->
-                    <div class="swiper-slide cover-background" style="background-image:url('images/homepage-8-slider-img-3.jpg');">
-                        <div class="container position-relative full-screen">
-                            <div class="col-md-12 slider-typography text-center text-md-left">
+                    <div class="swiper-slide cover-background" style="background-image:url('images/portfolio-item58.jpg');">
+                        <div class="container position-relative one-fourth-screen">
+                            <div class="slider-typography text-center">
                                 <div class="slider-text-middle-main">
                                     <div class="slider-text-middle">
-                                        <h1 class="alt-font text-extra-dark-gray font-weight-700 letter-spacing-minus-1 line-height-80 width-55 margin-35px-bottom lg-width-60 md-width-70 lg-line-height-auto sm-width-100 sm-margin-15px-bottom">We combine design, thinking and technical</h1>
-                                        <p class="text-extra-dark-gray text-large margin-four-bottom width-40 lg-width-50 md-width-60 sm-width-100 sm-margin-15px-bottom">Everything you could possibly want it to do and not only that, beautifully carefully designed.</p>
-                                        <div class="btn-dual"><a href="https://1.envato.market/g7jrr" target="_blank" class="btn btn-dark-gray btn-rounded btn-small no-margin-lr">Purchase Pofo</a><a href="https://1.envato.market/g7jrr" target="_blank" class="btn btn-transparent-dark-gray btn-rounded btn-small margin-20px-lr sm-margin-5px-top">Download now</a></div>
+                                        <span class="text-white-2 alt-font font-weight-600 title-large d-block margin-20px-bottom">Best of Nature</span>
+                                        <span class="width-60 mx-auto text-light-gray text-outside-line alt-font sm-width-100 sm-padding-15px-lr d-inline-block d-md-inline">Branding Design &nbsp;&nbsp; • &nbsp;&nbsp; Magento Development &nbsp;&nbsp; • &nbsp;&nbsp; Mobile Website</span>
                                     </div>
                                 </div>
                             </div>
@@ -22,14 +21,13 @@
                     </div>
                     <!-- end slider item -->
                     <!-- start slider item -->
-                    <div class="swiper-slide cover-background" style="background-image:url('images/homepage-8-slider-img-2.jpg');">
-                        <div class="container position-relative full-screen">
-                            <div class="col-md-12 slider-typography text-center text-md-left">
+                    <div class="swiper-slide cover-background" style="background-image:url('images/portfolio-item58.jpg');">
+                        <div class="container position-relative one-fourth-screen">
+                            <div class="slider-typography text-center">
                                 <div class="slider-text-middle-main">
                                     <div class="slider-text-middle">
-                                        <h1 class="alt-font text-extra-dark-gray font-weight-700 letter-spacing-minus-1 line-height-80 width-55 margin-35px-bottom lg-width-60 md-width-70 lg-line-height-auto sm-width-100 sm-margin-15px-bottom">We always stay on the cutting edge of digital</h1>
-                                        <p class="text-extra-dark-gray text-large margin-four-bottom width-40 lg-width-50 md-width-60 sm-width-100 sm-margin-15px-bottom">Everything you could possibly want it to do and not only that, beautifully carefully designed.</p>
-                                        <div class="btn-dual"><a href="https://1.envato.market/g7jrr" target="_blank" class="btn btn-dark-gray btn-rounded btn-small no-margin-lr">Purchase Pofo</a><a href="https://1.envato.market/g7jrr" target="_blank" class="btn btn-transparent-dark-gray btn-rounded btn-small margin-20px-lr sm-margin-5px-tb">Download now</a></div>
+                                        <span class="text-white-2 alt-font font-weight-600 title-large d-block margin-20px-bottom">Best of Nature</span>
+                                        <span class="width-60 mx-auto text-light-gray text-outside-line alt-font sm-width-100 sm-padding-15px-lr d-inline-block d-md-inline">Branding Design &nbsp;&nbsp; • &nbsp;&nbsp; Magento Development &nbsp;&nbsp; • &nbsp;&nbsp; Mobile Website</span>
                                     </div>
                                 </div>
                             </div>
@@ -37,14 +35,13 @@
                     </div>
                     <!-- end slider item -->
                     <!-- start slider item -->
-                    <div class="swiper-slide cover-background" style="background-image:url('images/homepage-8-slider-img-1.jpg');">
-                        <div class="container position-relative full-screen">
-                            <div class="col-md-12 slider-typography text-center text-md-left">
+                    <div class="swiper-slide cover-background" style="background-image:url('images/portfolio-item58.jpg');">
+                        <div class="container position-relative one-fourth-screen">
+                            <div class="slider-typography text-center">
                                 <div class="slider-text-middle-main">
                                     <div class="slider-text-middle">
-                                        <h1 class="alt-font text-extra-dark-gray font-weight-700 letter-spacing-minus-1 line-height-80 width-55 margin-35px-bottom lg-width-60 md-width-70 lg-line-height-auto sm-width-100 sm-margin-15px-bottom">We crafts stunning and intuitive apps</h1>
-                                        <p class="text-extra-dark-gray text-large margin-four-bottom width-40 lg-width-50 md-width-60 sm-width-100 sm-margin-15px-bottom">Everything you could possibly want it to do and not only that, beautifully carefully designed.</p>
-                                        <div class="btn-dual"><a href="https://1.envato.market/g7jrr" target="_blank" class="btn btn-dark-gray btn-rounded btn-small no-margin-lr">Purchase Pofo</a><a href="https://1.envato.market/g7jrr" target="_blank" class="btn btn-transparent-dark-gray btn-rounded btn-small margin-20px-lr sm-margin-5px-tb">Download now</a></div>
+                                        <span class="text-white-2 alt-font font-weight-600 title-large d-block margin-20px-bottom">Best of Nature</span>
+                                        <span class="width-60 mx-auto text-light-gray text-outside-line alt-font sm-width-100 sm-padding-15px-lr d-inline-block d-md-inline">Branding Design &nbsp;&nbsp; • &nbsp;&nbsp; Magento Development &nbsp;&nbsp; • &nbsp;&nbsp; Mobile Website</span>
                                     </div>
                                 </div>
                             </div>
@@ -93,7 +90,7 @@
         <!-- end project overview section -->
 
         <!-- start feature section -->
-    <section class="p-0 wow fadeIn bg-light-gray">
+        <section class="p-0 wow fadeIn bg-light-gray">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12 col-lg-6 cover-background wow fadeInLeft md-height-450px"  style="background-image:url('images/services-classic-03.jpg');"></div>
@@ -152,6 +149,7 @@
             </div>
         </section>
         <!-- end feature section -->
+
         <!-- start grid section -->
         <section class="wow fadeIn p-0" style="visibility: visible; animation-name: fadeIn;">
             <div class="container-fluid">
