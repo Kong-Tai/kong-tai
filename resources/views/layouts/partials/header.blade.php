@@ -21,16 +21,16 @@
                         <div class="navbar-collapse collapse justify-content-center" id="navbar-collapse-toggle-1">
                             <ul class="nav navbar-nav alt-font text-normal">
                                 <!-- start menu item -->
-                                <li><a href="#home" class="inner-link">Home</a></li>
+                                <li><a href="/" class="inner-link">Home</a></li>
                                 <!-- end menu item -->
                                 <!-- start menu item -->
-                                <li><a href="#portfolio" class="inner-link">Portfolio</a></li>
+                                <li><a href="#portfolio" class="inner-link point-portfolio">Portfolio</a></li>
                                 <!-- end menu item -->
                                 <!-- start menu item -->
-                                <li><a href="#gallery" class="inner-link">Gallery</a></li>
+                                <li><a href="#gallery" class="inner-link point-gallery">Gallery</a></li>
                                 <!-- end menu item -->
                                 <!-- start menu item -->
-                                <li><a href="#blog" class="inner-link">Blog</a></li>
+                                <li><a href="/blog" class="inner-link">Blog</a></li>
                                 <!-- end menu item -->
                                 {{-- <!-- start menu item -->
                                 <li><a href="#features" class="inner-link">Features</a></li>
