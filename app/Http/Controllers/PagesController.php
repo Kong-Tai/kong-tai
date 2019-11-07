@@ -15,21 +15,12 @@ class PagesController extends Controller
      */
     public function home()
     {
-        $portfolio = Portfolio::with('category')->get();
+        $portfolio = Portfolio::with(['category'])->get();
         $categories = PortfolioCategory::get();
         return view('home', [
             'portfolio' => $portfolio,
             'categories' => $categories
         ]);
-    }
-    /**
-     * Display Blog View.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function blog()
-    {
-        return view('pages.blog');
     }
 
     /**
@@ -39,7 +30,21 @@ class PagesController extends Controller
      */
     public function singlework()
     {
-        return view('pages.single-work');
+        $portfolioList = Portfolio::with(['category', 'portfolio_carousels', 'portfolio_galleries'])->get();
+        $portfolio = $portfolioList[0];
+        return view('pages.single-work', [
+            'portfolio' => $portfolio
+        ]);
+    }
+
+    /**
+     * Display Blog View.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function blog()
+    {
+        return view('pages.blog');
     }
 
     /**

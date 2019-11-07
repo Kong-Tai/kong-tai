@@ -749,10 +749,126 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
+  props: {
+    portfolio: {}
+  },
+  data: function data() {
+    return {};
+  },
+  created: function created() {},
+  computed: {},
   mounted: function mounted() {
     console.log('Component mounted.');
-  }
+  },
+  methods: {}
 });
 
 /***/ }),
@@ -2583,29 +2699,303 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", [
+    _c(
+      "section",
+      {
+        staticClass:
+          "no-padding main-slider height-100 mobile-height wow fadeIn"
+      },
+      [
+        _c(
+          "div",
+          {
+            staticClass:
+              "swiper-full-screen swiper-container height-100 width-100 black-move"
+          },
+          [
+            _c(
+              "div",
+              { staticClass: "swiper-wrapper" },
+              _vm._l(_vm.portfolio.portfolio_carousels, function(carousel) {
+                return _c(
+                  "div",
+                  {
+                    key: carousel,
+                    staticClass: "swiper-slide cover-background",
+                    staticStyle: {
+                      "background-image": "url('images/portfolio-item58.jpg')"
+                    }
+                  },
+                  [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "container position-relative one-fourth-screen"
+                      },
+                      [
+                        _c(
+                          "div",
+                          { staticClass: "slider-typography text-center" },
+                          [
+                            _c(
+                              "div",
+                              { staticClass: "slider-text-middle-main" },
+                              [
+                                _c(
+                                  "div",
+                                  { staticClass: "slider-text-middle" },
+                                  [
+                                    _c(
+                                      "span",
+                                      {
+                                        staticClass:
+                                          "text-white-2 alt-font font-weight-600 title-large d-block margin-20px-bottom"
+                                      },
+                                      [_vm._v(_vm._s(_vm.portfolio.title))]
+                                    ),
+                                    _vm._v(" "),
+                                    _c(
+                                      "span",
+                                      {
+                                        staticClass:
+                                          "width-60 mx-auto text-light-gray text-outside-line alt-font sm-width-100 sm-padding-15px-lr d-inline-block d-md-inline"
+                                      },
+                                      [
+                                        _vm._v(
+                                          "Branding Design    •    Magento Development    •    Mobile Website"
+                                        )
+                                      ]
+                                    )
+                                  ]
+                                )
+                              ]
+                            )
+                          ]
+                        )
+                      ]
+                    )
+                  ]
+                )
+              }),
+              0
+            ),
+            _vm._v(" "),
+            _c("div", {
+              staticClass: "swiper-pagination swiper-full-screen-pagination"
+            }),
+            _vm._v(" "),
+            _c("div", {
+              staticClass:
+                "swiper-button-next swiper-button-black-highlight d-none"
+            }),
+            _vm._v(" "),
+            _c("div", {
+              staticClass:
+                "swiper-button-prev swiper-button-black-highlight d-none"
+            })
+          ]
+        )
+      ]
+    ),
+    _vm._v(" "),
+    _c(
+      "section",
+      {
+        staticClass: "wow fadeIn bg-light-gray big-section",
+        staticStyle: { visibility: "visible", "animation-name": "fadeIn" }
+      },
+      [
+        _c("div", { staticClass: "container padding-two-tb" }, [
+          _c("div", { staticClass: "row" }, [
+            _c(
+              "div",
+              {
+                staticClass:
+                  "col-12 text-center margin-60px-bottom md-margin-30px-bottom sm-margin-10px-bottom"
+              },
+              [
+                _c(
+                  "span",
+                  {
+                    staticClass:
+                      "width-60 mx-auto text-outside-line alt-font sm-width-100 sm-padding-15px-lr d-inline"
+                  },
+                  [_vm._v("Branding    •    Design    •    Web")]
+                ),
+                _vm._v(" "),
+                _c(
+                  "h1",
+                  {
+                    staticClass:
+                      "text-extra-dark-gray alt-font letter-spacing-minus-1 font-weight-700 d-block margin-10px-top"
+                  },
+                  [_vm._v(_vm._s(_vm.portfolio.title))]
+                )
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass:
+                  "col-12 col-lg-5 offset-lg-1 line-height-28 last-paragraph-no-margin md-margin-50px-bottom sm-margin-30px-bottom wow fadeInUp",
+                staticStyle: {
+                  visibility: "visible",
+                  "animation-name": "fadeInUp"
+                }
+              },
+              [_c("p", [_vm._v(_vm._s(_vm.portfolio.intro) + ".")])]
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass:
+                  "col-12 col-lg-4 offset-lg-1 line-height-26 wow fadeInUp",
+                staticStyle: {
+                  visibility: "visible",
+                  "animation-name": "fadeInUp"
+                }
+              },
+              [
+                _c("ul", { staticClass: "list-style-6 margin-twelve-left" }, [
+                  _c("li", { staticClass: "margin-5px-bottom" }, [
+                    _c("label", { staticClass: "width-30 d-inline-block" }, [
+                      _vm._v("Client:")
+                    ]),
+                    _vm._v(
+                      "\n\t\t\t\t\t\t\t" +
+                        _vm._s(_vm.portfolio.client) +
+                        "\n\t\t\t\t\t\t"
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _vm._m(0),
+                  _vm._v(" "),
+                  _vm._m(1),
+                  _vm._v(" "),
+                  _c("li", { staticClass: "margin-5px-bottom" }, [
+                    _c("label", { staticClass: "width-30 d-inline-block" }, [
+                      _vm._v("Date:")
+                    ]),
+                    _vm._v(
+                      "\n\t\t\t\t\t\t\t" +
+                        _vm._s(_vm.portfolio.workdate) +
+                        "\n\t\t\t\t\t\t"
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("li", { staticClass: "margin-5px-bottom" }, [
+                    _c("label", { staticClass: "width-30 d-inline-block" }, [
+                      _vm._v("Website:")
+                    ]),
+                    _vm._v(" "),
+                    _c("a", { attrs: { href: "#" } }, [
+                      _vm._v(_vm._s(_vm.portfolio.website_url))
+                    ])
+                  ])
+                ])
+              ]
+            )
+          ])
+        ])
+      ]
+    ),
+    _vm._v(" "),
+    _c(
+      "section",
+      {
+        staticClass: "wow fadeIn p-0",
+        staticStyle: { visibility: "visible", "animation-name": "fadeIn" }
+      },
+      [
+        _c("div", { staticClass: "container-fluid" }, [
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "col-12 p-0 lightbox-portfolio" }, [
+              _c(
+                "div",
+                {
+                  staticClass: "justified-gallery",
+                  staticStyle: { height: "2308.99px" },
+                  attrs: { id: "justified" }
+                },
+                _vm._l(_vm.portfolio.portfolio_galleries, function(gallery) {
+                  return _c(
+                    "div",
+                    {
+                      key: gallery,
+                      staticClass: "wow fadeInUp jg-entry entry-visible",
+                      staticStyle: {
+                        visibility: "visible",
+                        "animation-name": "fadeInUp",
+                        width: "639px",
+                        height: "425.674px",
+                        top: "10px",
+                        left: "10px"
+                      }
+                    },
+                    [
+                      _c(
+                        "a",
+                        {
+                          staticClass: "gallery-link",
+                          attrs: { href: gallery.gallery_image }
+                        },
+                        [
+                          _c("img", {
+                            staticStyle: {
+                              width: "639px",
+                              height: "426px",
+                              "margin-left": "-319.5px",
+                              "margin-top": "-213px"
+                            },
+                            attrs: {
+                              src: gallery.gallery_image,
+                              alt: "Herbal Beauty Salon",
+                              "data-no-retina": ""
+                            }
+                          })
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "caption" }, [
+                        _vm._v(_vm._s(_vm.portfolio.title))
+                      ])
+                    ]
+                  )
+                }),
+                0
+              )
+            ])
+          ])
+        ])
+      ]
+    )
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container" }, [
-      _c("div", { staticClass: "row justify-content-center" }, [
-        _c("div", { staticClass: "col-md-8" }, [
-          _c("div", { staticClass: "card" }, [
-            _c("div", { staticClass: "card-header" }, [
-              _vm._v("Example Component")
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "card-body" }, [
-              _vm._v(
-                "\n                    I'm an example component.\n                "
-              )
-            ])
-          ])
-        ])
-      ])
+    return _c("li", { staticClass: "margin-5px-bottom" }, [
+      _c("label", { staticClass: "width-30 d-inline-block" }, [
+        _vm._v("Industry:")
+      ]),
+      _vm._v("Adventure / Travel\n\t\t\t\t\t\t")
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", { staticClass: "margin-5px-bottom" }, [
+      _c("label", { staticClass: "width-30 d-inline-block" }, [
+        _vm._v("Services:")
+      ]),
+      _vm._v("Design, Art Direction, Website\n\t\t\t\t\t\t")
     ])
   }
 ]
