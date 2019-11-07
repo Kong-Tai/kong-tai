@@ -58,92 +58,25 @@
         </section>
         <!-- end slider section -->
 
-        <!-- start project overview section -->
-        <section class="wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-lg-8 col-md-10 mx-auto text-center last-paragraph-no-margin margin-eight-bottom md-margin-40px-bottom sm-margin-30px-bottom">
-                        <h4 class="alt-font font-weight-600 text-extra-dark-gray">Project Overview</h4>
-                        <p class="text-large text-medium-gray">Best of Nature, short BON, only uses the most natural ingredients in traditional recipes for its finest oils, herbal mixtures and essences. But with a constantly growing product palette, it was important to establish a strategic and aesthetic focus for the brand. </p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 col-lg-3 col-md-6 border-right border-color-medium-gray text-center padding-5px-tb alt-font md-padding-10px-tb md-margin-15px-bottom sm-no-border-right">
-                        <span class="text-extra-dark-gray text-medium d-block font-weight-500">Client</span>
-                        <span>Filamento Lamps</span>
-                    </div>
-                    <div class="col-12 col-lg-3 col-md-6 border-right border-color-medium-gray text-center padding-5px-tb alt-font md-padding-10px-tb md-margin-15px-bottom md-no-border-right">
-                        <span class="text-extra-dark-gray text-medium d-block font-weight-500">Industry</span>
-                        <span>Herbal Essences</span>
-                    </div>
-                    <div class="col-12 col-lg-3 col-md-6 border-right border-color-medium-gray text-center padding-5px-tb alt-font md-padding-10px-tb sm-margin-15px-bottom sm-no-border-right">
-                        <span class="text-extra-dark-gray text-medium d-block font-weight-500">Art Director</span>
-                        <span>Jackson Smith</span>
-                    </div>
-                    <div class="col-12 col-lg-3 col-md-6 text-center padding-5px-tb alt-font md-padding-10px-top">
-                        <span class="text-extra-dark-gray text-medium d-block font-weight-500">Year</span>
-                        <span>2017</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- end project overview section -->
-
         <!-- start feature section -->
-        <section class="p-0 wow fadeIn bg-light-gray">
-            <div class="container-fluid">
+        <section class="wow fadeIn bg-light-gray big-section" style="visibility: visible; animation-name: fadeIn;">
+            <div class="container padding-two-tb">
                 <div class="row">
-                    <div class="col-12 col-lg-6 cover-background wow fadeInLeft md-height-450px"  style="background-image:url('images/services-classic-03.jpg');"></div>
-                    <div class="col-12 col-lg-6 padding-five-all md-padding-ten-all sm-padding-50px-tb md-padding-15px-lr wow fadeInRight ">
-                        <div class="row m-0">
-                            <div class="col-12 col-xl-11 margin-five-bottom lg-margin-six-bottom md-margin-40px-bottom sm-margin-30px-bottom sm-no-padding-lr">
-                                <h4 class="alt-font text-extra-dark-gray font-weight-600 text-center text-lg-left md-width-70 mx-auto mx-lg-0 md-no-margin-bottom sm-width-100">We are delivering beautiful digital products for you</h4>
-                            </div>
-                            <!-- start feature box item -->
-                            <div class="col-12 col-xl-6 col-lg-12 col-md-6 margin-six-bottom md-margin-30px-bottom last-paragraph-no-margin sm-no-padding-lr">
-                                <div class="feature-box-5 position-relative">
-                                    <i class="icon-desktop text-medium-gray icon-medium"></i>
-                                    <div class="feature-content">
-                                        <div class="text-extra-dark-gray margin-5px-bottom alt-font font-weight-600">Elegant / Unique design</div>
-                                        <p class="width-95 md-width-100">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end feature box item -->
-                            <!-- start feature box item -->
-                            <div class="col-12 col-xl-6 col-lg-12 col-md-6 margin-six-bottom md-margin-30px-bottom last-paragraph-no-margin sm-no-padding-lr">
-                                <div class="feature-box-5 position-relative">
-                                    <i class="icon-pricetags text-medium-gray icon-medium"></i>
-                                    <div class="feature-content">
-                                        <div class="text-extra-dark-gray margin-5px-bottom alt-font font-weight-600">Different Layout Type</div>
-                                        <p class="width-95 md-width-100">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end feature box item -->
-                            <!-- start feature box item -->
-                            <div class="col-12 col-xl-6 col-lg-12 col-md-6 md-margin-six-bottom md-no-margin-bottom sm-margin-30px-bottom last-paragraph-no-margin sm-no-padding-lr">
-                                <div class="feature-box-5 position-relative">
-                                    <i class="icon-chat text-medium-gray icon-medium"></i>
-                                    <div class="feature-content">
-                                        <div class="text-extra-dark-gray margin-5px-bottom alt-font font-weight-600">Make it Simple</div>
-                                        <p class="width-95 md-width-100">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end feature box item -->
-                            <!-- start feature box item -->
-                            <div class="col-12 col-xl-6 col-lg-12 col-md-6 last-paragraph-no-margin">
-                                <div class="feature-box-5 position-relative ">
-                                    <i class="icon-mobile text-medium-gray icon-medium"></i>
-                                    <div class="feature-content">
-                                        <div class="text-extra-dark-gray margin-5px-bottom alt-font font-weight-600">True Responsiveness</div>
-                                        <p class="width-95 md-width-100">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end feature box item -->
-                        </div>
+                    <div class="col-12 text-center margin-60px-bottom md-margin-30px-bottom sm-margin-10px-bottom">
+                        <span class="width-60 mx-auto text-outside-line alt-font sm-width-100 sm-padding-15px-lr d-inline">Branding &nbsp;&nbsp; • &nbsp;&nbsp; Design &nbsp;&nbsp; • &nbsp;&nbsp; Web</span>
+                        <h1 class="text-extra-dark-gray alt-font letter-spacing-minus-1 font-weight-700 d-block margin-10px-top">Spice Blends</h1>
+                    </div>
+                    <div class="col-12 col-lg-5 offset-lg-1 line-height-28 last-paragraph-no-margin md-margin-50px-bottom sm-margin-30px-bottom wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.</p>
+                    </div>
+                    <div class="col-12 col-lg-4 offset-lg-1 line-height-26 wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+                        <ul class="list-style-6 margin-twelve-left">
+                            <li class="margin-5px-bottom"><label class="width-30 d-inline-block">Client:</label>Jason Richardson</li>
+                            <li class="margin-5px-bottom"><label class="width-30 d-inline-block">Industry:</label>Adventure  /  Travel</li>
+                            <li class="margin-5px-bottom"><label class="width-30 d-inline-block">Services:</label>Design, Art Direction, Website</li>
+                            <li class="margin-5px-bottom"><label class="width-30 d-inline-block">Date:</label>January 16th, 2017</li>
+                            <li class="margin-5px-bottom"><label class="width-30 d-inline-block">Website:</label><a href="#">www.spiceblends.com</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
