@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Portfolio;
+use App\PortfolioCategory;
 use Illuminate\Http\Request;
 
 class PagesController extends Controller
@@ -13,7 +15,12 @@ class PagesController extends Controller
      */
     public function home()
     {
-        return view('home');
+        $portfolio = Portfolio::with('category')->get();
+        $categories = PortfolioCategory::get();
+        return view('home', [
+            'portfolio' => $portfolio,
+            'categories' => $categories
+        ]);
     }
     /**
      * Display Blog View.

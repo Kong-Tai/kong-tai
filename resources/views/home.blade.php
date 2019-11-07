@@ -22,7 +22,10 @@
         </section>
         <!-- end hero section -->
 
-        <home-portfolio></home-portfolio>
+        <home-portfolio
+        :portfolio="{{ json_encode($portfolio) }}"
+        :categories="{{ json_encode($categories) }}"
+        ></home-portfolio>
         <home-counter></home-counter>
         <home-gallery></home-gallery>
 @endsection
