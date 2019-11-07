@@ -13,7 +13,7 @@
 
 // Home
 Route::get('/', 'PagesController@home')->name('home');
-Route::get('/about', 'PagesController@about')->name('about');
+Route::get('/team', 'PagesController@about')->name('about');
 
 // Portfolio
 Route::get('/single-work', 'PagesController@singlework')->name('single-work');

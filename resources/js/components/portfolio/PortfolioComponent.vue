@@ -109,7 +109,7 @@
 										style="width: 639px; height: 426px; margin-left: -319.5px; margin-top: -213px;"
 									/>
 								</a>
-								<div class="caption">{{ portfolio.title }}</div>
+								<div class="caption">{{ gallery.caption }}</div>
 							</div>
 							<!-- end gallery item -->
 						</div>

@@ -30,6 +30,9 @@
                                 <li><a href="#gallery" class="inner-link point-gallery">Gallery</a></li>
                                 <!-- end menu item -->
                                 <!-- start menu item -->
+                                <li><a href="/team" class="inner-link">Our Team</a></li>
+                                <!-- end menu item -->
+                                <!-- start menu item -->
                                 <li><a href="/blog" class="inner-link">Blog</a></li>
                                 <!-- end menu item -->
                                 {{-- <!-- start menu item -->

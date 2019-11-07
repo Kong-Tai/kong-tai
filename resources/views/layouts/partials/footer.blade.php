@@ -5,7 +5,7 @@
                     <div class="row align-items-center">
                         <!-- start slogan -->
                         <div class="col-lg-4 col-md-5 text-center alt-font sm-margin-15px-bottom">
-                            Kenyan based creative center
+                            Humble African Tech
                         </div>
                         <!-- end slogan -->
                         <!-- start logo -->

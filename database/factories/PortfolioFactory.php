@@ -48,6 +48,7 @@ $factory->define(PortfolioCarousel::class, function (Faker $faker) {
 });
 $factory->define(PortfolioGallery::class, function (Faker $faker) {
     return [
+        'caption'     => $faker->name,
         'gallery_image' => $faker->imageUrl(1080, 1080, $imageCategory = null, $randomise = true),
         'portfolio_id' => function () {
             return Portfolio::all()->random()->id;

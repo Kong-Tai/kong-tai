@@ -18,6 +18,7 @@ class CreatePortfolioGalleriesTable extends Migration
             $table->integer('portfolio_id')->nullable()->unsigned();
             $table->foreign('portfolio_id')->references('id')->on('portfolios');
             $table->string('gallery_image')->nullable();
+            $table->string('caption')->nullable();
             $table->timestamps();
         });
     }
