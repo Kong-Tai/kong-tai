@@ -32,6 +32,15 @@ class Portfolio extends Model
         return $this->belongsTo(PortfolioCategory::class);
     }
 
+    public function portfolio_galleries()
+    {
+        return $this->hasMany(PortfolioGallery::class);
+    }
+    public function portfolio_carousels()
+    {
+        return $this->hasMany(PortfolioCarousel::class);
+    }
+
     public function user()
     {
         return $this->belongsTo(User::class);

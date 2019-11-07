@@ -4,6 +4,8 @@
 
 use App\User;
 use App\Portfolio;
+use App\PortfolioGallery;
+use App\PortfolioCarousel;
 use App\PortfolioCategory;
 use Faker\Generator as Faker;
 
@@ -32,6 +34,23 @@ $factory->define(Portfolio::class, function (Faker $faker) {
         },
         'category_id' => function () {
             return PortfolioCategory::all()->random()->id;
+        },
+    ];
+});
+
+$factory->define(PortfolioCarousel::class, function (Faker $faker) {
+    return [
+        'carousel_image' => $faker->imageUrl(1080, 1080, $imageCategory = null, $randomise = true),
+        'portfolio_id' => function () {
+            return Portfolio::all()->random()->id;
+        },
+    ];
+});
+$factory->define(PortfolioGallery::class, function (Faker $faker) {
+    return [
+        'gallery_image' => $faker->imageUrl(1080, 1080, $imageCategory = null, $randomise = true),
+        'portfolio_id' => function () {
+            return Portfolio::all()->random()->id;
         },
     ];
 });

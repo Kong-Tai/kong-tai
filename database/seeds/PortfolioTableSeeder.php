@@ -1,8 +1,7 @@
 <?php
 
-use App\User;
 use App\Portfolio;
-use App\PortfolioCategory;
+use App\PortfolioCarousel;
 use Illuminate\Database\Seeder;
 
 class PortfolioTableSeeder extends Seeder
@@ -14,8 +13,13 @@ class PortfolioTableSeeder extends Seeder
      */
     public function run()
     {
-        // $users = factory(User::class, 1)->create();
-        // $categories = factory(PortfolioCategory::class, 5)->create();
-        $portfolio = factory(Portfolio::class, 20)->create();
+        factory(Portfolio::class, 8)->create()->each(function ($portfolio) {
+            for ($i = 0; $i < 3; $i++) {
+                $portfolio->portfolio_carousels()->save(factory(\App\PortfolioCarousel::class)->make());
+            }
+            for ($i = 0; $i < 6; $i++) {
+                $portfolio->portfolio_galleries()->save(factory(\App\PortfolioGallery::class)->make());
+            }
+        });
     }
 }
