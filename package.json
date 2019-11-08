@@ -13,6 +13,7 @@
         "axios": "^0.19",
         "bootstrap": "^4.0.0",
         "cross-env": "^5.1",
+        "font-awesome": "^4.7.0",
         "jquery": "^3.2",
         "laravel-mix": "^4.0.7",
         "lodash": "^4.17.13",
@@ -27,12 +28,12 @@
         "@icon/themify-icons": "^1.0.1",
         "animate.css": "^3.7.2",
         "et-line": "^1.0.1",
-        "font-awesome": "^4.7.0",
         "justifiedGallery": "^3.7.0",
         "magnific-popup": "^1.1.0",
+        "moment": "^2.24.0",
         "swiper": "^5.2.0",
         "themify-icons": "^1.0.0",
-        "vuex": "^3.1.1",
-        "moment": "^2.24.0"
+        "themify-icons-scss": "^1.0.0",
+        "vuex": "^3.1.1"
     }
 }
