@@ -12,7 +12,7 @@
 					>
 						<div class="blog-post blog-post-style2">
 							<div class="blog-post-images overflow-hidden margin-25px-bottom sm-margin-15px-bottom">
-								<a href="blog-post-layout-01.html">
+								<a href="/post">
 									<img
 										v-if="post.post_images.length"
 										class="card-img-top"
@@ -24,7 +24,7 @@
 							</div>
 							<div class="post-details">
 								<a
-									href="#"
+									href="/post"
 									class="post-title text-medium text-extra-dark-gray width-90 d-block lg-width-100"
 								>{{ post.title }}</a>
 								<div

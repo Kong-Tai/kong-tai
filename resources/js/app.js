@@ -32,9 +32,9 @@ Vue.component('home-gallery', require('./components/home/GalleryComponent.vue').
 Vue.component('view-portfolio', require('./components/portfolio/PortfolioComponent.vue').default);
 
 // blog
-Vue.component('view-blog', require('./components/blog/BlogComponent.vue').default);
-Vue.component('create-post', require('./components/CreatePost.vue').default);
-Vue.component('all-post', require('./components/AllPosts.vue').default);
+Vue.component('view-blog', require('./components/blog/ViewComponent.vue').default);
+Vue.component('create-post', require('./components/blog/CreatePost.vue').default);
+Vue.component('all-post', require('./components/blog/AllPosts.vue').default);
 
 
 const app = new Vue({

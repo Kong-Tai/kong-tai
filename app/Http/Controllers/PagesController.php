@@ -54,7 +54,7 @@ class PagesController extends Controller
      */
     public function post()
     {
-        return view('pages.blog.post');
+        return view('pages.blog.view');
     }
 
     /**
