@@ -103,6 +103,6 @@
         <!-- revolution -->
         <script  src="/js/jquery.themepunch.tools.min.js"></script>
         <script  src="/js/jquery.themepunch.revolution.min.js"></script>
-        <script src="/js/main.js"></script>
+        {{-- <script src="/js/main.js"></script> --}}
 </body>
 </html>
