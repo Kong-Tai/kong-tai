@@ -1,1 +1,2 @@
 # kong-tai
+HUMBLE AFRICAN TECH
