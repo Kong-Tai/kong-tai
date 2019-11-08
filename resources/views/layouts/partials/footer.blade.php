@@ -18,10 +18,10 @@
                             <span class="alt-font margin-20px-right">On social networks</span>
                             <div class="social-icon-style-8 d-inline-block vertical-align-middle">
                                 <ul class="small-icon mb-0">
-                                    <li><a class="facebook text-white-2" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
-                                    <li><a class="twitter text-white-2" href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a class="google text-white-2" href="https://plus.google.com" target="_blank"><i class="fab fa-google-plus-g"></i></a></li>
-                                    <li><a class="instagram text-white-2" href="https://instagram.com/" target="_blank"><i class="fab fa-instagram no-margin-right" aria-hidden="true"></i></a></li>
+                                    <li><a class="facebook text-white-2" href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-f" aria-hidden="true"></i></a></li>
+                                    <li><a class="twitter text-white-2" href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a class="google text-white-2" href="https://plus.google.com" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                                    <li><a class="instagram text-white-2" href="https://instagram.com/" target="_blank"><i class="fa fa-instagram no-margin-right" aria-hidden="true"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -71,7 +71,7 @@
                                 <div class="position-relative newsletter width-95">
                                     <div id="success-subscribe-newsletter" class="mx-0" style="display: none;"></div>
                                     <input type="text" id="email" name="email" class="bg-transparent text-small m-0 border-color-medium-dark-gray" placeholder="Enter your email...">
-                                    <button id="button-subscribe-newsletter" type="submit" class="btn btn-arrow-small position-absolute border-color-medium-dark-gray"><i class="fas fa-caret-right no-margin-left"></i></button>
+                                    <button id="button-subscribe-newsletter" type="submit" class="btn btn-arrow-small position-absolute border-color-medium-dark-gray"><i class="fa fa-caret-right no-margin-left"></i></button>
                                 </div>
                             </form>
                         </div>

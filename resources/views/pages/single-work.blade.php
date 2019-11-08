@@ -25,8 +25,8 @@
                                     <div class="portfolio-img bg-deep-pink position-relative text-center overflow-hidden">
                                         <img src="images/portfolio-item27.jpg" alt="" data-no-retina="">
                                         <div class="portfolio-icon">
-                                            <a href="single-project-page-01.html"><i class="fas fa-link text-extra-dark-gray" aria-hidden="true"></i></a>
-                                            <a class="gallery-link" title="IMAGE TITLE" href="images/portfolio-item27.jpg"><i class="fas fa-search text-extra-dark-gray" aria-hidden="true"></i></a>
+                                            <a href="single-project-page-01.html"><i class="fa fa-link text-extra-dark-gray" aria-hidden="true"></i></a>
+                                            <a class="gallery-link" title="IMAGE TITLE" href="images/portfolio-item27.jpg"><i class="fa fa-search text-extra-dark-gray" aria-hidden="true"></i></a>
                                         </div>
                                     </div>
                                     <figcaption class="bg-white">
@@ -48,8 +48,8 @@
                                     <div class="portfolio-img bg-deep-pink position-relative text-center overflow-hidden">
                                         <img src="images/portfolio-item40.jpg" alt="" data-no-retina="">
                                         <div class="portfolio-icon">
-                                            <a href="single-project-page-02.html"><i class="fas fa-link text-extra-dark-gray" aria-hidden="true"></i></a>
-                                            <a class="gallery-link" title="IMAGE TITLE" href="images/portfolio-item40.jpg"><i class="fas fa-search text-extra-dark-gray" aria-hidden="true"></i></a>
+                                            <a href="single-project-page-02.html"><i class="fa fa-link text-extra-dark-gray" aria-hidden="true"></i></a>
+                                            <a class="gallery-link" title="IMAGE TITLE" href="images/portfolio-item40.jpg"><i class="fa fa-search text-extra-dark-gray" aria-hidden="true"></i></a>
                                         </div>
                                     </div>
                                     <figcaption class="bg-white">
@@ -71,8 +71,8 @@
                                     <div class="portfolio-img bg-deep-pink position-relative text-center overflow-hidden">
                                         <img src="images/portfolio-item28.jpg" alt="" data-no-retina="">
                                         <div class="portfolio-icon">
-                                            <a href="single-project-page-03.html"><i class="fas fa-link text-extra-dark-gray" aria-hidden="true"></i></a>
-                                            <a class="gallery-link" title="IMAGE TITLE" href="images/portfolio-item28.jpg"><i class="fas fa-search text-extra-dark-gray" aria-hidden="true"></i></a>
+                                            <a href="single-project-page-03.html"><i class="fa fa-link text-extra-dark-gray" aria-hidden="true"></i></a>
+                                            <a class="gallery-link" title="IMAGE TITLE" href="images/portfolio-item28.jpg"><i class="fa fa-search text-extra-dark-gray" aria-hidden="true"></i></a>
                                         </div>
                                     </div>
                                     <figcaption class="bg-white">
@@ -94,8 +94,8 @@
                                     <div class="portfolio-img bg-deep-pink position-relative text-center overflow-hidden">
                                         <img src="images/portfolio-item30.jpg" alt="" data-no-retina="">
                                         <div class="portfolio-icon">
-                                            <a href="single-project-page-04.html"><i class="fas fa-link text-extra-dark-gray" aria-hidden="true"></i></a>
-                                            <a class="gallery-link" title="IMAGE TITLE" href="images/portfolio-item30.jpg"><i class="fas fa-search text-extra-dark-gray" aria-hidden="true"></i></a>
+                                            <a href="single-project-page-04.html"><i class="fa fa-link text-extra-dark-gray" aria-hidden="true"></i></a>
+                                            <a class="gallery-link" title="IMAGE TITLE" href="images/portfolio-item30.jpg"><i class="fa fa-search text-extra-dark-gray" aria-hidden="true"></i></a>
                                         </div>
                                     </div>
                                     <figcaption class="bg-white">

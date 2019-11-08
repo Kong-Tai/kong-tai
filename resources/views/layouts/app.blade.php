@@ -30,9 +30,9 @@
         <!-- et line icon -->
         <link rel="stylesheet" href="css/et-line-icons.css" />
         <!-- font-awesome icon -->
-        <link rel="stylesheet" href="/css/font-awesome.min.css" />
+        {{-- <link rel="stylesheet" href="css/font-awesome.min.css" /> --}}
         <!-- themify icon -->
-        <link rel="stylesheet" href="css/themify-icons.css">
+        {{-- <link rel="stylesheet" href="css/themify-icons.css"> --}}
         <!-- swiper carousel -->
         <link rel="stylesheet" href="css/swiper.min.css">
         <!-- justified gallery  -->

@@ -53,7 +53,7 @@
 						<ul class="mx-auto">
 							<li>
 								<a href="#">
-									<i class="fas fa-long-arrow-alt-left margin-5px-right d-none d-md-inline-block"></i> Prev
+									<i class="fa fa-long-arrow-alt-left margin-5px-right d-none d-md-inline-block"></i> Prev
 								</a>
 							</li>
 							<li class="active">
@@ -68,7 +68,7 @@
 							<li>
 								<a href="#">
 									Next
-									<i class="fas fa-long-arrow-alt-right margin-5px-left d-none d-md-inline-block"></i>
+									<i class="fa fa-long-arrow-alt-right margin-5px-left d-none d-md-inline-block"></i>
 								</a>
 							</li>
 						</ul>

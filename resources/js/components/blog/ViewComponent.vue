@@ -91,7 +91,7 @@
 					<div class="col-12 col-lg-10 mx-auto text-center margin-60px-tb md-margin-30px-tb">
 						<div class="bg-light-gray padding-ten-all md-padding-35px-all sm-padding-25px-all">
 							<i
-								class="fas fa-quote-left icon-small text-deep-pink d-block margin-25px-bottom sm-margin-15px-bottom"
+								class="fa fa-quote-left icon-small text-deep-pink d-block margin-25px-bottom sm-margin-15px-bottom"
 							></i>
 							<h5
 								class="alt-font text-extra-dark-gray font-weight-600"
@@ -159,28 +159,28 @@
 								<ul class="extra-small-icon">
 									<li>
 										<a class="likes-count" href="#" target="_blank">
-											<i class="fas fa-heart text-deep-pink"></i>
+											<i class="fa fa-heart text-deep-pink"></i>
 											<span class="text-small">300</span>
 										</a>
 									</li>
 									<li>
 										<a class="facebook" href="http://facebook.com" target="_blank">
-											<i class="fab fa-facebook-f"></i>
+											<i class="fa fa-facebook-f"></i>
 										</a>
 									</li>
 									<li>
 										<a class="twitter" href="http://twitter.com" target="_blank">
-											<i class="fab fa-twitter"></i>
+											<i class="fa fa-twitter"></i>
 										</a>
 									</li>
 									<li>
 										<a class="google" href="http://google.com" target="_blank">
-											<i class="fab fa-google-plus-g"></i>
+											<i class="fa fa-google-plus-g"></i>
 										</a>
 									</li>
 									<li>
 										<a class="pinterest" href="http://dribbble.com" target="_blank">
-											<i class="fab fa-pinterest-p"></i>
+											<i class="fa fa-pinterest-p"></i>
 										</a>
 									</li>
 								</ul>
