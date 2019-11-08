@@ -13,8 +13,8 @@
                                     <div class="opacity-medium bg-black bg-black"></div>
                                     <figure class="position-absolute">
                                         <figcaption>
-                                            <a href="single-project-page-01.html"><h6 class="font-weight-300 text-white-2 margin-20px-bottom">Brian Kipruto</h6></a>
-                                            <p class="text-white-2 width-85 md-width-100">Chief Technology Officer (CTO)</p>
+                                            <a href="single-project-page-01.html"><h6 class="font-weight-300 text-white-2 margin-20px-bottom">Chief Technology Officer (CTO)</h6></a>
+                                            <p class="text-white-2 width-85 md-width-100">Brian Kipruto</p>
                                             <div class="separator-line-horrizontal-medium-light2 opacity5 bg-white margin-35px-top md-margin-15px-top"></div>
                                         </figcaption>
                                     </figure>
@@ -27,7 +27,7 @@
                                     <div class="opacity-medium bg-black"></div>
                                     <figure class="position-absolute">
                                         <figcaption>
-                                            <a href="single-project-page-02.html"><h6 class="font-weight-300 text-white-2 margin-20px-bottom">Violator Series</h6></a>
+                                            <a href="single-project-page-02.html"><h6 class="font-weight-300 text-white-2 margin-20px-bottom">Technology Analyst</h6></a>
                                             <p class="text-white-2 width-85 md-width-100">Technology Analyst</p>
                                             <div class="separator-line-horrizontal-medium-light2 opacity5 bg-white margin-35px-top md-margin-15px-top"></div>
                                         </figcaption>
@@ -41,7 +41,7 @@
                                     <div class="opacity-medium bg-black"></div>
                                     <figure class="position-absolute">
                                         <figcaption>
-                                            <a href="single-project-page-03.html"><h6 class="font-weight-300 text-white-2 margin-20px-bottom">Redot Studio</h6></a>
+                                            <a href="single-project-page-03.html"><h6 class="font-weight-300 text-white-2 margin-20px-bottom">Technology Associate</h6></a>
                                             <p class="text-white-2 width-85 md-width-100">Technology Associate.</p>
                                             <div class="separator-line-horrizontal-medium-light2 opacity5 bg-white margin-35px-top md-margin-15px-top"></div>
                                         </figcaption>
@@ -55,7 +55,7 @@
                                     <div class="opacity-medium bg-black"></div>
                                     <figure class="position-absolute">
                                         <figcaption>
-                                            <a href="single-project-page-04.html"><h6 class="font-weight-300 text-white-2 margin-20px-bottom">Ada Weel</h6></a>
+                                            <a href="single-project-page-04.html"><h6 class="font-weight-300 text-white-2 margin-20px-bottom">Project Manager</h6></a>
                                             <p class="text-white-2 width-85 md-width-100">Project Manager</p>
                                             <div class="separator-line-horrizontal-medium-light2 opacity5 bg-white margin-35px-top md-margin-15px-top"></div>
                                         </figcaption>
@@ -69,7 +69,7 @@
                                     <div class="opacity-medium bg-black"></div>
                                     <figure class="position-absolute">
                                         <figcaption>
-                                            <a href="single-project-page-06.html"><h6 class="font-weight-300 text-white-2 margin-20px-bottom">Ridko Haircut</h6></a>
+                                            <a href="single-project-page-06.html"><h6 class="font-weight-300 text-white-2 margin-20px-bottom">Project Leader</h6></a>
                                             <p class="text-white-2 width-85 md-width-100">Project Leader</p>
                                             <div class="separator-line-horrizontal-medium-light2 opacity5 bg-white margin-35px-top md-margin-15px-top"></div>
                                         </figcaption>
@@ -83,7 +83,7 @@
                                     <div class="opacity-medium bg-black"></div>
                                     <figure class="position-absolute">
                                         <figcaption>
-                                            <a href="single-project-page-07.html"><h6 class="font-weight-300 text-white-2 margin-20px-bottom">Fed Stuhle</h6></a>
+                                            <a href="single-project-page-07.html"><h6 class="font-weight-300 text-white-2 margin-20px-bottom">Chief Marketing Officer</h6></a>
                                             <p class="text-white-2 width-85 md-width-100">Chief Marketing Officer</p>
                                             <div class="separator-line-horrizontal-medium-light2 opacity5 bg-white margin-35px-top md-margin-15px-top"></div>
                                         </figcaption>
@@ -97,7 +97,7 @@
                                     <div class="opacity-medium bg-black"></div>
                                     <figure class="position-absolute">
                                         <figcaption>
-                                            <a href="single-project-page-08.html"><h6 class="font-weight-300 text-white-2 margin-20px-bottom">Bang &amp; Olufsen</h6></a>
+                                            <a href="single-project-page-08.html"><h6 class="font-weight-300 text-white-2 margin-20px-bottom">Chief financial officer</h6></a>
                                             <p class="text-white-2 width-85 md-width-100">Chief financial officer</p>
                                             <div class="separator-line-horrizontal-medium-light2 opacity5 bg-white margin-35px-top md-margin-15px-top"></div>
                                         </figcaption>
@@ -111,7 +111,7 @@
                                     <div class="opacity-medium bg-black"></div>
                                     <figure class="position-absolute">
                                         <figcaption>
-                                            <a href="single-project-page-01.html"><h6 class="font-weight-300 text-white-2 margin-20px-bottom">Beoplay</h6></a>
+                                            <a href="single-project-page-01.html"><h6 class="font-weight-300 text-white-2 margin-20px-bottom">Android Developer</h6></a>
                                             <p class="text-white-2 width-85 md-width-100">Android Developer</p>
                                             <div class="separator-line-horrizontal-medium-light2 opacity5 bg-white margin-35px-top md-margin-15px-top"></div>
                                         </figcaption>
