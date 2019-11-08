@@ -48,6 +48,16 @@ class PagesController extends Controller
     }
 
     /**
+     * Display Post View.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function post()
+    {
+        return view('pages.blog.post');
+    }
+
+    /**
      * Display About View.
      *
      * @return \Illuminate\Http\Response

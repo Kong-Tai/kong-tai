@@ -4,10 +4,11 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 
-// require('./bootstrap');
+require('./bootstrap');
 // require('./main');
 
 window.Vue = require('vue');
+import store from './store/index';
 $(document).ready(function () {
     if (window.location.pathname === '/blog') {
         $('.point-portfolio').click(function () {
@@ -19,6 +20,8 @@ $(document).ready(function () {
     }
 
 })
+
+Vue.prototype.$store = store
 // home
 Vue.component('view-home', require('./components/home/HomeComponent.vue').default);
 Vue.component('home-portfolio', require('./components/home/PortfolioComponent.vue').default);
@@ -30,6 +33,8 @@ Vue.component('view-portfolio', require('./components/portfolio/PortfolioCompone
 
 // blog
 Vue.component('view-blog', require('./components/blog/BlogComponent.vue').default);
+Vue.component('create-post', require('./components/CreatePost.vue').default);
+Vue.component('all-post', require('./components/AllPosts.vue').default);
 
 
 const app = new Vue({

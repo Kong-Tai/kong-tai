@@ -9,12 +9,6 @@ use App\PortfolioCarousel;
 use App\PortfolioCategory;
 use Faker\Generator as Faker;
 
-// $factory->define(PortfolioCategory::class, function (Faker $faker) {
-//     return [
-//         'name' => $faker->company,
-//     ];
-// });
-
 $factory->define(Portfolio::class, function (Faker $faker) {
     $title = ucwords($faker->unique()->sentence($nbWords = 2, $variableNbWords = true));
     return [
@@ -46,6 +40,7 @@ $factory->define(PortfolioCarousel::class, function (Faker $faker) {
         },
     ];
 });
+
 $factory->define(PortfolioGallery::class, function (Faker $faker) {
     return [
         'caption'     => $faker->name,

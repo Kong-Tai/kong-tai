@@ -41,4 +41,10 @@ class User extends Authenticatable
     {
         return $this->hasMany(Portfolio::class);
     }
+
+    // post relationship
+    public function posts()
+    {
+        return $this->hasMany('App\Post');
+    }
 }
