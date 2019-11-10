@@ -60,7 +60,8 @@
 										class="text-medium-gray text-uppercase text-extra-small padding-15px-left d-inline-block"
 									>
 										by
-										<a href="home-blog-grid.html" class="text-medium-gray">Jay Benjamin</a>&nbsp;&nbsp;|&nbsp;&nbsp;13 May 2017
+										<a href="home-blog-grid.html" class="text-medium-gray">{{ post.user.name }}</a>
+										&nbsp;&nbsp;|&nbsp;&nbsp;{{ post.created_at }}
 									</span>
 								</div>
 							</div>

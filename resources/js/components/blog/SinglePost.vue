@@ -19,7 +19,7 @@
 							<a
 								href="blog-masonry.html"
 								class="text-white-2"
-							>Jay Benjamin</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+							>{{ post.user.name }}</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 							<a href="blog-masonry.html" class="text-white-2">Design</a>,
 							<a href="blog-masonry.html" class="text-white-2">Branding</a>
 						</span>
@@ -103,7 +103,7 @@
 						class="col-12 col-lg-10 mx-auto text-center margin-60px-bottom last-paragraph-no-margin md-margin-30px-bottom"
 					>
 						<img
-							:src="post.post_images[2].post_image_path"
+							:src="post.post_images[1].post_image_path"
 							alt
 							class="width-100 margin-40px-bottom md-margin-30px-bottom"
 							data-no-retina
@@ -121,7 +121,7 @@
 									class="text-medium font-weight-600 text-extra-dark-gray alt-font"
 								>Young man with beard and piercings</span>
 								<img
-									:src="post.post_images[3].post_image_path"
+									:src="post.post_images[0].post_image_path"
 									alt
 									class="width-100 margin-30px-tb"
 									data-no-retina
@@ -135,7 +135,7 @@
 									class="text-medium font-weight-600 text-extra-dark-gray alt-font"
 								>Latin man with beard and piercings</span>
 								<img
-									:src="post.post_images[0].post_image_path"
+									:src="post.post_images[1].post_image_path"
 									alt
 									class="width-100 margin-30px-tb"
 									data-no-retina
@@ -205,7 +205,12 @@
 							class="d-block d-md-flex width-100 align-items-center align-items-md-start border border-color-extra-light-gray padding-50px-all md-padding-30px-all sm-padding-20px-all"
 						>
 							<div class="width-150px text-center sm-margin-15px-bottom">
-								<img src="/images/avtar-01.jpg" class="rounded-circle width-100px" alt data-no-retina />
+								<img
+									:src="'/images/'+post.user.avatar+''"
+									class="rounded-circle width-100px"
+									alt
+									data-no-retina
+								/>
 							</div>
 							<div
 								class="width-100 padding-40px-left last-paragraph-no-margin sm-no-padding-left text-center text-md-left"
@@ -213,7 +218,7 @@
 								<a
 									href="#"
 									class="text-extra-dark-gray text-uppercase alt-font font-weight-600 margin-10px-bottom d-inline-block text-small"
-								>Alexander Harvard</a>
+								>{{ post.user.name }}</a>
 								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
 								<a href="#" class="btn btn-very-small btn-black margin-20px-top">All author posts</a>
 							</div>
@@ -383,7 +388,7 @@
 						<div class="position-relative overflow-hidden width-100">
 							<span
 								class="text-small text-outside-line-full alt-font font-weight-600 text-uppercase text-extra-dark-gray"
-							>10 Comments</span>
+							>{{ post.comments.length }} Comments</span>
 						</div>
 					</div>
 				</div>

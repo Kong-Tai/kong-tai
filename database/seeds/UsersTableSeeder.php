@@ -7,10 +7,11 @@
     {
         public function run()
         {
-            User::create([
-                'name' => 'Brayo Kip',
-                'email' => 'briankipruto793@gmail.com',
-                'password' => bcrypt('12345678'),
-            ]);
+            // User::create([
+            //     'name' => 'admin',
+            //     'email' => 'admin@gmail.com',
+            //     'password' => bcrypt('12345678'),
+            // ]);
+            $users = factory(User::class, 15)->create();
         }
     }

@@ -1,6 +1,7 @@
 <?php
 
 use App\Post;
+use App\Comment;
 use App\PostImage;
 use Illuminate\Database\Seeder;
 
@@ -15,5 +16,6 @@ class BlogTableSeeder extends Seeder
     {
         $posts = factory(Post::class, 8)->create();
         $post_images = factory(PostImage::class, 8)->create();
+        $comments = factory(Comment::class, 8)->create();
     }
 }

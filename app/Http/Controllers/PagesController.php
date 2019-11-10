@@ -55,7 +55,7 @@ class PagesController extends Controller
      */
     public function singlePost($post)
     {
-        $post = Post::with(['post_images', 'author'])->orderBy('created_at', 'desc')->findOrFail($post);
+        $post = Post::with(['post_images', 'user', 'comments'])->orderBy('created_at', 'desc')->findOrFail($post);
 
         return view('pages.blog.singlePost', [
             'post' => $post
