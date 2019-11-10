@@ -1,5 +1,29 @@
 <template>
 	<div>
+		<!-- start page title section -->
+		<section
+			class="wow fadeIn parallax"
+			data-stellar-background-ratio="0.5"
+			style="background-image: url(&quot;images/parallax-bg39.jpg&quot;); background-position: 0px 0px; visibility: visible; animation-name: fadeIn;"
+		>
+			<div class="opacity-medium bg-extra-dark-gray"></div>
+			<div class="container">
+				<div class="row align-items-center">
+					<div
+						class="col-12 d-flex flex-column justify-content-center text-center extra-small-screen page-title-large"
+					>
+						<!-- start page title -->
+						<h1
+							class="text-white-2 alt-font font-weight-600 letter-spacing-minus-1 margin-10px-bottom"
+						>Blog list</h1>
+						<span class="text-white-2 opacity6 alt-font">Lorem Ipsum is simply dummy text printing</span>
+						<!-- end page title -->
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- end page title section -->
+
 		<section class="wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
 			<div class="container">
 				<div class="row">
@@ -12,7 +36,7 @@
 					>
 						<div class="blog-post blog-post-style2">
 							<div class="blog-post-images overflow-hidden margin-25px-bottom sm-margin-15px-bottom">
-								<a href="/post">
+								<a href="/single-post">
 									<img
 										v-if="post.post_images.length"
 										class="card-img-top"
@@ -24,7 +48,7 @@
 							</div>
 							<div class="post-details">
 								<a
-									href="/post"
+									href="/single-post"
 									class="post-title text-medium text-extra-dark-gray width-90 d-block lg-width-100"
 								>{{ post.title }}</a>
 								<div

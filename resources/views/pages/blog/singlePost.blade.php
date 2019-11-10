@@ -1,5 +1,5 @@
 @extends('layouts.app')
 
 @section('content')
-<view-blog></view-blog>
+<single-post></single-post>
 @endsection

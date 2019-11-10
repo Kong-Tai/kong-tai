@@ -42,9 +42,9 @@ class PagesController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function blog()
+    public function postList()
     {
-        return view('pages.blog');
+        return view('pages.blog.postList');
     }
 
     /**
@@ -52,9 +52,9 @@ class PagesController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function post()
+    public function singlePost()
     {
-        return view('pages.blog.view');
+        return view('pages.blog.viewPost');
     }
 
     /**

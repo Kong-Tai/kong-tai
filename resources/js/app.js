@@ -31,9 +31,9 @@ Vue.component('home-gallery', require('./components/home/GalleryComponent.vue').
 Vue.component('view-portfolio', require('./components/portfolio/PortfolioComponent.vue').default);
 
 // blog
-Vue.component('view-blog', require('./components/blog/ViewComponent.vue').default);
-Vue.component('create-post', require('./components/blog/CreatePost.vue').default);
 Vue.component('all-post', require('./components/blog/AllPosts.vue').default);
+Vue.component('single-post', require('./components/blog/SinglePost.vue').default);
+Vue.component('create-post', require('./components/blog/CreatePost.vue').default);
 
 
 const app = new Vue({
