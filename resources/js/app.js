@@ -8,17 +8,17 @@ require('./bootstrap');
 
 window.Vue = require('vue');
 import store from './store/index';
-$(document).ready(function () {
-    if (window.location.pathname === '/blog') {
-        $('.point-portfolio').click(function () {
-            window.location = '/#portfolio'
-        })
-        $('.point-gallery').click(function () {
-            window.location = '/#gallery'
-        })
-    }
+// $(document).ready(function () {
+//     if (window.location.pathname === '/blog') {
+//         $('.point-portfolio').click(function () {
+//             window.location = '/#portfolio'
+//         })
+//         $('.point-gallery').click(function () {
+//             window.location = '/#gallery'
+//         })
+//     }
 
-})
+// })
 
 Vue.prototype.$store = store
 // home

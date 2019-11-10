@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Post;
 use App\Portfolio;
 use App\PortfolioCategory;
 use Illuminate\Http\Request;
@@ -52,9 +53,13 @@ class PagesController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function singlePost()
+    public function singlePost($post)
     {
-        return view('pages.blog.viewPost');
+        $post = Post::with(['post_images', 'author'])->orderBy('created_at', 'desc')->findOrFail($post);
+
+        return view('pages.blog.singlePost', [
+            'post' => $post
+        ]);
     }
 
     /**

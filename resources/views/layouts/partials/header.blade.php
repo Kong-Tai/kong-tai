@@ -6,8 +6,8 @@
                     <!-- start logo -->
                     <div class="col col-md-auto col-lg-2 pl-0">
                         <a href="/" title="Pofo" class="logo">
-                            <img src="images/kong-tai.png" data-rjs="images/logo@2x.png" class="logo-dark" alt="Pofo">
-                            <img src="images/kong-tai.png" data-rjs="images/logo-white@2x.png" alt="Pofo" class="logo-light default">
+                            <img src="/images/kong-tai.png" data-rjs="images/logo@2x.png" class="logo-dark" alt="Pofo">
+                            <img src="/images/kong-tai.png" data-rjs="images/logo-white@2x.png" alt="Pofo" class="logo-light default">
                         </a>
                     </div>
                     <!-- end logo -->

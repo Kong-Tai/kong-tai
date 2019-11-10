@@ -69,7 +69,7 @@
 							class="alt-font text-extra-dark-gray font-weight-600 mb-0"
 						>We must let go of the life we have planned, so as to accept the one that is waiting for us.</h5>
 						<img
-							src="images/blog-details-img2.jpg"
+							src="/images/blog-details-img2.jpg"
 							alt
 							class="width-100 margin-40px-tb md-margin-30px-tb"
 							data-no-retina
@@ -78,7 +78,7 @@
 					</div>
 					<div class="col-12 col-lg-10 mx-auto text-center last-paragraph-no-margin">
 						<img
-							src="images/blog-details-img3.jpg"
+							src="/images/blog-details-img3.jpg"
 							alt
 							class="width-100 margin-40px-tb md-margin-30px-tb"
 							data-no-retina
@@ -105,7 +105,7 @@
 						class="col-12 col-lg-10 mx-auto text-center margin-60px-bottom last-paragraph-no-margin md-margin-30px-bottom"
 					>
 						<img
-							src="images/blog-details-img4.jpg"
+							src="/images/blog-details-img4.jpg"
 							alt
 							class="width-100 margin-40px-bottom md-margin-30px-bottom"
 							data-no-retina
@@ -122,7 +122,12 @@
 								<span
 									class="text-medium font-weight-600 text-extra-dark-gray alt-font"
 								>Young man with beard and piercings</span>
-								<img src="images/blog-details-img5.jpg" alt class="width-100 margin-30px-tb" data-no-retina />
+								<img
+									src="/images/blog-details-img5.jpg"
+									alt
+									class="width-100 margin-30px-tb"
+									data-no-retina
+								/>
 								<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
 							</div>
 						</div>
@@ -131,7 +136,12 @@
 								<span
 									class="text-medium font-weight-600 text-extra-dark-gray alt-font"
 								>Latin man with beard and piercings</span>
-								<img src="images/blog-details-img6.jpg" alt class="width-100 margin-30px-tb" data-no-retina />
+								<img
+									src="/images/blog-details-img6.jpg"
+									alt
+									class="width-100 margin-30px-tb"
+									data-no-retina
+								/>
 								<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
 							</div>
 						</div>
@@ -197,7 +207,7 @@
 							class="d-block d-md-flex width-100 align-items-center align-items-md-start border border-color-extra-light-gray padding-50px-all md-padding-30px-all sm-padding-20px-all"
 						>
 							<div class="width-150px text-center sm-margin-15px-bottom">
-								<img src="images/avtar-01.jpg" class="rounded-circle width-100px" alt data-no-retina />
+								<img src="/images/avtar-01.jpg" class="rounded-circle width-100px" alt data-no-retina />
 							</div>
 							<div
 								class="width-100 padding-40px-left last-paragraph-no-margin sm-no-padding-left text-center text-md-left"
@@ -237,7 +247,7 @@
 						<div class="blog-post blog-post-style1 text-center text-md-left">
 							<div class="blog-post-images overflow-hidden margin-25px-bottom md-margin-20px-bottom">
 								<a href="blog-post-layout-01.html">
-									<img src="images/blog-img15.jpg" alt data-no-retina />
+									<img src="/images/blog-img15.jpg" alt data-no-retina />
 								</a>
 							</div>
 							<div class="post-details">
@@ -270,7 +280,7 @@
 						<div class="blog-post blog-post-style1 text-center text-md-left">
 							<div class="blog-post-images overflow-hidden margin-25px-bottom md-margin-20px-bottom">
 								<a href="blog-post-layout-02.html">
-									<img src="images/blog-img16.jpg" alt data-no-retina />
+									<img src="/images/blog-img16.jpg" alt data-no-retina />
 								</a>
 							</div>
 							<div class="post-details">
@@ -303,7 +313,7 @@
 						<div class="blog-post blog-post-style1 text-center text-md-left">
 							<div class="blog-post-images overflow-hidden margin-25px-bottom md-margin-20px-bottom">
 								<a href="blog-post-layout-03.html">
-									<img src="images/blog-img17.jpg" alt data-no-retina />
+									<img src="/images/blog-img17.jpg" alt data-no-retina />
 								</a>
 							</div>
 							<div class="post-details">
@@ -336,7 +346,7 @@
 						<div class="blog-post blog-post-style1 text-center text-md-left">
 							<div class="blog-post-images overflow-hidden margin-25px-bottom md-margin-20px-bottom">
 								<a href="blog-post-layout-04.html">
-									<img src="images/blog-img18.jpg" alt data-no-retina />
+									<img src="/images/blog-img18.jpg" alt data-no-retina />
 								</a>
 							</div>
 							<div class="post-details">
@@ -386,7 +396,7 @@
 								<div class="d-block d-md-flex width-100 width-100">
 									<div class="width-110px sm-width-50px text-center sm-margin-10px-bottom">
 										<img
-											src="images/avtar-02.jpg"
+											src="/images/avtar-02.jpg"
 											class="rounded-circle width-85 sm-width-100"
 											alt
 											data-no-retina
@@ -412,7 +422,7 @@
 										<div class="d-block d-md-flex width-100 width-100">
 											<div class="width-110px sm-width-50px text-center sm-margin-10px-bottom">
 												<img
-													src="images/avtar-01.jpg"
+													src="/images/avtar-01.jpg"
 													class="rounded-circle width-85 sm-width-100"
 													alt
 													data-no-retina
@@ -440,7 +450,7 @@
 								<div class="d-block d-md-flex width-100 width-100">
 									<div class="width-110px sm-width-50px text-center sm-margin-10px-bottom">
 										<img
-											src="images/avtar-04.jpg"
+											src="/images/avtar-04.jpg"
 											class="rounded-circle width-85 sm-width-100"
 											alt
 											data-no-retina
@@ -512,8 +522,17 @@
 
 <script>
 export default {
+	props: {
+		post: {}
+	},
+	data() {
+		return {}
+	},
+	created() {},
+	computed: {},
 	mounted() {
 		console.log('Component mounted.')
-	}
+	},
+	methods: {}
 }
 </script>

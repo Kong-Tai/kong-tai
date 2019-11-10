@@ -36,7 +36,7 @@
 					>
 						<div class="blog-post blog-post-style2">
 							<div class="blog-post-images overflow-hidden margin-25px-bottom sm-margin-15px-bottom">
-								<a href="/single-post">
+								<a :href="'/blog/'+post.id+''">
 									<img
 										v-if="post.post_images.length"
 										class="card-img-top"
@@ -48,14 +48,14 @@
 							</div>
 							<div class="post-details">
 								<a
-									href="/single-post"
+									:href="'/blog/'+post.id+''"
 									class="post-title text-medium text-extra-dark-gray width-90 d-block lg-width-100"
 								>{{ post.title }}</a>
 								<div
 									class="separator-line-horrizontal-full bg-medium-light-gray margin-20px-tb sm-margin-15px-tb"
 								></div>
 								<div class="author">
-									<img src="images/avtar-01.jpg" alt class="rounded-circle" data-no-retina />
+									<img src="/images/avtar-01.jpg" alt class="rounded-circle" data-no-retina />
 									<span
 										class="text-medium-gray text-uppercase text-extra-small padding-15px-left d-inline-block"
 									>

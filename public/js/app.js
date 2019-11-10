@@ -2665,10 +2665,29 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
+  props: {
+    post: {}
+  },
+  data: function data() {
+    return {};
+  },
+  created: function created() {},
+  computed: {},
   mounted: function mounted() {
     console.log('Component mounted.');
-  }
+  },
+  methods: {}
 });
 
 /***/ }),
@@ -39823,7 +39842,7 @@ var render = function() {
                           "blog-post-images overflow-hidden margin-25px-bottom sm-margin-15px-bottom"
                       },
                       [
-                        _c("a", { attrs: { href: "/single-post" } }, [
+                        _c("a", { attrs: { href: "/blog/" + post.id + "" } }, [
                           post.post_images.length
                             ? _c("img", {
                                 staticClass: "card-img-top",
@@ -39844,7 +39863,7 @@ var render = function() {
                         {
                           staticClass:
                             "post-title text-medium text-extra-dark-gray width-90 d-block lg-width-100",
-                          attrs: { href: "/single-post" }
+                          attrs: { href: "/blog/" + post.id + "" }
                         },
                         [_vm._v(_vm._s(post.title))]
                       ),
@@ -39924,7 +39943,7 @@ var staticRenderFns = [
     return _c("div", { staticClass: "author" }, [
       _c("img", {
         staticClass: "rounded-circle",
-        attrs: { src: "images/avtar-01.jpg", alt: "", "data-no-retina": "" }
+        attrs: { src: "/images/avtar-01.jpg", alt: "", "data-no-retina": "" }
       }),
       _vm._v(" "),
       _c(
@@ -40306,7 +40325,7 @@ var staticRenderFns = [
                   _c("img", {
                     staticClass: "width-100 margin-40px-tb md-margin-30px-tb",
                     attrs: {
-                      src: "images/blog-details-img2.jpg",
+                      src: "/images/blog-details-img2.jpg",
                       alt: "",
                       "data-no-retina": ""
                     }
@@ -40330,7 +40349,7 @@ var staticRenderFns = [
                   _c("img", {
                     staticClass: "width-100 margin-40px-tb md-margin-30px-tb",
                     attrs: {
-                      src: "images/blog-details-img3.jpg",
+                      src: "/images/blog-details-img3.jpg",
                       alt: "",
                       "data-no-retina": ""
                     }
@@ -40406,7 +40425,7 @@ var staticRenderFns = [
                     staticClass:
                       "width-100 margin-40px-bottom md-margin-30px-bottom",
                     attrs: {
-                      src: "images/blog-details-img4.jpg",
+                      src: "/images/blog-details-img4.jpg",
                       alt: "",
                       "data-no-retina": ""
                     }
@@ -40452,7 +40471,7 @@ var staticRenderFns = [
                           _c("img", {
                             staticClass: "width-100 margin-30px-tb",
                             attrs: {
-                              src: "images/blog-details-img5.jpg",
+                              src: "/images/blog-details-img5.jpg",
                               alt: "",
                               "data-no-retina": ""
                             }
@@ -40494,7 +40513,7 @@ var staticRenderFns = [
                           _c("img", {
                             staticClass: "width-100 margin-30px-tb",
                             attrs: {
-                              src: "images/blog-details-img6.jpg",
+                              src: "/images/blog-details-img6.jpg",
                               alt: "",
                               "data-no-retina": ""
                             }
@@ -40678,7 +40697,7 @@ var staticRenderFns = [
                           _c("img", {
                             staticClass: "rounded-circle width-100px",
                             attrs: {
-                              src: "images/avtar-01.jpg",
+                              src: "/images/avtar-01.jpg",
                               alt: "",
                               "data-no-retina": ""
                             }
@@ -40797,7 +40816,7 @@ var staticRenderFns = [
                             [
                               _c("img", {
                                 attrs: {
-                                  src: "images/blog-img15.jpg",
+                                  src: "/images/blog-img15.jpg",
                                   alt: "",
                                   "data-no-retina": ""
                                 }
@@ -40892,7 +40911,7 @@ var staticRenderFns = [
                             [
                               _c("img", {
                                 attrs: {
-                                  src: "images/blog-img16.jpg",
+                                  src: "/images/blog-img16.jpg",
                                   alt: "",
                                   "data-no-retina": ""
                                 }
@@ -40987,7 +41006,7 @@ var staticRenderFns = [
                             [
                               _c("img", {
                                 attrs: {
-                                  src: "images/blog-img17.jpg",
+                                  src: "/images/blog-img17.jpg",
                                   alt: "",
                                   "data-no-retina": ""
                                 }
@@ -41082,7 +41101,7 @@ var staticRenderFns = [
                             [
                               _c("img", {
                                 attrs: {
-                                  src: "images/blog-img18.jpg",
+                                  src: "/images/blog-img18.jpg",
                                   alt: "",
                                   "data-no-retina": ""
                                 }
@@ -41203,7 +41222,7 @@ var staticRenderFns = [
                               staticClass:
                                 "rounded-circle width-85 sm-width-100",
                               attrs: {
-                                src: "images/avtar-02.jpg",
+                                src: "/images/avtar-02.jpg",
                                 alt: "",
                                 "data-no-retina": ""
                               }
@@ -41276,7 +41295,7 @@ var staticRenderFns = [
                                   staticClass:
                                     "rounded-circle width-85 sm-width-100",
                                   attrs: {
-                                    src: "images/avtar-01.jpg",
+                                    src: "/images/avtar-01.jpg",
                                     alt: "",
                                     "data-no-retina": ""
                                   }
@@ -41349,7 +41368,7 @@ var staticRenderFns = [
                               staticClass:
                                 "rounded-circle width-85 sm-width-100",
                               attrs: {
-                                src: "images/avtar-04.jpg",
+                                src: "/images/avtar-04.jpg",
                                 alt: "",
                                 "data-no-retina": ""
                               }
@@ -41837,7 +41856,7 @@ var staticRenderFns = [
                                 staticClass: "width-100 box-shadow-large",
                                 attrs: {
                                   src:
-                                    "images/pofo-portfolio-layout-img-03.jpg",
+                                    "/images/pofo-portfolio-layout-img-03.jpg",
                                   alt: "",
                                   "data-no-retina": ""
                                 }
@@ -41872,7 +41891,7 @@ var staticRenderFns = [
                                 staticClass: "width-100 box-shadow-large",
                                 attrs: {
                                   src:
-                                    "images/pofo-portfolio-layout-img-04.jpg",
+                                    "/images/pofo-portfolio-layout-img-04.jpg",
                                   alt: "",
                                   "data-no-retina": ""
                                 }
@@ -41907,7 +41926,7 @@ var staticRenderFns = [
                                 staticClass: "width-100 box-shadow-large",
                                 attrs: {
                                   src:
-                                    "images/pofo-portfolio-layout-img-05.jpg",
+                                    "/images/pofo-portfolio-layout-img-05.jpg",
                                   alt: "",
                                   "data-no-retina": ""
                                 }
@@ -41942,7 +41961,7 @@ var staticRenderFns = [
                                 staticClass: "width-100 box-shadow-large",
                                 attrs: {
                                   src:
-                                    "images/pofo-portfolio-layout-img-06.jpg",
+                                    "/images/pofo-portfolio-layout-img-06.jpg",
                                   alt: "",
                                   "data-no-retina": ""
                                 }
@@ -41977,7 +41996,7 @@ var staticRenderFns = [
                                 staticClass: "width-100 box-shadow-large",
                                 attrs: {
                                   src:
-                                    "images/pofo-portfolio-layout-img-07.jpg",
+                                    "/images/pofo-portfolio-layout-img-07.jpg",
                                   alt: "",
                                   "data-no-retina": ""
                                 }
@@ -42012,7 +42031,7 @@ var staticRenderFns = [
                                 staticClass: "width-100 box-shadow-large",
                                 attrs: {
                                   src:
-                                    "images/pofo-portfolio-layout-img-08.jpg",
+                                    "/images/pofo-portfolio-layout-img-08.jpg",
                                   alt: "",
                                   "data-no-retina": ""
                                 }
@@ -42047,7 +42066,7 @@ var staticRenderFns = [
                                 staticClass: "width-100 box-shadow-large",
                                 attrs: {
                                   src:
-                                    "images/pofo-portfolio-layout-img-01.jpg",
+                                    "/images/pofo-portfolio-layout-img-01.jpg",
                                   alt: "",
                                   "data-no-retina": ""
                                 }
@@ -42081,7 +42100,7 @@ var staticRenderFns = [
                                 staticClass: "width-100 box-shadow-large",
                                 attrs: {
                                   src:
-                                    "images/pofo-portfolio-layout-img-02.jpg",
+                                    "/images/pofo-portfolio-layout-img-02.jpg",
                                   alt: "",
                                   "data-no-retina": ""
                                 }
@@ -42115,7 +42134,7 @@ var staticRenderFns = [
                                 staticClass: "width-100 box-shadow-large",
                                 attrs: {
                                   src:
-                                    "images/pofo-portfolio-layout-img-03.jpg",
+                                    "/images/pofo-portfolio-layout-img-03.jpg",
                                   alt: "",
                                   "data-no-retina": ""
                                 }
@@ -42149,7 +42168,7 @@ var staticRenderFns = [
                                 staticClass: "width-100 box-shadow-large",
                                 attrs: {
                                   src:
-                                    "images/pofo-portfolio-layout-img-04.jpg",
+                                    "/images/pofo-portfolio-layout-img-04.jpg",
                                   alt: "",
                                   "data-no-retina": ""
                                 }
@@ -42183,7 +42202,7 @@ var staticRenderFns = [
                                 staticClass: "width-100 box-shadow-large",
                                 attrs: {
                                   src:
-                                    "images/pofo-portfolio-layout-img-05.jpg",
+                                    "/images/pofo-portfolio-layout-img-05.jpg",
                                   alt: "",
                                   "data-no-retina": ""
                                 }
@@ -42217,7 +42236,7 @@ var staticRenderFns = [
                                 staticClass: "width-100 box-shadow-large",
                                 attrs: {
                                   src:
-                                    "images/pofo-portfolio-layout-img-06.jpg",
+                                    "/images/pofo-portfolio-layout-img-06.jpg",
                                   alt: "",
                                   "data-no-retina": ""
                                 }
@@ -42252,7 +42271,7 @@ var staticRenderFns = [
                                 staticClass: "width-100 box-shadow-large",
                                 attrs: {
                                   src:
-                                    "images/pofo-portfolio-layout-img-07.jpg",
+                                    "/images/pofo-portfolio-layout-img-07.jpg",
                                   alt: "",
                                   "data-no-retina": ""
                                 }
@@ -42287,7 +42306,7 @@ var staticRenderFns = [
                                 staticClass: "width-100 box-shadow-large",
                                 attrs: {
                                   src:
-                                    "images/pofo-portfolio-layout-img-08.jpg",
+                                    "/images/pofo-portfolio-layout-img-08.jpg",
                                   alt: "",
                                   "data-no-retina": ""
                                 }
@@ -42322,7 +42341,7 @@ var staticRenderFns = [
                                 staticClass: "width-100 box-shadow-large",
                                 attrs: {
                                   src:
-                                    "images/pofo-portfolio-layout-img-01.jpg",
+                                    "/images/pofo-portfolio-layout-img-01.jpg",
                                   alt: "",
                                   "data-no-retina": ""
                                 }
@@ -42357,7 +42376,7 @@ var staticRenderFns = [
                                 staticClass: "width-100 box-shadow-large",
                                 attrs: {
                                   src:
-                                    "images/pofo-portfolio-layout-img-02.jpg",
+                                    "/images/pofo-portfolio-layout-img-02.jpg",
                                   alt: "",
                                   "data-no-retina": ""
                                 }
@@ -42392,7 +42411,7 @@ var staticRenderFns = [
                                 staticClass: "width-100 box-shadow-large",
                                 attrs: {
                                   src:
-                                    "images/pofo-portfolio-layout-img-03.jpg",
+                                    "/images/pofo-portfolio-layout-img-03.jpg",
                                   alt: "",
                                   "data-no-retina": ""
                                 }
@@ -42427,7 +42446,7 @@ var staticRenderFns = [
                                 staticClass: "width-100 box-shadow-large",
                                 attrs: {
                                   src:
-                                    "images/pofo-portfolio-layout-img-04.jpg",
+                                    "/images/pofo-portfolio-layout-img-04.jpg",
                                   alt: "",
                                   "data-no-retina": ""
                                 }
@@ -42462,7 +42481,7 @@ var staticRenderFns = [
                                 staticClass: "width-100 box-shadow-large",
                                 attrs: {
                                   src:
-                                    "images/pofo-portfolio-layout-img-05.jpg",
+                                    "/images/pofo-portfolio-layout-img-05.jpg",
                                   alt: "",
                                   "data-no-retina": ""
                                 }
@@ -42497,7 +42516,7 @@ var staticRenderFns = [
                                 staticClass: "width-100 box-shadow-large",
                                 attrs: {
                                   src:
-                                    "images/pofo-portfolio-layout-img-06.jpg",
+                                    "/images/pofo-portfolio-layout-img-06.jpg",
                                   alt: "",
                                   "data-no-retina": ""
                                 }
@@ -56316,17 +56335,17 @@ __webpack_require__(/*! ./main */ "./resources/js/main.js");
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
+ // $(document).ready(function () {
+//     if (window.location.pathname === '/blog') {
+//         $('.point-portfolio').click(function () {
+//             window.location = '/#portfolio'
+//         })
+//         $('.point-gallery').click(function () {
+//             window.location = '/#gallery'
+//         })
+//     }
+// })
 
-$(document).ready(function () {
-  if (window.location.pathname === '/blog') {
-    $('.point-portfolio').click(function () {
-      window.location = '/#portfolio';
-    });
-    $('.point-gallery').click(function () {
-      window.location = '/#gallery';
-    });
-  }
-});
 Vue.prototype.$store = _store_index__WEBPACK_IMPORTED_MODULE_0__["default"]; // home
 
 Vue.component('view-home', __webpack_require__(/*! ./components/home/HomeComponent.vue */ "./resources/js/components/home/HomeComponent.vue")["default"]);

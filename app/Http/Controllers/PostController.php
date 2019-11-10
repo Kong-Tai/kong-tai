@@ -15,6 +15,7 @@ class PostController extends Controller
         $posts = Post::with(['post_images', 'author'])->orderBy('created_at', 'desc')->get();
         return response()->json(['data' => $posts]);
     }
+
     public function createPost(Request $request)
     {
         DB::transaction(function () use ($request) {
