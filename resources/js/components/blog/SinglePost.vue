@@ -15,7 +15,7 @@
 						<span
 							class="text-white-2 opacity6 alt-font margin-10px-bottom d-block text-uppercase text-small"
 						>
-							25 April 2017&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;by
+							{{ post.created_at }}&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;by
 							<a
 								href="blog-masonry.html"
 								class="text-white-2"
@@ -25,9 +25,7 @@
 						</span>
 						<!-- end sub title -->
 						<!-- start page title -->
-						<h1
-							class="text-white-2 alt-font font-weight-600 margin-10px-bottom"
-						>Perfection is not attainable</h1>
+						<h1 class="text-white-2 alt-font font-weight-600 margin-10px-bottom">{{ post.title }}</h1>
 						<!-- end page title -->
 					</div>
 				</div>
@@ -51,7 +49,7 @@
 							<li>
 								<a href="/blog" class="text-medium-gray">Blog</a>
 							</li>
-							<li class="text-medium-gray">Perfection is not attainable</li>
+							<li class="text-medium-gray">{{ post.title }}</li>
 						</ul>
 						<!-- end breadcrumb -->
 					</div>
@@ -69,7 +67,7 @@
 							class="alt-font text-extra-dark-gray font-weight-600 mb-0"
 						>We must let go of the life we have planned, so as to accept the one that is waiting for us.</h5>
 						<img
-							src="/images/blog-details-img2.jpg"
+							:src="post.post_images[0].post_image_path"
 							alt
 							class="width-100 margin-40px-tb md-margin-30px-tb"
 							data-no-retina
@@ -78,7 +76,7 @@
 					</div>
 					<div class="col-12 col-lg-10 mx-auto text-center last-paragraph-no-margin">
 						<img
-							src="/images/blog-details-img3.jpg"
+							:src="post.post_images[1].post_image_path"
 							alt
 							class="width-100 margin-40px-tb md-margin-30px-tb"
 							data-no-retina
@@ -105,7 +103,7 @@
 						class="col-12 col-lg-10 mx-auto text-center margin-60px-bottom last-paragraph-no-margin md-margin-30px-bottom"
 					>
 						<img
-							src="/images/blog-details-img4.jpg"
+							:src="post.post_images[2].post_image_path"
 							alt
 							class="width-100 margin-40px-bottom md-margin-30px-bottom"
 							data-no-retina
@@ -123,7 +121,7 @@
 									class="text-medium font-weight-600 text-extra-dark-gray alt-font"
 								>Young man with beard and piercings</span>
 								<img
-									src="/images/blog-details-img5.jpg"
+									:src="post.post_images[3].post_image_path"
 									alt
 									class="width-100 margin-30px-tb"
 									data-no-retina
@@ -137,7 +135,7 @@
 									class="text-medium font-weight-600 text-extra-dark-gray alt-font"
 								>Latin man with beard and piercings</span>
 								<img
-									src="/images/blog-details-img6.jpg"
+									:src="post.post_images[0].post_image_path"
 									alt
 									class="width-100 margin-30px-tb"
 									data-no-retina

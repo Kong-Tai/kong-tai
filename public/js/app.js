@@ -2673,8 +2673,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: {
     post: {}
@@ -40160,544 +40158,1088 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", [
+    _c(
+      "section",
+      {
+        staticClass:
+          "wow fadeIn cover-background background-position-top top-space",
+        staticStyle: {
+          "background-image": 'url("/images/parallax-bg53.jpg")',
+          visibility: "visible",
+          "animation-name": "fadeIn"
+        }
+      },
+      [
+        _c("div", { staticClass: "opacity-medium bg-extra-dark-gray" }),
+        _vm._v(" "),
+        _c("div", { staticClass: "container" }, [
+          _c("div", { staticClass: "row align-items-center" }, [
+            _c(
+              "div",
+              {
+                staticClass:
+                  "col-12 d-flex justify-content-center flex-column text-center page-title-large padding-30px-tb"
+              },
+              [
+                _c(
+                  "span",
+                  {
+                    staticClass:
+                      "text-white-2 opacity6 alt-font margin-10px-bottom d-block text-uppercase text-small"
+                  },
+                  [
+                    _vm._v(
+                      "\n\t\t\t\t\t\t" +
+                        _vm._s(_vm.post.created_at) +
+                        "   |   by\n\t\t\t\t\t\t"
+                    ),
+                    _c(
+                      "a",
+                      {
+                        staticClass: "text-white-2",
+                        attrs: { href: "blog-masonry.html" }
+                      },
+                      [_vm._v("Jay Benjamin")]
+                    ),
+                    _vm._v("   |   \n\t\t\t\t\t\t"),
+                    _c(
+                      "a",
+                      {
+                        staticClass: "text-white-2",
+                        attrs: { href: "blog-masonry.html" }
+                      },
+                      [_vm._v("Design")]
+                    ),
+                    _vm._v(",\n\t\t\t\t\t\t"),
+                    _c(
+                      "a",
+                      {
+                        staticClass: "text-white-2",
+                        attrs: { href: "blog-masonry.html" }
+                      },
+                      [_vm._v("Branding")]
+                    )
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "h1",
+                  {
+                    staticClass:
+                      "text-white-2 alt-font font-weight-600 margin-10px-bottom"
+                  },
+                  [_vm._v(_vm._s(_vm.post.title))]
+                )
+              ]
+            )
+          ])
+        ])
+      ]
+    ),
+    _vm._v(" "),
+    _c(
+      "section",
+      {
+        staticClass:
+          "wow fadeIn padding-20px-tb border-bottom border-color-extra-light-gray",
+        staticStyle: { visibility: "visible", "animation-name": "fadeIn" }
+      },
+      [
+        _c("div", { staticClass: "container" }, [
+          _c("div", { staticClass: "row" }, [
+            _c(
+              "div",
+              { staticClass: "col-12 breadcrumb alt-font text-small" },
+              [
+                _c("ul", [
+                  _vm._m(0),
+                  _vm._v(" "),
+                  _vm._m(1),
+                  _vm._v(" "),
+                  _c("li", { staticClass: "text-medium-gray" }, [
+                    _vm._v(_vm._s(_vm.post.title))
+                  ])
+                ])
+              ]
+            )
+          ])
+        ])
+      ]
+    ),
+    _vm._v(" "),
+    _c(
+      "section",
+      {
+        staticClass: "wow fadeIn",
+        staticStyle: { visibility: "visible", "animation-name": "fadeIn" }
+      },
+      [
+        _c("div", { staticClass: "container" }, [
+          _c("div", { staticClass: "row" }, [
+            _c(
+              "div",
+              {
+                staticClass:
+                  "col-12 col-lg-10 mx-auto text-center last-paragraph-no-margin"
+              },
+              [
+                _c(
+                  "h5",
+                  {
+                    staticClass:
+                      "alt-font text-extra-dark-gray font-weight-600 mb-0"
+                  },
+                  [
+                    _vm._v(
+                      "We must let go of the life we have planned, so as to accept the one that is waiting for us."
+                    )
+                  ]
+                ),
+                _vm._v(" "),
+                _c("img", {
+                  staticClass: "width-100 margin-40px-tb md-margin-30px-tb",
+                  attrs: {
+                    src: _vm.post.post_images[0].post_image_path,
+                    alt: "",
+                    "data-no-retina": ""
+                  }
+                }),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v(
+                    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of letraset sheets containing lorem ipsum passages, and more recently with desktop publishing software like Aldus pagemaker including versions of Lorem Ipsum."
+                  )
+                ])
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass:
+                  "col-12 col-lg-10 mx-auto text-center last-paragraph-no-margin"
+              },
+              [
+                _c("img", {
+                  staticClass: "width-100 margin-40px-tb md-margin-30px-tb",
+                  attrs: {
+                    src: _vm.post.post_images[1].post_image_path,
+                    alt: "",
+                    "data-no-retina": ""
+                  }
+                }),
+                _vm._v(" "),
+                _c("p", { staticClass: "text-large text-extra-dark-gray" }, [
+                  _vm._v(
+                    "Today I choose life. Every morning when I wake up I can choose joy, happiness, negativity, pain... To feel the freedom that comes from being able to continue to make mistakes and choices - today I choose to feel life, not to deny my humanity but embrace it."
+                  )
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v(
+                    "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour."
+                  )
+                ])
+              ]
+            ),
+            _vm._v(" "),
+            _vm._m(2),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass:
+                  "col-12 col-lg-10 mx-auto text-center margin-60px-bottom last-paragraph-no-margin md-margin-30px-bottom"
+              },
+              [
+                _c("img", {
+                  staticClass:
+                    "width-100 margin-40px-bottom md-margin-30px-bottom",
+                  attrs: {
+                    src: _vm.post.post_images[2].post_image_path,
+                    alt: "",
+                    "data-no-retina": ""
+                  }
+                }),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v(
+                    "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour."
+                  )
+                ])
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "row" }, [
+            _c(
+              "div",
+              { staticClass: "col-12 col-lg-10 d-flex flex-wrap mx-auto" },
+              [
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "col-12 col-lg-6 pl-0 md-no-padding-lr md-margin-30px-bottom text-center last-paragraph-no-margin"
+                  },
+                  [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "bg-light-gray padding-50px-all md-padding-25px-all"
+                      },
+                      [
+                        _c(
+                          "span",
+                          {
+                            staticClass:
+                              "text-medium font-weight-600 text-extra-dark-gray alt-font"
+                          },
+                          [_vm._v("Young man with beard and piercings")]
+                        ),
+                        _vm._v(" "),
+                        _c("img", {
+                          staticClass: "width-100 margin-30px-tb",
+                          attrs: {
+                            src: _vm.post.post_images[3].post_image_path,
+                            alt: "",
+                            "data-no-retina": ""
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("p", [
+                          _vm._v(
+                            "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."
+                          )
+                        ])
+                      ]
+                    )
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "col-12 col-lg-6 pl-0 md-no-padding-lr text-center last-paragraph-no-margin"
+                  },
+                  [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "bg-light-gray padding-50px-all md-padding-25px-all"
+                      },
+                      [
+                        _c(
+                          "span",
+                          {
+                            staticClass:
+                              "text-medium font-weight-600 text-extra-dark-gray alt-font"
+                          },
+                          [_vm._v("Latin man with beard and piercings")]
+                        ),
+                        _vm._v(" "),
+                        _c("img", {
+                          staticClass: "width-100 margin-30px-tb",
+                          attrs: {
+                            src: _vm.post.post_images[0].post_image_path,
+                            alt: "",
+                            "data-no-retina": ""
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("p", [
+                          _vm._v(
+                            "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."
+                          )
+                        ])
+                      ]
+                    )
+                  ]
+                )
+              ]
+            )
+          ])
+        ])
+      ]
+    ),
+    _vm._v(" "),
+    _vm._m(3),
+    _vm._v(" "),
+    _vm._m(4),
+    _vm._v(" "),
+    _vm._m(5),
+    _vm._v(" "),
+    _vm._m(6)
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", [
-      _c(
-        "section",
-        {
-          staticClass:
-            "wow fadeIn cover-background background-position-top top-space",
-          staticStyle: {
-            "background-image": 'url("/images/parallax-bg53.jpg")',
-            visibility: "visible",
-            "animation-name": "fadeIn"
-          }
-        },
-        [
-          _c("div", { staticClass: "opacity-medium bg-extra-dark-gray" }),
-          _vm._v(" "),
-          _c("div", { staticClass: "container" }, [
-            _c("div", { staticClass: "row align-items-center" }, [
-              _c(
-                "div",
-                {
-                  staticClass:
-                    "col-12 d-flex justify-content-center flex-column text-center page-title-large padding-30px-tb"
-                },
-                [
-                  _c(
-                    "span",
-                    {
-                      staticClass:
-                        "text-white-2 opacity6 alt-font margin-10px-bottom d-block text-uppercase text-small"
-                    },
-                    [
-                      _vm._v(
-                        "\n\t\t\t\t\t\t25 April 2017   |   by\n\t\t\t\t\t\t"
-                      ),
-                      _c(
-                        "a",
-                        {
-                          staticClass: "text-white-2",
-                          attrs: { href: "blog-masonry.html" }
-                        },
-                        [_vm._v("Jay Benjamin")]
-                      ),
-                      _vm._v("   |   \n\t\t\t\t\t\t"),
-                      _c(
-                        "a",
-                        {
-                          staticClass: "text-white-2",
-                          attrs: { href: "blog-masonry.html" }
-                        },
-                        [_vm._v("Design")]
-                      ),
-                      _vm._v(",\n\t\t\t\t\t\t"),
-                      _c(
-                        "a",
-                        {
-                          staticClass: "text-white-2",
-                          attrs: { href: "blog-masonry.html" }
-                        },
-                        [_vm._v("Branding")]
-                      )
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "h1",
-                    {
-                      staticClass:
-                        "text-white-2 alt-font font-weight-600 margin-10px-bottom"
-                    },
-                    [_vm._v("Perfection is not attainable")]
-                  )
-                ]
-              )
-            ])
-          ])
-        ]
-      ),
-      _vm._v(" "),
-      _c(
-        "section",
-        {
-          staticClass:
-            "wow fadeIn padding-20px-tb border-bottom border-color-extra-light-gray",
-          staticStyle: { visibility: "visible", "animation-name": "fadeIn" }
-        },
-        [
-          _c("div", { staticClass: "container" }, [
-            _c("div", { staticClass: "row" }, [
-              _c(
-                "div",
-                { staticClass: "col-12 breadcrumb alt-font text-small" },
-                [
-                  _c("ul", [
-                    _c("li", [
-                      _c(
-                        "a",
-                        {
-                          staticClass: "text-medium-gray",
-                          attrs: { href: "/" }
-                        },
-                        [_vm._v("Home")]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("li", [
-                      _c(
-                        "a",
-                        {
-                          staticClass: "text-medium-gray",
-                          attrs: { href: "/blog" }
-                        },
-                        [_vm._v("Blog")]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("li", { staticClass: "text-medium-gray" }, [
-                      _vm._v("Perfection is not attainable")
-                    ])
-                  ])
-                ]
-              )
-            ])
-          ])
-        ]
-      ),
-      _vm._v(" "),
-      _c(
-        "section",
-        {
-          staticClass: "wow fadeIn",
-          staticStyle: { visibility: "visible", "animation-name": "fadeIn" }
-        },
-        [
-          _c("div", { staticClass: "container" }, [
-            _c("div", { staticClass: "row" }, [
-              _c(
-                "div",
-                {
-                  staticClass:
-                    "col-12 col-lg-10 mx-auto text-center last-paragraph-no-margin"
-                },
-                [
-                  _c(
-                    "h5",
-                    {
-                      staticClass:
-                        "alt-font text-extra-dark-gray font-weight-600 mb-0"
-                    },
-                    [
-                      _vm._v(
-                        "We must let go of the life we have planned, so as to accept the one that is waiting for us."
-                      )
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c("img", {
-                    staticClass: "width-100 margin-40px-tb md-margin-30px-tb",
-                    attrs: {
-                      src: "/images/blog-details-img2.jpg",
-                      alt: "",
-                      "data-no-retina": ""
-                    }
-                  }),
-                  _vm._v(" "),
-                  _c("p", [
-                    _vm._v(
-                      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of letraset sheets containing lorem ipsum passages, and more recently with desktop publishing software like Aldus pagemaker including versions of Lorem Ipsum."
-                    )
-                  ])
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                {
-                  staticClass:
-                    "col-12 col-lg-10 mx-auto text-center last-paragraph-no-margin"
-                },
-                [
-                  _c("img", {
-                    staticClass: "width-100 margin-40px-tb md-margin-30px-tb",
-                    attrs: {
-                      src: "/images/blog-details-img3.jpg",
-                      alt: "",
-                      "data-no-retina": ""
-                    }
-                  }),
-                  _vm._v(" "),
-                  _c("p", { staticClass: "text-large text-extra-dark-gray" }, [
-                    _vm._v(
-                      "Today I choose life. Every morning when I wake up I can choose joy, happiness, negativity, pain... To feel the freedom that comes from being able to continue to make mistakes and choices - today I choose to feel life, not to deny my humanity but embrace it."
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("p", [
-                    _vm._v(
-                      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour."
-                    )
-                  ])
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                {
-                  staticClass:
-                    "col-12 col-lg-10 mx-auto text-center margin-60px-tb md-margin-30px-tb"
-                },
-                [
-                  _c(
-                    "div",
-                    {
-                      staticClass:
-                        "bg-light-gray padding-ten-all md-padding-35px-all sm-padding-25px-all"
-                    },
-                    [
-                      _c("i", {
-                        staticClass:
-                          "fa fa-quote-left icon-small text-deep-pink d-block margin-25px-bottom sm-margin-15px-bottom"
-                      }),
+    return _c("li", [
+      _c("a", { staticClass: "text-medium-gray", attrs: { href: "/" } }, [
+        _vm._v("Home")
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", [
+      _c("a", { staticClass: "text-medium-gray", attrs: { href: "/blog" } }, [
+        _vm._v("Blog")
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass:
+          "col-12 col-lg-10 mx-auto text-center margin-60px-tb md-margin-30px-tb"
+      },
+      [
+        _c(
+          "div",
+          {
+            staticClass:
+              "bg-light-gray padding-ten-all md-padding-35px-all sm-padding-25px-all"
+          },
+          [
+            _c("i", {
+              staticClass:
+                "fa fa-quote-left icon-small text-deep-pink d-block margin-25px-bottom sm-margin-15px-bottom"
+            }),
+            _vm._v(" "),
+            _c(
+              "h5",
+              { staticClass: "alt-font text-extra-dark-gray font-weight-600" },
+              [
+                _vm._v(
+                  "This is an excellent company! I personally enjoyed the energy and the professional support the whole team gave to us into creating website."
+                )
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "span",
+              {
+                staticClass:
+                  "text-uppercase text-extra-small alt-font letter-spacing-3 text-medium-gray"
+              },
+              [_vm._v("Mattie Stepanek")]
+            )
+          ]
+        )
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "section",
+      {
+        staticClass: "wow fadeIn pt-0",
+        staticStyle: { visibility: "visible", "animation-name": "fadeIn" }
+      },
+      [
+        _c("div", { staticClass: "container" }, [
+          _c("div", { staticClass: "row" }, [
+            _c(
+              "div",
+              { staticClass: "col-12 col-lg-10 d-flex flex-wrap mx-auto p-0" },
+              [
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "col-12 col-lg-8 col-md-6 text-center text-md-left sm-margin-10px-bottom"
+                  },
+                  [
+                    _c("div", { staticClass: "tag-cloud" }, [
+                      _c("a", { attrs: { href: "blog-grid.html" } }, [
+                        _vm._v("Advertisement")
+                      ]),
                       _vm._v(" "),
+                      _c("a", { attrs: { href: "blog-grid.html" } }, [
+                        _vm._v("Artistry")
+                      ]),
+                      _vm._v(" "),
+                      _c("a", { attrs: { href: "blog-grid.html" } }, [
+                        _vm._v("Blog")
+                      ]),
+                      _vm._v(" "),
+                      _c("a", { attrs: { href: "blog-grid.html" } }, [
+                        _vm._v("Conceptual")
+                      ])
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "col-12 col-lg-4 col-md-6 text-center text-md-right"
+                  },
+                  [
+                    _c("div", { staticClass: "social-icon-style-6" }, [
+                      _c("ul", { staticClass: "extra-small-icon" }, [
+                        _c("li", [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "likes-count",
+                              attrs: { href: "#", target: "_blank" }
+                            },
+                            [
+                              _c("i", {
+                                staticClass: "fa fa-heart text-deep-pink"
+                              }),
+                              _vm._v(" "),
+                              _c("span", { staticClass: "text-small" }, [
+                                _vm._v("300")
+                              ])
+                            ]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("li", [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "facebook",
+                              attrs: {
+                                href: "http://facebook.com",
+                                target: "_blank"
+                              }
+                            },
+                            [_c("i", { staticClass: "fa fa-facebook-f" })]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("li", [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "twitter",
+                              attrs: {
+                                href: "http://twitter.com",
+                                target: "_blank"
+                              }
+                            },
+                            [_c("i", { staticClass: "fa fa-twitter" })]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("li", [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "google",
+                              attrs: {
+                                href: "http://google.com",
+                                target: "_blank"
+                              }
+                            },
+                            [_c("i", { staticClass: "fa fa-google-plus-g" })]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("li", [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "pinterest",
+                              attrs: {
+                                href: "http://dribbble.com",
+                                target: "_blank"
+                              }
+                            },
+                            [_c("i", { staticClass: "fa fa-pinterest-p" })]
+                          )
+                        ])
+                      ])
+                    ])
+                  ]
+                )
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "row" }, [
+            _c(
+              "div",
+              {
+                staticClass:
+                  "col-12 col-lg-10 mx-auto margin-50px-top md-margin-30px-top wow fadeInUp",
+                staticStyle: {
+                  visibility: "visible",
+                  "animation-name": "fadeInUp"
+                }
+              },
+              [
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "d-block d-md-flex width-100 align-items-center align-items-md-start border border-color-extra-light-gray padding-50px-all md-padding-30px-all sm-padding-20px-all"
+                  },
+                  [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "width-150px text-center sm-margin-15px-bottom"
+                      },
+                      [
+                        _c("img", {
+                          staticClass: "rounded-circle width-100px",
+                          attrs: {
+                            src: "/images/avtar-01.jpg",
+                            alt: "",
+                            "data-no-retina": ""
+                          }
+                        })
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "width-100 padding-40px-left last-paragraph-no-margin sm-no-padding-left text-center text-md-left"
+                      },
+                      [
+                        _c(
+                          "a",
+                          {
+                            staticClass:
+                              "text-extra-dark-gray text-uppercase alt-font font-weight-600 margin-10px-bottom d-inline-block text-small",
+                            attrs: { href: "#" }
+                          },
+                          [_vm._v("Alexander Harvard")]
+                        ),
+                        _vm._v(" "),
+                        _c("p", [
+                          _vm._v(
+                            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries."
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c(
+                          "a",
+                          {
+                            staticClass:
+                              "btn btn-very-small btn-black margin-20px-top",
+                            attrs: { href: "#" }
+                          },
+                          [_vm._v("All author posts")]
+                        )
+                      ]
+                    )
+                  ]
+                )
+              ]
+            )
+          ])
+        ])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "section",
+      {
+        staticClass: "wow fadeIn bg-light-gray",
+        staticStyle: { visibility: "visible", "animation-name": "fadeIn" }
+      },
+      [
+        _c("div", { staticClass: "container" }, [
+          _c("div", { staticClass: "row" }, [
+            _c(
+              "div",
+              {
+                staticClass:
+                  "col-12 col-lg-10 mx-auto text-center margin-80px-bottom sm-margin-40px-bottom"
+              },
+              [
+                _c(
+                  "div",
+                  {
+                    staticClass: "position-relative overflow-hidden width-100"
+                  },
+                  [
+                    _c(
+                      "span",
+                      {
+                        staticClass:
+                          "text-small text-outside-line-full alt-font font-weight-600 text-uppercase text-extra-dark-gray"
+                      },
+                      [_vm._v("Related Posts")]
+                    )
+                  ]
+                )
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "row" }, [
+            _c(
+              "div",
+              {
+                staticClass:
+                  "col-12 col-lg-3 col-md-6 last-paragraph-no-margin md-margin-50px-bottom sm-margin-30px-bottom wow fadeInUp",
+                staticStyle: {
+                  visibility: "visible",
+                  "animation-name": "fadeInUp"
+                }
+              },
+              [
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "blog-post blog-post-style1 text-center text-md-left"
+                  },
+                  [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "blog-post-images overflow-hidden margin-25px-bottom md-margin-20px-bottom"
+                      },
+                      [
+                        _c(
+                          "a",
+                          { attrs: { href: "blog-post-layout-01.html" } },
+                          [
+                            _c("img", {
+                              attrs: {
+                                src: "/images/blog-img15.jpg",
+                                alt: "",
+                                "data-no-retina": ""
+                              }
+                            })
+                          ]
+                        )
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "post-details" }, [
                       _c(
-                        "h5",
+                        "span",
                         {
                           staticClass:
-                            "alt-font text-extra-dark-gray font-weight-600"
+                            "post-author text-extra-small text-medium-gray text-uppercase d-block margin-10px-bottom sm-margin-5px-bottom"
                         },
                         [
                           _vm._v(
-                            "This is an excellent company! I personally enjoyed the energy and the professional support the whole team gave to us into creating website."
+                            "\n\t\t\t\t\t\t\t\t17 july 2017 | by\n\t\t\t\t\t\t\t\t"
+                          ),
+                          _c(
+                            "a",
+                            {
+                              staticClass: "text-medium-gray",
+                              attrs: { href: "blog-masonry.html" }
+                            },
+                            [_vm._v("Jay Benjamin")]
                           )
                         ]
                       ),
                       _vm._v(" "),
                       _c(
+                        "a",
+                        {
+                          staticClass:
+                            "post-title text-medium text-extra-dark-gray width-90 d-block md-width-100",
+                          attrs: { href: "blog-post-layout-01.html" }
+                        },
+                        [
+                          _vm._v(
+                            "I try to look at design from a more conceptual standpoint."
+                          )
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c("div", {
+                        staticClass:
+                          "separator-line-horrizontal-full bg-medium-light-gray margin-20px-tb md-margin-15px-tb"
+                      }),
+                      _vm._v(" "),
+                      _c("p", { staticClass: "width-90 sm-width-100" }, [
+                        _vm._v(
+                          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum text..."
+                        )
+                      ])
+                    ])
+                  ]
+                )
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass:
+                  "col-12 col-lg-3 col-md-6 last-paragraph-no-margin md-margin-50px-bottom sm-margin-30px-bottom wow fadeInUp",
+                staticStyle: {
+                  visibility: "visible",
+                  "animation-delay": "0.2s",
+                  "animation-name": "fadeInUp"
+                },
+                attrs: { "data-wow-delay": "0.2s" }
+              },
+              [
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "blog-post blog-post-style1 text-center text-md-left"
+                  },
+                  [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "blog-post-images overflow-hidden margin-25px-bottom md-margin-20px-bottom"
+                      },
+                      [
+                        _c(
+                          "a",
+                          { attrs: { href: "blog-post-layout-02.html" } },
+                          [
+                            _c("img", {
+                              attrs: {
+                                src: "/images/blog-img16.jpg",
+                                alt: "",
+                                "data-no-retina": ""
+                              }
+                            })
+                          ]
+                        )
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "post-details" }, [
+                      _c(
                         "span",
                         {
                           staticClass:
-                            "text-uppercase text-extra-small alt-font letter-spacing-3 text-medium-gray"
+                            "post-author text-extra-small text-medium-gray text-uppercase d-block margin-10px-bottom sm-margin-5px-bottom"
                         },
-                        [_vm._v("Mattie Stepanek")]
-                      )
-                    ]
-                  )
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                {
-                  staticClass:
-                    "col-12 col-lg-10 mx-auto text-center margin-60px-bottom last-paragraph-no-margin md-margin-30px-bottom"
+                        [
+                          _vm._v(
+                            "\n\t\t\t\t\t\t\t\t03 July 2017 | by\n\t\t\t\t\t\t\t\t"
+                          ),
+                          _c(
+                            "a",
+                            {
+                              staticClass: "text-medium-gray",
+                              attrs: { href: "blog-masonry.html" }
+                            },
+                            [_vm._v("Herman Miller")]
+                          )
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "a",
+                        {
+                          staticClass:
+                            "post-title text-medium text-extra-dark-gray width-90 d-block md-width-100",
+                          attrs: { href: "blog-post-layout-02.html" }
+                        },
+                        [
+                          _vm._v(
+                            "Good design accelerates the adoption of new ideas."
+                          )
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c("div", {
+                        staticClass:
+                          "separator-line-horrizontal-full bg-medium-light-gray margin-20px-tb md-margin-15px-tb"
+                      }),
+                      _vm._v(" "),
+                      _c("p", { staticClass: "width-90 sm-width-100" }, [
+                        _vm._v(
+                          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum text..."
+                        )
+                      ])
+                    ])
+                  ]
+                )
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass:
+                  "col-12 col-lg-3 col-md-6 last-paragraph-no-margin sm-margin-30px-bottom wow fadeInUp",
+                staticStyle: {
+                  visibility: "visible",
+                  "animation-delay": "0.4s",
+                  "animation-name": "fadeInUp"
                 },
-                [
-                  _c("img", {
+                attrs: { "data-wow-delay": "0.4s" }
+              },
+              [
+                _c(
+                  "div",
+                  {
                     staticClass:
-                      "width-100 margin-40px-bottom md-margin-30px-bottom",
-                    attrs: {
-                      src: "/images/blog-details-img4.jpg",
-                      alt: "",
-                      "data-no-retina": ""
-                    }
-                  }),
-                  _vm._v(" "),
-                  _c("p", [
-                    _vm._v(
-                      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour."
-                    )
-                  ])
-                ]
-              )
-            ]),
+                      "blog-post blog-post-style1 text-center text-md-left"
+                  },
+                  [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "blog-post-images overflow-hidden margin-25px-bottom md-margin-20px-bottom"
+                      },
+                      [
+                        _c(
+                          "a",
+                          { attrs: { href: "blog-post-layout-03.html" } },
+                          [
+                            _c("img", {
+                              attrs: {
+                                src: "/images/blog-img17.jpg",
+                                alt: "",
+                                "data-no-retina": ""
+                              }
+                            })
+                          ]
+                        )
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "post-details" }, [
+                      _c(
+                        "span",
+                        {
+                          staticClass:
+                            "post-author text-extra-small text-medium-gray text-uppercase d-block margin-10px-bottom sm-margin-5px-bottom"
+                        },
+                        [
+                          _vm._v(
+                            "\n\t\t\t\t\t\t\t\t22 June 2017 | by\n\t\t\t\t\t\t\t\t"
+                          ),
+                          _c(
+                            "a",
+                            {
+                              staticClass: "text-medium-gray",
+                              attrs: { href: "blog-masonry.html" }
+                            },
+                            [_vm._v("Hugh Macleod")]
+                          )
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "a",
+                        {
+                          staticClass:
+                            "post-title text-medium text-extra-dark-gray width-90 d-block md-width-100",
+                          attrs: { href: "blog-post-layout-03.html" }
+                        },
+                        [
+                          _vm._v(
+                            "Design is inherently optimistic. That is its power."
+                          )
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c("div", {
+                        staticClass:
+                          "separator-line-horrizontal-full bg-medium-light-gray margin-20px-tb md-margin-15px-tb"
+                      }),
+                      _vm._v(" "),
+                      _c("p", { staticClass: "width-90 sm-width-100" }, [
+                        _vm._v(
+                          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum text..."
+                        )
+                      ])
+                    ])
+                  ]
+                )
+              ]
+            ),
             _vm._v(" "),
-            _c("div", { staticClass: "row" }, [
-              _c(
-                "div",
-                { staticClass: "col-12 col-lg-10 d-flex flex-wrap mx-auto" },
-                [
-                  _c(
-                    "div",
-                    {
-                      staticClass:
-                        "col-12 col-lg-6 pl-0 md-no-padding-lr md-margin-30px-bottom text-center last-paragraph-no-margin"
-                    },
-                    [
+            _c(
+              "div",
+              {
+                staticClass:
+                  "col-12 col-lg-3 col-md-6 last-paragraph-no-margin wow fadeInUp",
+                staticStyle: {
+                  visibility: "visible",
+                  "animation-delay": "0.6s",
+                  "animation-name": "fadeInUp"
+                },
+                attrs: { "data-wow-delay": "0.6s" }
+              },
+              [
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "blog-post blog-post-style1 text-center text-md-left"
+                  },
+                  [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "blog-post-images overflow-hidden margin-25px-bottom md-margin-20px-bottom"
+                      },
+                      [
+                        _c(
+                          "a",
+                          { attrs: { href: "blog-post-layout-04.html" } },
+                          [
+                            _c("img", {
+                              attrs: {
+                                src: "/images/blog-img18.jpg",
+                                alt: "",
+                                "data-no-retina": ""
+                              }
+                            })
+                          ]
+                        )
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "post-details" }, [
                       _c(
-                        "div",
+                        "span",
                         {
                           staticClass:
-                            "bg-light-gray padding-50px-all md-padding-25px-all"
+                            "post-author text-extra-small text-medium-gray text-uppercase d-block margin-10px-bottom sm-margin-5px-bottom"
                         },
                         [
-                          _c(
-                            "span",
-                            {
-                              staticClass:
-                                "text-medium font-weight-600 text-extra-dark-gray alt-font"
-                            },
-                            [_vm._v("Young man with beard and piercings")]
+                          _vm._v(
+                            "\n\t\t\t\t\t\t\t\t02 June 2017 | by\n\t\t\t\t\t\t\t\t"
                           ),
-                          _vm._v(" "),
-                          _c("img", {
-                            staticClass: "width-100 margin-30px-tb",
-                            attrs: {
-                              src: "/images/blog-details-img5.jpg",
-                              alt: "",
-                              "data-no-retina": ""
-                            }
-                          }),
-                          _vm._v(" "),
-                          _c("p", [
-                            _vm._v(
-                              "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."
-                            )
-                          ])
+                          _c(
+                            "a",
+                            {
+                              staticClass: "text-medium-gray",
+                              attrs: { href: "blog-masonry.html" }
+                            },
+                            [_vm._v("Jennifer Freeman")]
+                          )
                         ]
-                      )
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    {
-                      staticClass:
-                        "col-12 col-lg-6 pl-0 md-no-padding-lr text-center last-paragraph-no-margin"
-                    },
-                    [
+                      ),
+                      _vm._v(" "),
                       _c(
-                        "div",
+                        "a",
                         {
                           staticClass:
-                            "bg-light-gray padding-50px-all md-padding-25px-all"
+                            "post-title text-medium text-extra-dark-gray width-90 d-block md-width-100",
+                          attrs: { href: "blog-post-layout-04.html" }
                         },
                         [
-                          _c(
-                            "span",
-                            {
-                              staticClass:
-                                "text-medium font-weight-600 text-extra-dark-gray alt-font"
-                            },
-                            [_vm._v("Latin man with beard and piercings")]
-                          ),
-                          _vm._v(" "),
-                          _c("img", {
-                            staticClass: "width-100 margin-30px-tb",
-                            attrs: {
-                              src: "/images/blog-details-img6.jpg",
-                              alt: "",
-                              "data-no-retina": ""
-                            }
-                          }),
-                          _vm._v(" "),
-                          _c("p", [
-                            _vm._v(
-                              "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."
-                            )
-                          ])
+                          _vm._v(
+                            "I wish someone would ask me to design a cathedral."
+                          )
                         ]
-                      )
-                    ]
-                  )
-                ]
-              )
-            ])
+                      ),
+                      _vm._v(" "),
+                      _c("div", {
+                        staticClass:
+                          "separator-line-horrizontal-full bg-medium-light-gray margin-20px-tb md-margin-15px-tb"
+                      }),
+                      _vm._v(" "),
+                      _c("p", { staticClass: "width-90 sm-width-100" }, [
+                        _vm._v(
+                          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum text..."
+                        )
+                      ])
+                    ])
+                  ]
+                )
+              ]
+            )
           ])
-        ]
-      ),
-      _vm._v(" "),
-      _c(
-        "section",
-        {
-          staticClass: "wow fadeIn pt-0",
-          staticStyle: { visibility: "visible", "animation-name": "fadeIn" }
-        },
-        [
-          _c("div", { staticClass: "container" }, [
-            _c("div", { staticClass: "row" }, [
-              _c(
-                "div",
-                {
-                  staticClass: "col-12 col-lg-10 d-flex flex-wrap mx-auto p-0"
-                },
-                [
+        ])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "section",
+      {
+        staticClass: "wow fadeIn",
+        staticStyle: { visibility: "visible", "animation-name": "fadeIn" }
+      },
+      [
+        _c("div", { staticClass: "container" }, [
+          _c("div", { staticClass: "row" }, [
+            _c(
+              "div",
+              {
+                staticClass:
+                  "col-12 col-lg-10 mx-auto text-center margin-80px-bottom md-margin-50px-bottom sm-margin-15px-bottom"
+              },
+              [
+                _c(
+                  "div",
+                  {
+                    staticClass: "position-relative overflow-hidden width-100"
+                  },
+                  [
+                    _c(
+                      "span",
+                      {
+                        staticClass:
+                          "text-small text-outside-line-full alt-font font-weight-600 text-uppercase text-extra-dark-gray"
+                      },
+                      [_vm._v("10 Comments")]
+                    )
+                  ]
+                )
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "col-12 col-lg-10 mx-auto" }, [
+              _c("ul", { staticClass: "blog-comment" }, [
+                _c("li", [
                   _c(
                     "div",
-                    {
-                      staticClass:
-                        "col-12 col-lg-8 col-md-6 text-center text-md-left sm-margin-10px-bottom"
-                    },
-                    [
-                      _c("div", { staticClass: "tag-cloud" }, [
-                        _c("a", { attrs: { href: "blog-grid.html" } }, [
-                          _vm._v("Advertisement")
-                        ]),
-                        _vm._v(" "),
-                        _c("a", { attrs: { href: "blog-grid.html" } }, [
-                          _vm._v("Artistry")
-                        ]),
-                        _vm._v(" "),
-                        _c("a", { attrs: { href: "blog-grid.html" } }, [
-                          _vm._v("Blog")
-                        ]),
-                        _vm._v(" "),
-                        _c("a", { attrs: { href: "blog-grid.html" } }, [
-                          _vm._v("Conceptual")
-                        ])
-                      ])
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    {
-                      staticClass:
-                        "col-12 col-lg-4 col-md-6 text-center text-md-right"
-                    },
-                    [
-                      _c("div", { staticClass: "social-icon-style-6" }, [
-                        _c("ul", { staticClass: "extra-small-icon" }, [
-                          _c("li", [
-                            _c(
-                              "a",
-                              {
-                                staticClass: "likes-count",
-                                attrs: { href: "#", target: "_blank" }
-                              },
-                              [
-                                _c("i", {
-                                  staticClass: "fa fa-heart text-deep-pink"
-                                }),
-                                _vm._v(" "),
-                                _c("span", { staticClass: "text-small" }, [
-                                  _vm._v("300")
-                                ])
-                              ]
-                            )
-                          ]),
-                          _vm._v(" "),
-                          _c("li", [
-                            _c(
-                              "a",
-                              {
-                                staticClass: "facebook",
-                                attrs: {
-                                  href: "http://facebook.com",
-                                  target: "_blank"
-                                }
-                              },
-                              [_c("i", { staticClass: "fa fa-facebook-f" })]
-                            )
-                          ]),
-                          _vm._v(" "),
-                          _c("li", [
-                            _c(
-                              "a",
-                              {
-                                staticClass: "twitter",
-                                attrs: {
-                                  href: "http://twitter.com",
-                                  target: "_blank"
-                                }
-                              },
-                              [_c("i", { staticClass: "fa fa-twitter" })]
-                            )
-                          ]),
-                          _vm._v(" "),
-                          _c("li", [
-                            _c(
-                              "a",
-                              {
-                                staticClass: "google",
-                                attrs: {
-                                  href: "http://google.com",
-                                  target: "_blank"
-                                }
-                              },
-                              [_c("i", { staticClass: "fa fa-google-plus-g" })]
-                            )
-                          ]),
-                          _vm._v(" "),
-                          _c("li", [
-                            _c(
-                              "a",
-                              {
-                                staticClass: "pinterest",
-                                attrs: {
-                                  href: "http://dribbble.com",
-                                  target: "_blank"
-                                }
-                              },
-                              [_c("i", { staticClass: "fa fa-pinterest-p" })]
-                            )
-                          ])
-                        ])
-                      ])
-                    ]
-                  )
-                ]
-              )
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "row" }, [
-              _c(
-                "div",
-                {
-                  staticClass:
-                    "col-12 col-lg-10 mx-auto margin-50px-top md-margin-30px-top wow fadeInUp",
-                  staticStyle: {
-                    visibility: "visible",
-                    "animation-name": "fadeInUp"
-                  }
-                },
-                [
-                  _c(
-                    "div",
-                    {
-                      staticClass:
-                        "d-block d-md-flex width-100 align-items-center align-items-md-start border border-color-extra-light-gray padding-50px-all md-padding-30px-all sm-padding-20px-all"
-                    },
+                    { staticClass: "d-block d-md-flex width-100 width-100" },
                     [
                       _c(
                         "div",
                         {
                           staticClass:
-                            "width-150px text-center sm-margin-15px-bottom"
+                            "width-110px sm-width-50px text-center sm-margin-10px-bottom"
                         },
                         [
                           _c("img", {
-                            staticClass: "rounded-circle width-100px",
+                            staticClass: "rounded-circle width-85 sm-width-100",
                             attrs: {
-                              src: "/images/avtar-01.jpg",
+                              src: "/images/avtar-02.jpg",
                               alt: "",
                               "data-no-retina": ""
                             }
@@ -40709,820 +41251,297 @@ var staticRenderFns = [
                         "div",
                         {
                           staticClass:
-                            "width-100 padding-40px-left last-paragraph-no-margin sm-no-padding-left text-center text-md-left"
+                            "width-100 padding-40px-left last-paragraph-no-margin sm-no-padding-left"
                         },
                         [
                           _c(
                             "a",
                             {
                               staticClass:
-                                "text-extra-dark-gray text-uppercase alt-font font-weight-600 margin-10px-bottom d-inline-block text-small",
+                                "text-extra-dark-gray text-uppercase alt-font font-weight-600 text-small",
                               attrs: { href: "#" }
                             },
-                            [_vm._v("Alexander Harvard")]
+                            [_vm._v("Herman Miller")]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "a",
+                            {
+                              staticClass:
+                                "inner-link btn-reply text-uppercase alt-font text-extra-dark-gray",
+                              attrs: { href: "#comments" }
+                            },
+                            [_vm._v("Reply")]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "text-small text-medium-gray text-uppercase margin-10px-bottom"
+                            },
+                            [_vm._v("17 july 2017, 6:05 pm")]
                           ),
                           _vm._v(" "),
                           _c("p", [
                             _vm._v(
                               "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries."
                             )
-                          ]),
+                          ])
+                        ]
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c("ul", { staticClass: "child-comment" }, [
+                    _c("li", [
+                      _c(
+                        "div",
+                        {
+                          staticClass: "d-block d-md-flex width-100 width-100"
+                        },
+                        [
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "width-110px sm-width-50px text-center sm-margin-10px-bottom"
+                            },
+                            [
+                              _c("img", {
+                                staticClass:
+                                  "rounded-circle width-85 sm-width-100",
+                                attrs: {
+                                  src: "/images/avtar-01.jpg",
+                                  alt: "",
+                                  "data-no-retina": ""
+                                }
+                              })
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "width-100 padding-40px-left last-paragraph-no-margin sm-no-padding-left"
+                            },
+                            [
+                              _c(
+                                "a",
+                                {
+                                  staticClass:
+                                    "text-extra-dark-gray text-uppercase alt-font font-weight-600 text-small",
+                                  attrs: { href: "#" }
+                                },
+                                [_vm._v("Alexander Harvard")]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "a",
+                                {
+                                  staticClass:
+                                    "inner-link btn-reply text-uppercase alt-font text-extra-dark-gray",
+                                  attrs: { href: "#comments" }
+                                },
+                                [_vm._v("Reply")]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "div",
+                                {
+                                  staticClass:
+                                    "text-small text-medium-gray text-uppercase margin-10px-bottom"
+                                },
+                                [_vm._v("17 july 2017, 6:05 pm")]
+                              ),
+                              _vm._v(" "),
+                              _c("p", [
+                                _vm._v(
+                                  "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries."
+                                )
+                              ])
+                            ]
+                          )
+                        ]
+                      )
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("li", [
+                  _c(
+                    "div",
+                    { staticClass: "d-block d-md-flex width-100 width-100" },
+                    [
+                      _c(
+                        "div",
+                        {
+                          staticClass:
+                            "width-110px sm-width-50px text-center sm-margin-10px-bottom"
+                        },
+                        [
+                          _c("img", {
+                            staticClass: "rounded-circle width-85 sm-width-100",
+                            attrs: {
+                              src: "/images/avtar-04.jpg",
+                              alt: "",
+                              "data-no-retina": ""
+                            }
+                          })
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass:
+                            "width-100 padding-40px-left last-paragraph-no-margin sm-no-padding-left"
+                        },
+                        [
+                          _c(
+                            "a",
+                            {
+                              staticClass:
+                                "text-extra-dark-gray text-uppercase alt-font font-weight-600 text-small",
+                              attrs: { href: "#" }
+                            },
+                            [_vm._v("Jennifer Freeman")]
+                          ),
                           _vm._v(" "),
                           _c(
                             "a",
                             {
                               staticClass:
-                                "btn btn-very-small btn-black margin-20px-top",
-                              attrs: { href: "#" }
+                                "inner-link btn-reply text-uppercase alt-font text-extra-dark-gray",
+                              attrs: { href: "#comments" }
                             },
-                            [_vm._v("All author posts")]
-                          )
-                        ]
-                      )
-                    ]
-                  )
-                ]
-              )
-            ])
-          ])
-        ]
-      ),
-      _vm._v(" "),
-      _c(
-        "section",
-        {
-          staticClass: "wow fadeIn bg-light-gray",
-          staticStyle: { visibility: "visible", "animation-name": "fadeIn" }
-        },
-        [
-          _c("div", { staticClass: "container" }, [
-            _c("div", { staticClass: "row" }, [
-              _c(
-                "div",
-                {
-                  staticClass:
-                    "col-12 col-lg-10 mx-auto text-center margin-80px-bottom sm-margin-40px-bottom"
-                },
-                [
-                  _c(
-                    "div",
-                    {
-                      staticClass: "position-relative overflow-hidden width-100"
-                    },
-                    [
-                      _c(
-                        "span",
-                        {
-                          staticClass:
-                            "text-small text-outside-line-full alt-font font-weight-600 text-uppercase text-extra-dark-gray"
-                        },
-                        [_vm._v("Related Posts")]
-                      )
-                    ]
-                  )
-                ]
-              )
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "row" }, [
-              _c(
-                "div",
-                {
-                  staticClass:
-                    "col-12 col-lg-3 col-md-6 last-paragraph-no-margin md-margin-50px-bottom sm-margin-30px-bottom wow fadeInUp",
-                  staticStyle: {
-                    visibility: "visible",
-                    "animation-name": "fadeInUp"
-                  }
-                },
-                [
-                  _c(
-                    "div",
-                    {
-                      staticClass:
-                        "blog-post blog-post-style1 text-center text-md-left"
-                    },
-                    [
-                      _c(
-                        "div",
-                        {
-                          staticClass:
-                            "blog-post-images overflow-hidden margin-25px-bottom md-margin-20px-bottom"
-                        },
-                        [
+                            [_vm._v("Reply")]
+                          ),
+                          _vm._v(" "),
                           _c(
-                            "a",
-                            { attrs: { href: "blog-post-layout-01.html" } },
-                            [
-                              _c("img", {
-                                attrs: {
-                                  src: "/images/blog-img15.jpg",
-                                  alt: "",
-                                  "data-no-retina": ""
-                                }
-                              })
-                            ]
-                          )
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "post-details" }, [
-                        _c(
-                          "span",
-                          {
-                            staticClass:
-                              "post-author text-extra-small text-medium-gray text-uppercase d-block margin-10px-bottom sm-margin-5px-bottom"
-                          },
-                          [
-                            _vm._v(
-                              "\n\t\t\t\t\t\t\t\t17 july 2017 | by\n\t\t\t\t\t\t\t\t"
-                            ),
-                            _c(
-                              "a",
-                              {
-                                staticClass: "text-medium-gray",
-                                attrs: { href: "blog-masonry.html" }
-                              },
-                              [_vm._v("Jay Benjamin")]
-                            )
-                          ]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "a",
-                          {
-                            staticClass:
-                              "post-title text-medium text-extra-dark-gray width-90 d-block md-width-100",
-                            attrs: { href: "blog-post-layout-01.html" }
-                          },
-                          [
-                            _vm._v(
-                              "I try to look at design from a more conceptual standpoint."
-                            )
-                          ]
-                        ),
-                        _vm._v(" "),
-                        _c("div", {
-                          staticClass:
-                            "separator-line-horrizontal-full bg-medium-light-gray margin-20px-tb md-margin-15px-tb"
-                        }),
-                        _vm._v(" "),
-                        _c("p", { staticClass: "width-90 sm-width-100" }, [
-                          _vm._v(
-                            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum text..."
-                          )
-                        ])
-                      ])
-                    ]
-                  )
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                {
-                  staticClass:
-                    "col-12 col-lg-3 col-md-6 last-paragraph-no-margin md-margin-50px-bottom sm-margin-30px-bottom wow fadeInUp",
-                  staticStyle: {
-                    visibility: "visible",
-                    "animation-delay": "0.2s",
-                    "animation-name": "fadeInUp"
-                  },
-                  attrs: { "data-wow-delay": "0.2s" }
-                },
-                [
-                  _c(
-                    "div",
-                    {
-                      staticClass:
-                        "blog-post blog-post-style1 text-center text-md-left"
-                    },
-                    [
-                      _c(
-                        "div",
-                        {
-                          staticClass:
-                            "blog-post-images overflow-hidden margin-25px-bottom md-margin-20px-bottom"
-                        },
-                        [
-                          _c(
-                            "a",
-                            { attrs: { href: "blog-post-layout-02.html" } },
-                            [
-                              _c("img", {
-                                attrs: {
-                                  src: "/images/blog-img16.jpg",
-                                  alt: "",
-                                  "data-no-retina": ""
-                                }
-                              })
-                            ]
-                          )
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "post-details" }, [
-                        _c(
-                          "span",
-                          {
-                            staticClass:
-                              "post-author text-extra-small text-medium-gray text-uppercase d-block margin-10px-bottom sm-margin-5px-bottom"
-                          },
-                          [
-                            _vm._v(
-                              "\n\t\t\t\t\t\t\t\t03 July 2017 | by\n\t\t\t\t\t\t\t\t"
-                            ),
-                            _c(
-                              "a",
-                              {
-                                staticClass: "text-medium-gray",
-                                attrs: { href: "blog-masonry.html" }
-                              },
-                              [_vm._v("Herman Miller")]
-                            )
-                          ]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "a",
-                          {
-                            staticClass:
-                              "post-title text-medium text-extra-dark-gray width-90 d-block md-width-100",
-                            attrs: { href: "blog-post-layout-02.html" }
-                          },
-                          [
-                            _vm._v(
-                              "Good design accelerates the adoption of new ideas."
-                            )
-                          ]
-                        ),
-                        _vm._v(" "),
-                        _c("div", {
-                          staticClass:
-                            "separator-line-horrizontal-full bg-medium-light-gray margin-20px-tb md-margin-15px-tb"
-                        }),
-                        _vm._v(" "),
-                        _c("p", { staticClass: "width-90 sm-width-100" }, [
-                          _vm._v(
-                            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum text..."
-                          )
-                        ])
-                      ])
-                    ]
-                  )
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                {
-                  staticClass:
-                    "col-12 col-lg-3 col-md-6 last-paragraph-no-margin sm-margin-30px-bottom wow fadeInUp",
-                  staticStyle: {
-                    visibility: "visible",
-                    "animation-delay": "0.4s",
-                    "animation-name": "fadeInUp"
-                  },
-                  attrs: { "data-wow-delay": "0.4s" }
-                },
-                [
-                  _c(
-                    "div",
-                    {
-                      staticClass:
-                        "blog-post blog-post-style1 text-center text-md-left"
-                    },
-                    [
-                      _c(
-                        "div",
-                        {
-                          staticClass:
-                            "blog-post-images overflow-hidden margin-25px-bottom md-margin-20px-bottom"
-                        },
-                        [
-                          _c(
-                            "a",
-                            { attrs: { href: "blog-post-layout-03.html" } },
-                            [
-                              _c("img", {
-                                attrs: {
-                                  src: "/images/blog-img17.jpg",
-                                  alt: "",
-                                  "data-no-retina": ""
-                                }
-                              })
-                            ]
-                          )
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "post-details" }, [
-                        _c(
-                          "span",
-                          {
-                            staticClass:
-                              "post-author text-extra-small text-medium-gray text-uppercase d-block margin-10px-bottom sm-margin-5px-bottom"
-                          },
-                          [
-                            _vm._v(
-                              "\n\t\t\t\t\t\t\t\t22 June 2017 | by\n\t\t\t\t\t\t\t\t"
-                            ),
-                            _c(
-                              "a",
-                              {
-                                staticClass: "text-medium-gray",
-                                attrs: { href: "blog-masonry.html" }
-                              },
-                              [_vm._v("Hugh Macleod")]
-                            )
-                          ]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "a",
-                          {
-                            staticClass:
-                              "post-title text-medium text-extra-dark-gray width-90 d-block md-width-100",
-                            attrs: { href: "blog-post-layout-03.html" }
-                          },
-                          [
-                            _vm._v(
-                              "Design is inherently optimistic. That is its power."
-                            )
-                          ]
-                        ),
-                        _vm._v(" "),
-                        _c("div", {
-                          staticClass:
-                            "separator-line-horrizontal-full bg-medium-light-gray margin-20px-tb md-margin-15px-tb"
-                        }),
-                        _vm._v(" "),
-                        _c("p", { staticClass: "width-90 sm-width-100" }, [
-                          _vm._v(
-                            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum text..."
-                          )
-                        ])
-                      ])
-                    ]
-                  )
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                {
-                  staticClass:
-                    "col-12 col-lg-3 col-md-6 last-paragraph-no-margin wow fadeInUp",
-                  staticStyle: {
-                    visibility: "visible",
-                    "animation-delay": "0.6s",
-                    "animation-name": "fadeInUp"
-                  },
-                  attrs: { "data-wow-delay": "0.6s" }
-                },
-                [
-                  _c(
-                    "div",
-                    {
-                      staticClass:
-                        "blog-post blog-post-style1 text-center text-md-left"
-                    },
-                    [
-                      _c(
-                        "div",
-                        {
-                          staticClass:
-                            "blog-post-images overflow-hidden margin-25px-bottom md-margin-20px-bottom"
-                        },
-                        [
-                          _c(
-                            "a",
-                            { attrs: { href: "blog-post-layout-04.html" } },
-                            [
-                              _c("img", {
-                                attrs: {
-                                  src: "/images/blog-img18.jpg",
-                                  alt: "",
-                                  "data-no-retina": ""
-                                }
-                              })
-                            ]
-                          )
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "post-details" }, [
-                        _c(
-                          "span",
-                          {
-                            staticClass:
-                              "post-author text-extra-small text-medium-gray text-uppercase d-block margin-10px-bottom sm-margin-5px-bottom"
-                          },
-                          [
-                            _vm._v(
-                              "\n\t\t\t\t\t\t\t\t02 June 2017 | by\n\t\t\t\t\t\t\t\t"
-                            ),
-                            _c(
-                              "a",
-                              {
-                                staticClass: "text-medium-gray",
-                                attrs: { href: "blog-masonry.html" }
-                              },
-                              [_vm._v("Jennifer Freeman")]
-                            )
-                          ]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "a",
-                          {
-                            staticClass:
-                              "post-title text-medium text-extra-dark-gray width-90 d-block md-width-100",
-                            attrs: { href: "blog-post-layout-04.html" }
-                          },
-                          [
-                            _vm._v(
-                              "I wish someone would ask me to design a cathedral."
-                            )
-                          ]
-                        ),
-                        _vm._v(" "),
-                        _c("div", {
-                          staticClass:
-                            "separator-line-horrizontal-full bg-medium-light-gray margin-20px-tb md-margin-15px-tb"
-                        }),
-                        _vm._v(" "),
-                        _c("p", { staticClass: "width-90 sm-width-100" }, [
-                          _vm._v(
-                            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum text..."
-                          )
-                        ])
-                      ])
-                    ]
-                  )
-                ]
-              )
-            ])
-          ])
-        ]
-      ),
-      _vm._v(" "),
-      _c(
-        "section",
-        {
-          staticClass: "wow fadeIn",
-          staticStyle: { visibility: "visible", "animation-name": "fadeIn" }
-        },
-        [
-          _c("div", { staticClass: "container" }, [
-            _c("div", { staticClass: "row" }, [
-              _c(
-                "div",
-                {
-                  staticClass:
-                    "col-12 col-lg-10 mx-auto text-center margin-80px-bottom md-margin-50px-bottom sm-margin-15px-bottom"
-                },
-                [
-                  _c(
-                    "div",
-                    {
-                      staticClass: "position-relative overflow-hidden width-100"
-                    },
-                    [
-                      _c(
-                        "span",
-                        {
-                          staticClass:
-                            "text-small text-outside-line-full alt-font font-weight-600 text-uppercase text-extra-dark-gray"
-                        },
-                        [_vm._v("10 Comments")]
-                      )
-                    ]
-                  )
-                ]
-              )
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "row" }, [
-              _c("div", { staticClass: "col-12 col-lg-10 mx-auto" }, [
-                _c("ul", { staticClass: "blog-comment" }, [
-                  _c("li", [
-                    _c(
-                      "div",
-                      { staticClass: "d-block d-md-flex width-100 width-100" },
-                      [
-                        _c(
-                          "div",
-                          {
-                            staticClass:
-                              "width-110px sm-width-50px text-center sm-margin-10px-bottom"
-                          },
-                          [
-                            _c("img", {
+                            "div",
+                            {
                               staticClass:
-                                "rounded-circle width-85 sm-width-100",
-                              attrs: {
-                                src: "/images/avtar-02.jpg",
-                                alt: "",
-                                "data-no-retina": ""
-                              }
-                            })
-                          ]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "div",
-                          {
-                            staticClass:
-                              "width-100 padding-40px-left last-paragraph-no-margin sm-no-padding-left"
-                          },
-                          [
-                            _c(
-                              "a",
-                              {
-                                staticClass:
-                                  "text-extra-dark-gray text-uppercase alt-font font-weight-600 text-small",
-                                attrs: { href: "#" }
-                              },
-                              [_vm._v("Herman Miller")]
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "a",
-                              {
-                                staticClass:
-                                  "inner-link btn-reply text-uppercase alt-font text-extra-dark-gray",
-                                attrs: { href: "#comments" }
-                              },
-                              [_vm._v("Reply")]
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "div",
-                              {
-                                staticClass:
-                                  "text-small text-medium-gray text-uppercase margin-10px-bottom"
-                              },
-                              [_vm._v("17 july 2017, 6:05 pm")]
-                            ),
-                            _vm._v(" "),
-                            _c("p", [
-                              _vm._v(
-                                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries."
-                              )
-                            ])
-                          ]
-                        )
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c("ul", { staticClass: "child-comment" }, [
-                      _c("li", [
-                        _c(
-                          "div",
-                          {
-                            staticClass: "d-block d-md-flex width-100 width-100"
-                          },
-                          [
-                            _c(
-                              "div",
-                              {
-                                staticClass:
-                                  "width-110px sm-width-50px text-center sm-margin-10px-bottom"
-                              },
-                              [
-                                _c("img", {
-                                  staticClass:
-                                    "rounded-circle width-85 sm-width-100",
-                                  attrs: {
-                                    src: "/images/avtar-01.jpg",
-                                    alt: "",
-                                    "data-no-retina": ""
-                                  }
-                                })
-                              ]
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "div",
-                              {
-                                staticClass:
-                                  "width-100 padding-40px-left last-paragraph-no-margin sm-no-padding-left"
-                              },
-                              [
-                                _c(
-                                  "a",
-                                  {
-                                    staticClass:
-                                      "text-extra-dark-gray text-uppercase alt-font font-weight-600 text-small",
-                                    attrs: { href: "#" }
-                                  },
-                                  [_vm._v("Alexander Harvard")]
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "a",
-                                  {
-                                    staticClass:
-                                      "inner-link btn-reply text-uppercase alt-font text-extra-dark-gray",
-                                    attrs: { href: "#comments" }
-                                  },
-                                  [_vm._v("Reply")]
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "div",
-                                  {
-                                    staticClass:
-                                      "text-small text-medium-gray text-uppercase margin-10px-bottom"
-                                  },
-                                  [_vm._v("17 july 2017, 6:05 pm")]
-                                ),
-                                _vm._v(" "),
-                                _c("p", [
-                                  _vm._v(
-                                    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries."
-                                  )
-                                ])
-                              ]
+                                "text-small text-medium-gray text-uppercase margin-10px-bottom"
+                            },
+                            [_vm._v("17 july 2017, 6:05 pm")]
+                          ),
+                          _vm._v(" "),
+                          _c("p", [
+                            _vm._v(
+                              "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries."
                             )
-                          ]
-                        )
-                      ])
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("li", [
-                    _c(
-                      "div",
-                      { staticClass: "d-block d-md-flex width-100 width-100" },
-                      [
-                        _c(
-                          "div",
-                          {
-                            staticClass:
-                              "width-110px sm-width-50px text-center sm-margin-10px-bottom"
-                          },
-                          [
-                            _c("img", {
-                              staticClass:
-                                "rounded-circle width-85 sm-width-100",
-                              attrs: {
-                                src: "/images/avtar-04.jpg",
-                                alt: "",
-                                "data-no-retina": ""
-                              }
-                            })
-                          ]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "div",
-                          {
-                            staticClass:
-                              "width-100 padding-40px-left last-paragraph-no-margin sm-no-padding-left"
-                          },
-                          [
-                            _c(
-                              "a",
-                              {
-                                staticClass:
-                                  "text-extra-dark-gray text-uppercase alt-font font-weight-600 text-small",
-                                attrs: { href: "#" }
-                              },
-                              [_vm._v("Jennifer Freeman")]
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "a",
-                              {
-                                staticClass:
-                                  "inner-link btn-reply text-uppercase alt-font text-extra-dark-gray",
-                                attrs: { href: "#comments" }
-                              },
-                              [_vm._v("Reply")]
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "div",
-                              {
-                                staticClass:
-                                  "text-small text-medium-gray text-uppercase margin-10px-bottom"
-                              },
-                              [_vm._v("17 july 2017, 6:05 pm")]
-                            ),
-                            _vm._v(" "),
-                            _c("p", [
-                              _vm._v(
-                                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries."
-                              )
-                            ])
-                          ]
-                        )
-                      ]
-                    )
-                  ])
+                          ])
+                        ]
+                      )
+                    ]
+                  )
                 ])
               ])
             ])
           ])
-        ]
-      ),
-      _vm._v(" "),
-      _c(
-        "section",
-        {
-          staticClass: "wow fadeIn bg-light-gray",
-          staticStyle: { visibility: "visible", "animation-name": "fadeIn" },
-          attrs: { id: "comments" }
-        },
-        [
-          _c("div", { staticClass: "container" }, [
-            _c("div", { staticClass: "row" }, [
-              _c(
-                "div",
-                {
-                  staticClass:
-                    "col-12 col-lg-10 mx-auto text-center margin-80px-bottom sm-margin-40px-bottom"
-                },
-                [
-                  _c(
-                    "div",
-                    {
-                      staticClass: "position-relative overflow-hidden width-100"
-                    },
-                    [
-                      _c(
-                        "span",
-                        {
-                          staticClass:
-                            "text-small text-outside-line-full alt-font font-weight-600 text-uppercase text-extra-dark-gray"
-                        },
-                        [_vm._v("Write A Comments")]
-                      )
-                    ]
-                  )
-                ]
-              )
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "row" }, [
-              _c(
-                "div",
-                {
-                  staticClass:
-                    "col-12 col-lg-10 p-0 d-flex flex-wrap mx-auto text-center"
-                },
-                [
-                  _c("div", { staticClass: "col-12 col-lg-4" }, [
-                    _c("input", {
-                      staticClass: "medium-input",
-                      attrs: { type: "text", placeholder: "Name *" }
-                    })
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-12 col-lg-4" }, [
-                    _c("input", {
-                      staticClass: "medium-input",
-                      attrs: { type: "text", placeholder: "E-mail *" }
-                    })
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-12 col-lg-4" }, [
-                    _c("input", {
-                      staticClass: "medium-input",
-                      attrs: { type: "url", placeholder: "Website" }
-                    })
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-12" }, [
-                    _c("textarea", {
-                      staticClass: "medium-textarea",
-                      attrs: {
-                        placeholder: "Enter your comment here..",
-                        rows: "8"
-                      }
-                    })
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-12 text-center" }, [
+        ])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "section",
+      {
+        staticClass: "wow fadeIn bg-light-gray",
+        staticStyle: { visibility: "visible", "animation-name": "fadeIn" },
+        attrs: { id: "comments" }
+      },
+      [
+        _c("div", { staticClass: "container" }, [
+          _c("div", { staticClass: "row" }, [
+            _c(
+              "div",
+              {
+                staticClass:
+                  "col-12 col-lg-10 mx-auto text-center margin-80px-bottom sm-margin-40px-bottom"
+              },
+              [
+                _c(
+                  "div",
+                  {
+                    staticClass: "position-relative overflow-hidden width-100"
+                  },
+                  [
                     _c(
-                      "button",
+                      "span",
                       {
                         staticClass:
-                          "btn btn-dark-gray btn-small margin-15px-top",
-                        attrs: { type: "submit" }
+                          "text-small text-outside-line-full alt-font font-weight-600 text-uppercase text-extra-dark-gray"
                       },
-                      [_vm._v("Send message")]
+                      [_vm._v("Write A Comments")]
                     )
-                  ])
-                ]
-              )
-            ])
+                  ]
+                )
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "row" }, [
+            _c(
+              "div",
+              {
+                staticClass:
+                  "col-12 col-lg-10 p-0 d-flex flex-wrap mx-auto text-center"
+              },
+              [
+                _c("div", { staticClass: "col-12 col-lg-4" }, [
+                  _c("input", {
+                    staticClass: "medium-input",
+                    attrs: { type: "text", placeholder: "Name *" }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-12 col-lg-4" }, [
+                  _c("input", {
+                    staticClass: "medium-input",
+                    attrs: { type: "text", placeholder: "E-mail *" }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-12 col-lg-4" }, [
+                  _c("input", {
+                    staticClass: "medium-input",
+                    attrs: { type: "url", placeholder: "Website" }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-12" }, [
+                  _c("textarea", {
+                    staticClass: "medium-textarea",
+                    attrs: {
+                      placeholder: "Enter your comment here..",
+                      rows: "8"
+                    }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-12 text-center" }, [
+                  _c(
+                    "button",
+                    {
+                      staticClass:
+                        "btn btn-dark-gray btn-small margin-15px-top",
+                      attrs: { type: "submit" }
+                    },
+                    [_vm._v("Send message")]
+                  )
+                ])
+              ]
+            )
           ])
-        ]
-      )
-    ])
+        ])
+      ]
+    )
   }
 ]
 render._withStripped = true
