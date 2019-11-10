@@ -48,7 +48,7 @@
                         </div>
                     </div>
                     <div class="col col-md-auto col-lg-2 pr-0 text-right">
-                        <a href="/nova" class="btn btn-very-small btn-rounded btn-white box-shadow-dark">Admin<i class="ti-user"></i></a>
+                        <a href="/admin" class="btn btn-very-small btn-rounded btn-white box-shadow-dark">Admin<i class="ti-user"></i></a>
                     </div>
                 </div>
             </nav>

@@ -27,7 +27,7 @@ Route::resource('/category', 'PortfolioCategoryController');
 
 // Blog
 Route::get('/blog', 'PagesController@postList')->name('blog');
-Route::get('/blog/{post}', 'PagesController@singlePost')->name('post');
+Route::get('/blog/{post}', 'PagesController@singlePost')->name('post')->middleware('auth');
 // Route::post('/post/create_post', 'PostController@createPost')->name('create_post');
 
 Auth::routes();
