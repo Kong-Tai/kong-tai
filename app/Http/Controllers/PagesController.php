@@ -6,6 +6,7 @@ use App\Post;
 use App\Portfolio;
 use App\PortfolioCategory;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class PagesController extends Controller
 {
@@ -55,7 +56,7 @@ class PagesController extends Controller
      */
     public function singlePost($post)
     {
-        $post = Post::with(['post_images', 'user', 'comments'])->orderBy('created_at', 'desc')->findOrFail($post);
+        $post = Post::with(['post_images', 'user', 'comments', 'comments.user', 'comments.replies', 'comments.replies.user'])->orderBy('created_at', 'desc')->findOrFail($post);
 
         return view('pages.blog.singlePost', [
             'post' => $post
