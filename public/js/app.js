@@ -2657,41 +2657,42 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: {
     post: {}
   },
   data: function data() {
-    return {};
+    return {
+      postData: {},
+      body: '',
+      post_id: ''
+    };
   },
-  created: function created() {},
+  created: function created() {
+    this.postData = this.post;
+    this.post_id = this.postData.id;
+  },
   computed: {},
   mounted: function mounted() {
     console.log('Component mounted.');
   },
-  methods: {}
+  methods: {
+    send: function send() {
+      var _this = this;
+
+      // this.errors = []
+      var data = {
+        body: this.body,
+        post_id: this.post_id
+      };
+      axios.post('/comment/store', data).then(function (response) {
+        _this.postData = {};
+        _this.postData = response.data.post;
+      })["catch"](function (error) {
+        console.log(error);
+      });
+    }
+  }
 });
 
 /***/ }),
@@ -40294,7 +40295,7 @@ var render = function() {
                   [
                     _vm._v(
                       "\n\t\t\t\t\t\t" +
-                        _vm._s(_vm.post.created_at) +
+                        _vm._s(_vm.postData.created_at) +
                         "   |   by\n\t\t\t\t\t\t"
                     ),
                     _c(
@@ -40303,7 +40304,7 @@ var render = function() {
                         staticClass: "text-white-2",
                         attrs: { href: "blog-masonry.html" }
                       },
-                      [_vm._v(_vm._s(_vm.post.user.name))]
+                      [_vm._v(_vm._s(_vm.postData.user.name))]
                     ),
                     _vm._v("   |   \n\t\t\t\t\t\t"),
                     _c(
@@ -40332,7 +40333,7 @@ var render = function() {
                     staticClass:
                       "text-white-2 alt-font font-weight-600 margin-10px-bottom"
                   },
-                  [_vm._v(_vm._s(_vm.post.title))]
+                  [_vm._v(_vm._s(_vm.postData.title))]
                 )
               ]
             )
@@ -40361,7 +40362,7 @@ var render = function() {
                   _vm._m(1),
                   _vm._v(" "),
                   _c("li", { staticClass: "text-medium-gray" }, [
-                    _vm._v(_vm._s(_vm.post.title))
+                    _vm._v(_vm._s(_vm.postData.title))
                   ])
                 ])
               ]
@@ -40403,7 +40404,7 @@ var render = function() {
                 _c("img", {
                   staticClass: "width-100 margin-40px-tb md-margin-30px-tb",
                   attrs: {
-                    src: _vm.post.post_images[0].post_image_path,
+                    src: _vm.postData.post_images[0].post_image_path,
                     alt: "",
                     "data-no-retina": ""
                   }
@@ -40427,7 +40428,7 @@ var render = function() {
                 _c("img", {
                   staticClass: "width-100 margin-40px-tb md-margin-30px-tb",
                   attrs: {
-                    src: _vm.post.post_images[1].post_image_path,
+                    src: _vm.postData.post_images[1].post_image_path,
                     alt: "",
                     "data-no-retina": ""
                   }
@@ -40460,7 +40461,7 @@ var render = function() {
                   staticClass:
                     "width-100 margin-40px-bottom md-margin-30px-bottom",
                   attrs: {
-                    src: _vm.post.post_images[1].post_image_path,
+                    src: _vm.postData.post_images[1].post_image_path,
                     alt: "",
                     "data-no-retina": ""
                   }
@@ -40506,7 +40507,7 @@ var render = function() {
                         _c("img", {
                           staticClass: "width-100 margin-30px-tb",
                           attrs: {
-                            src: _vm.post.post_images[0].post_image_path,
+                            src: _vm.postData.post_images[0].post_image_path,
                             alt: "",
                             "data-no-retina": ""
                           }
@@ -40548,7 +40549,7 @@ var render = function() {
                         _c("img", {
                           staticClass: "width-100 margin-30px-tb",
                           attrs: {
-                            src: _vm.post.post_images[1].post_image_path,
+                            src: _vm.postData.post_images[1].post_image_path,
                             alt: "",
                             "data-no-retina": ""
                           }
@@ -40609,7 +40610,7 @@ var render = function() {
                         _c("img", {
                           staticClass: "rounded-circle width-100px",
                           attrs: {
-                            src: "/images/" + _vm.post.user.avatar + "",
+                            src: "/images/" + _vm.postData.user.avatar + "",
                             alt: "",
                             "data-no-retina": ""
                           }
@@ -40631,7 +40632,7 @@ var render = function() {
                               "text-extra-dark-gray text-uppercase alt-font font-weight-600 margin-10px-bottom d-inline-block text-small",
                             attrs: { href: "#" }
                           },
-                          [_vm._v(_vm._s(_vm.post.user.name))]
+                          [_vm._v(_vm._s(_vm.postData.user.name))]
                         ),
                         _vm._v(" "),
                         _c("p", [
@@ -40690,7 +40691,11 @@ var render = function() {
                         staticClass:
                           "text-small text-outside-line-full alt-font font-weight-600 text-uppercase text-extra-dark-gray"
                       },
-                      [_vm._v(_vm._s(_vm.post.comments.length) + " Comments")]
+                      [
+                        _vm._v(
+                          _vm._s(_vm.postData.comments.length) + " Comments"
+                        )
+                      ]
                     )
                   ]
                 )
@@ -40698,12 +40703,256 @@ var render = function() {
             )
           ]),
           _vm._v(" "),
-          _vm._m(5)
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "col-12 col-lg-10 mx-auto" }, [
+              _c(
+                "ul",
+                { staticClass: "blog-comment" },
+                _vm._l(_vm.postData.comments, function(comment, i) {
+                  return _c("li", { key: i }, [
+                    _c(
+                      "div",
+                      { staticClass: "d-block d-md-flex width-100 width-100" },
+                      [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "width-110px sm-width-50px text-center sm-margin-10px-bottom"
+                          },
+                          [
+                            _c("img", {
+                              staticClass:
+                                "rounded-circle width-85 sm-width-100",
+                              attrs: {
+                                src: "/images/" + comment.user.avatar + "",
+                                alt: "",
+                                "data-no-retina": ""
+                              }
+                            })
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "width-100 padding-40px-left last-paragraph-no-margin sm-no-padding-left"
+                          },
+                          [
+                            _c(
+                              "a",
+                              {
+                                staticClass:
+                                  "text-extra-dark-gray text-uppercase alt-font font-weight-600 text-small",
+                                attrs: { href: "#" }
+                              },
+                              [_vm._v(_vm._s(comment.user.name))]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "a",
+                              {
+                                staticClass:
+                                  "inner-link btn-reply text-uppercase alt-font text-extra-dark-gray",
+                                attrs: { href: "#comments" }
+                              },
+                              [_vm._v("Reply")]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "text-small text-medium-gray text-uppercase margin-10px-bottom"
+                              },
+                              [_vm._v(_vm._s(comment.created_at))]
+                            ),
+                            _vm._v(" "),
+                            _c("p", [_vm._v(_vm._s(comment.body) + ".")])
+                          ]
+                        )
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "ul",
+                      { staticClass: "child-comment" },
+                      _vm._l(comment.replies, function(reply, i) {
+                        return _c("li", { key: i }, [
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "d-block d-md-flex width-100 width-100"
+                            },
+                            [
+                              _c(
+                                "div",
+                                {
+                                  staticClass:
+                                    "width-110px sm-width-50px text-center sm-margin-10px-bottom"
+                                },
+                                [
+                                  _c("img", {
+                                    staticClass:
+                                      "rounded-circle width-85 sm-width-100",
+                                    attrs: {
+                                      src: "/images/" + reply.user.avatar + "",
+                                      alt: "",
+                                      "data-no-retina": ""
+                                    }
+                                  })
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "div",
+                                {
+                                  staticClass:
+                                    "width-100 padding-40px-left last-paragraph-no-margin sm-no-padding-left"
+                                },
+                                [
+                                  _c(
+                                    "a",
+                                    {
+                                      staticClass:
+                                        "text-extra-dark-gray text-uppercase alt-font font-weight-600 text-small",
+                                      attrs: { href: "#" }
+                                    },
+                                    [_vm._v(_vm._s(reply.user.name))]
+                                  ),
+                                  _vm._v(" "),
+                                  _c(
+                                    "a",
+                                    {
+                                      staticClass:
+                                        "inner-link btn-reply text-uppercase alt-font text-extra-dark-gray",
+                                      attrs: { href: "#comments" }
+                                    },
+                                    [_vm._v("Reply")]
+                                  ),
+                                  _vm._v(" "),
+                                  _c(
+                                    "div",
+                                    {
+                                      staticClass:
+                                        "text-small text-medium-gray text-uppercase margin-10px-bottom"
+                                    },
+                                    [_vm._v(_vm._s(reply.created_at))]
+                                  ),
+                                  _vm._v(" "),
+                                  _c("p", [_vm._v(_vm._s(reply.body) + ".")])
+                                ]
+                              )
+                            ]
+                          )
+                        ])
+                      }),
+                      0
+                    )
+                  ])
+                }),
+                0
+              )
+            ])
+          ])
         ])
       ]
     ),
     _vm._v(" "),
-    _vm._m(6)
+    _c(
+      "section",
+      {
+        staticClass: "wow fadeIn bg-light-gray",
+        staticStyle: { visibility: "visible", "animation-name": "fadeIn" },
+        attrs: { id: "comments" }
+      },
+      [
+        _c("div", { staticClass: "container" }, [
+          _vm._m(5),
+          _vm._v(" "),
+          _c("div", { staticClass: "row" }, [
+            _c(
+              "div",
+              {
+                staticClass:
+                  "col-12 col-lg-10 p-0 d-flex flex-wrap mx-auto text-center"
+              },
+              [
+                _c("div", { staticClass: "col-12 col-lg-4" }, [
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.post_id,
+                        expression: "post_id"
+                      }
+                    ],
+                    attrs: { type: "hidden" },
+                    domProps: { value: _vm.post_id },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.post_id = $event.target.value
+                      }
+                    }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-12" }, [
+                  _c("textarea", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.body,
+                        expression: "body"
+                      }
+                    ],
+                    staticClass: "medium-textarea",
+                    attrs: {
+                      type: "text",
+                      placeholder: "Enter your comment here..",
+                      rows: "8"
+                    },
+                    domProps: { value: _vm.body },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.body = $event.target.value
+                      }
+                    }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-12 text-center" }, [
+                  _c(
+                    "button",
+                    {
+                      staticClass:
+                        "btn btn-dark-gray btn-small margin-15px-top",
+                      attrs: { type: "submit" },
+                      on: {
+                        click: function($event) {
+                          return _vm.send()
+                        }
+                      }
+                    },
+                    [_vm._v("Send message")]
+                  )
+                ])
+              ]
+            )
+          ])
+        ])
+      ]
+    )
   ])
 }
 var staticRenderFns = [
@@ -41313,320 +41562,30 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "row" }, [
-      _c("div", { staticClass: "col-12 col-lg-10 mx-auto" }, [
-        _c("ul", { staticClass: "blog-comment" }, [
-          _c("li", [
-            _c(
-              "div",
-              { staticClass: "d-block d-md-flex width-100 width-100" },
-              [
-                _c(
-                  "div",
-                  {
-                    staticClass:
-                      "width-110px sm-width-50px text-center sm-margin-10px-bottom"
-                  },
-                  [
-                    _c("img", {
-                      staticClass: "rounded-circle width-85 sm-width-100",
-                      attrs: {
-                        src: "/images/avtar-02.jpg",
-                        alt: "",
-                        "data-no-retina": ""
-                      }
-                    })
-                  ]
-                ),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  {
-                    staticClass:
-                      "width-100 padding-40px-left last-paragraph-no-margin sm-no-padding-left"
-                  },
-                  [
-                    _c(
-                      "a",
-                      {
-                        staticClass:
-                          "text-extra-dark-gray text-uppercase alt-font font-weight-600 text-small",
-                        attrs: { href: "#" }
-                      },
-                      [_vm._v("Herman Miller")]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "a",
-                      {
-                        staticClass:
-                          "inner-link btn-reply text-uppercase alt-font text-extra-dark-gray",
-                        attrs: { href: "#comments" }
-                      },
-                      [_vm._v("Reply")]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      {
-                        staticClass:
-                          "text-small text-medium-gray text-uppercase margin-10px-bottom"
-                      },
-                      [_vm._v("17 july 2017, 6:05 pm")]
-                    ),
-                    _vm._v(" "),
-                    _c("p", [
-                      _vm._v(
-                        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries."
-                      )
-                    ])
-                  ]
-                )
-              ]
-            ),
-            _vm._v(" "),
-            _c("ul", { staticClass: "child-comment" }, [
-              _c("li", [
-                _c(
-                  "div",
-                  { staticClass: "d-block d-md-flex width-100 width-100" },
-                  [
-                    _c(
-                      "div",
-                      {
-                        staticClass:
-                          "width-110px sm-width-50px text-center sm-margin-10px-bottom"
-                      },
-                      [
-                        _c("img", {
-                          staticClass: "rounded-circle width-85 sm-width-100",
-                          attrs: {
-                            src: "/images/avtar-01.jpg",
-                            alt: "",
-                            "data-no-retina": ""
-                          }
-                        })
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      {
-                        staticClass:
-                          "width-100 padding-40px-left last-paragraph-no-margin sm-no-padding-left"
-                      },
-                      [
-                        _c(
-                          "a",
-                          {
-                            staticClass:
-                              "text-extra-dark-gray text-uppercase alt-font font-weight-600 text-small",
-                            attrs: { href: "#" }
-                          },
-                          [_vm._v("Alexander Harvard")]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "a",
-                          {
-                            staticClass:
-                              "inner-link btn-reply text-uppercase alt-font text-extra-dark-gray",
-                            attrs: { href: "#comments" }
-                          },
-                          [_vm._v("Reply")]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "div",
-                          {
-                            staticClass:
-                              "text-small text-medium-gray text-uppercase margin-10px-bottom"
-                          },
-                          [_vm._v("17 july 2017, 6:05 pm")]
-                        ),
-                        _vm._v(" "),
-                        _c("p", [
-                          _vm._v(
-                            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries."
-                          )
-                        ])
-                      ]
-                    )
-                  ]
-                )
-              ])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("li", [
-            _c(
-              "div",
-              { staticClass: "d-block d-md-flex width-100 width-100" },
-              [
-                _c(
-                  "div",
-                  {
-                    staticClass:
-                      "width-110px sm-width-50px text-center sm-margin-10px-bottom"
-                  },
-                  [
-                    _c("img", {
-                      staticClass: "rounded-circle width-85 sm-width-100",
-                      attrs: {
-                        src: "/images/avtar-04.jpg",
-                        alt: "",
-                        "data-no-retina": ""
-                      }
-                    })
-                  ]
-                ),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  {
-                    staticClass:
-                      "width-100 padding-40px-left last-paragraph-no-margin sm-no-padding-left"
-                  },
-                  [
-                    _c(
-                      "a",
-                      {
-                        staticClass:
-                          "text-extra-dark-gray text-uppercase alt-font font-weight-600 text-small",
-                        attrs: { href: "#" }
-                      },
-                      [_vm._v("Jennifer Freeman")]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "a",
-                      {
-                        staticClass:
-                          "inner-link btn-reply text-uppercase alt-font text-extra-dark-gray",
-                        attrs: { href: "#comments" }
-                      },
-                      [_vm._v("Reply")]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      {
-                        staticClass:
-                          "text-small text-medium-gray text-uppercase margin-10px-bottom"
-                      },
-                      [_vm._v("17 july 2017, 6:05 pm")]
-                    ),
-                    _vm._v(" "),
-                    _c("p", [
-                      _vm._v(
-                        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries."
-                      )
-                    ])
-                  ]
-                )
-              ]
-            )
-          ])
-        ])
-      ])
+      _c(
+        "div",
+        {
+          staticClass:
+            "col-12 col-lg-10 mx-auto text-center margin-80px-bottom sm-margin-40px-bottom"
+        },
+        [
+          _c(
+            "div",
+            { staticClass: "position-relative overflow-hidden width-100" },
+            [
+              _c(
+                "span",
+                {
+                  staticClass:
+                    "text-small text-outside-line-full alt-font font-weight-600 text-uppercase text-extra-dark-gray"
+                },
+                [_vm._v("Write A Comments")]
+              )
+            ]
+          )
+        ]
+      )
     ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "section",
-      {
-        staticClass: "wow fadeIn bg-light-gray",
-        staticStyle: { visibility: "visible", "animation-name": "fadeIn" },
-        attrs: { id: "comments" }
-      },
-      [
-        _c("div", { staticClass: "container" }, [
-          _c("div", { staticClass: "row" }, [
-            _c(
-              "div",
-              {
-                staticClass:
-                  "col-12 col-lg-10 mx-auto text-center margin-80px-bottom sm-margin-40px-bottom"
-              },
-              [
-                _c(
-                  "div",
-                  {
-                    staticClass: "position-relative overflow-hidden width-100"
-                  },
-                  [
-                    _c(
-                      "span",
-                      {
-                        staticClass:
-                          "text-small text-outside-line-full alt-font font-weight-600 text-uppercase text-extra-dark-gray"
-                      },
-                      [_vm._v("Write A Comments")]
-                    )
-                  ]
-                )
-              ]
-            )
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "row" }, [
-            _c(
-              "div",
-              {
-                staticClass:
-                  "col-12 col-lg-10 p-0 d-flex flex-wrap mx-auto text-center"
-              },
-              [
-                _c("div", { staticClass: "col-12 col-lg-4" }, [
-                  _c("input", {
-                    staticClass: "medium-input",
-                    attrs: { type: "text", placeholder: "Name *" }
-                  })
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-12 col-lg-4" }, [
-                  _c("input", {
-                    staticClass: "medium-input",
-                    attrs: { type: "text", placeholder: "E-mail *" }
-                  })
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-12 col-lg-4" }, [
-                  _c("input", {
-                    staticClass: "medium-input",
-                    attrs: { type: "url", placeholder: "Website" }
-                  })
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-12" }, [
-                  _c("textarea", {
-                    staticClass: "medium-textarea",
-                    attrs: {
-                      placeholder: "Enter your comment here..",
-                      rows: "8"
-                    }
-                  })
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-12 text-center" }, [
-                  _c(
-                    "button",
-                    {
-                      staticClass:
-                        "btn btn-dark-gray btn-small margin-15px-top",
-                      attrs: { type: "submit" }
-                    },
-                    [_vm._v("Send message")]
-                  )
-                ])
-              ]
-            )
-          ])
-        ])
-      ]
-    )
   }
 ]
 render._withStripped = true
