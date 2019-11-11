@@ -12,6 +12,6 @@
             //     'email' => 'admin@gmail.com',
             //     'password' => bcrypt('12345678'),
             // ]);
-            $users = factory(User::class, 15)->create();
+            $users = factory(User::class, 5)->create();
         }
     }
