@@ -10,7 +10,7 @@
                         <!-- end slogan -->
                         <!-- start logo -->
                         <div class="col-lg-4 col-md-2 text-center sm-margin-10px-bottom">
-                            <a href="index.html"><img class="footer-logo" src="images/kong-tai.png" data-rjs="images/logo-white@2x.png" alt="Pofo"></a>
+                            <a href="index.html"><img class="footer-logo" src="/images/kong-tai.png" data-rjs="images/logo-white@2x.png" alt="Pofo"></a>
                         </div>
                         <!-- end logo -->
                         <!-- start social media -->
@@ -44,19 +44,19 @@
                             <ul class="latest-post position-relative">
                                 <li class="media border-bottom border-color-medium-dark-gray">
                                     <figure>
-                                        <a href="blog-post-layout-01.html"><img src="images/latest-blog2.jpg" alt="" data-no-retina=""></a>
+                                        <a href="blog-post-layout-01.html"><img src="/images/latest-blog2.jpg" alt="" data-no-retina=""></a>
                                     </figure>
                                     <div class="media-body text-small"><a href="blog-post-layout-01.html" class="d-block mb-1">Design is not just what looks...</a> <span class="clearfix"></span>20 April 2017 | by <a href="blog-grid.html">Herman Miller</a></div>
                                 </li>
                                 <li class="media border-bottom border-color-medium-dark-gray">
                                     <figure>
-                                        <a href="blog-post-layout-02.html"><img src="images/latest-blog3.jpg" alt="" data-no-retina=""></a>
+                                        <a href="blog-post-layout-02.html"><img src="/images/latest-blog3.jpg" alt="" data-no-retina=""></a>
                                     </figure>
                                     <div class="media-body text-small"><a href="blog-post-layout-02.html" class="d-block mb-1">A lot of care, effort &amp; passion...</a> <span class="clearfix"></span>20 April 2017 | by <a href="blog-grid.html">Herman Miller</a></div>
                                 </li>
                                 <li class="media">
                                     <figure>
-                                        <a href="blog-post-layout-03.html"><img src="images/latest-blog4.jpg" alt="" data-no-retina=""></a>
+                                        <a href="blog-post-layout-03.html"><img src="/images/latest-blog4.jpg" alt="" data-no-retina=""></a>
                                     </figure>
                                     <div class="media-body text-small"><a href="blog-post-layout-03.html" class="d-block mb-1">I love making the stuff, that's...</a> <span class="clearfix"></span>20 April 2017 | by <a href="blog-grid.html">Herman Miller</a></div>
                                 </li>
