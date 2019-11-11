@@ -2,19 +2,34 @@
 
 namespace App\Http\Controllers;
 
+use App\Post;
+use App\Comment;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class CommentController extends Controller
 {
-    public function store(Request $request)
+    public function __construct()
     {
-        $comment = new Comment;
-        $comment->body = $request->get('comment_body');
-        $comment->user()->associate($request->user());
-        $post = Post::find($request->get('post_id'));
-        $post->comments()->save($comment);
+        $this->middleware('auth');
+    }
 
-        return back();
+    public function store(Comment $comment)
+    {
+
+        $this->validate(request(), ['body' => 'required']);
+        // $id = Auth::user();
+        $comment->create([
+            'body' => request('body'),
+            'post_id' => request('post_id'),
+            'user_id'  => Auth::id(),
+        ]);
+        $post_id = request('post_id');
+
+        $post = Post::with(['post_images', 'user', 'comments', 'comments.user', 'comments.replies', 'comments.replies.user'])->orderBy('created_at', 'desc')->findOrFail($post_id);
+        return response()->json([
+            'post'    => $post,
+        ]);
     }
 
     public function replyStore(Request $request)
