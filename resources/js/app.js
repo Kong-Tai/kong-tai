@@ -21,6 +21,10 @@ import store from './store/index';
 // })
 
 Vue.prototype.$store = store
+// Auth
+Vue.component('login-view', require('./components/auth/LoginComponent.vue').default);
+Vue.component('register-view', require('./components/auth/RegisterComponent.vue').default);
+
 // home
 Vue.component('view-home', require('./components/home/HomeComponent.vue').default);
 Vue.component('home-portfolio', require('./components/home/PortfolioComponent.vue').default);
