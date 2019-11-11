@@ -15,17 +15,17 @@
 						<span
 							class="text-white-2 opacity6 alt-font margin-10px-bottom d-block text-uppercase text-small"
 						>
-							{{ post.created_at }}&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;by
+							{{ postData.created_at }}&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;by
 							<a
 								href="blog-masonry.html"
 								class="text-white-2"
-							>{{ post.user.name }}</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+							>{{ postData.user.name }}</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 							<a href="blog-masonry.html" class="text-white-2">Design</a>,
 							<a href="blog-masonry.html" class="text-white-2">Branding</a>
 						</span>
 						<!-- end sub title -->
 						<!-- start page title -->
-						<h1 class="text-white-2 alt-font font-weight-600 margin-10px-bottom">{{ post.title }}</h1>
+						<h1 class="text-white-2 alt-font font-weight-600 margin-10px-bottom">{{ postData.title }}</h1>
 						<!-- end page title -->
 					</div>
 				</div>
@@ -49,7 +49,7 @@
 							<li>
 								<a href="/blog" class="text-medium-gray">Blog</a>
 							</li>
-							<li class="text-medium-gray">{{ post.title }}</li>
+							<li class="text-medium-gray">{{ postData.title }}</li>
 						</ul>
 						<!-- end breadcrumb -->
 					</div>
@@ -67,7 +67,7 @@
 							class="alt-font text-extra-dark-gray font-weight-600 mb-0"
 						>We must let go of the life we have planned, so as to accept the one that is waiting for us.</h5>
 						<img
-							:src="post.post_images[0].post_image_path"
+							:src="postData.post_images[0].post_image_path"
 							alt
 							class="width-100 margin-40px-tb md-margin-30px-tb"
 							data-no-retina
@@ -76,7 +76,7 @@
 					</div>
 					<div class="col-12 col-lg-10 mx-auto text-center last-paragraph-no-margin">
 						<img
-							:src="post.post_images[1].post_image_path"
+							:src="postData.post_images[1].post_image_path"
 							alt
 							class="width-100 margin-40px-tb md-margin-30px-tb"
 							data-no-retina
@@ -103,7 +103,7 @@
 						class="col-12 col-lg-10 mx-auto text-center margin-60px-bottom last-paragraph-no-margin md-margin-30px-bottom"
 					>
 						<img
-							:src="post.post_images[1].post_image_path"
+							:src="postData.post_images[1].post_image_path"
 							alt
 							class="width-100 margin-40px-bottom md-margin-30px-bottom"
 							data-no-retina
@@ -121,7 +121,7 @@
 									class="text-medium font-weight-600 text-extra-dark-gray alt-font"
 								>Young man with beard and piercings</span>
 								<img
-									:src="post.post_images[0].post_image_path"
+									:src="postData.post_images[0].post_image_path"
 									alt
 									class="width-100 margin-30px-tb"
 									data-no-retina
@@ -135,7 +135,7 @@
 									class="text-medium font-weight-600 text-extra-dark-gray alt-font"
 								>Latin man with beard and piercings</span>
 								<img
-									:src="post.post_images[1].post_image_path"
+									:src="postData.post_images[1].post_image_path"
 									alt
 									class="width-100 margin-30px-tb"
 									data-no-retina
@@ -206,7 +206,7 @@
 						>
 							<div class="width-150px text-center sm-margin-15px-bottom">
 								<img
-									:src="'/images/'+post.user.avatar+''"
+									:src="'/images/'+postData.user.avatar+''"
 									class="rounded-circle width-100px"
 									alt
 									data-no-retina
@@ -218,7 +218,7 @@
 								<a
 									href="#"
 									class="text-extra-dark-gray text-uppercase alt-font font-weight-600 margin-10px-bottom d-inline-block text-small"
-								>{{ post.user.name }}</a>
+								>{{ postData.user.name }}</a>
 								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
 								<a href="#" class="btn btn-very-small btn-black margin-20px-top">All author posts</a>
 							</div>
@@ -388,18 +388,18 @@
 						<div class="position-relative overflow-hidden width-100">
 							<span
 								class="text-small text-outside-line-full alt-font font-weight-600 text-uppercase text-extra-dark-gray"
-							>{{ post.comments.length }} Comments</span>
+							>{{ postData.comments.length }} Comments</span>
 						</div>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-12 col-lg-10 mx-auto">
 						<ul class="blog-comment">
-							<li>
+							<li v-for="(comment, i) in postData.comments" :key="i">
 								<div class="d-block d-md-flex width-100 width-100">
 									<div class="width-110px sm-width-50px text-center sm-margin-10px-bottom">
 										<img
-											src="/images/avtar-02.jpg"
+											:src="'/images/'+comment.user.avatar+''"
 											class="rounded-circle width-85 sm-width-100"
 											alt
 											data-no-retina
@@ -409,23 +409,23 @@
 										<a
 											href="#"
 											class="text-extra-dark-gray text-uppercase alt-font font-weight-600 text-small"
-										>Herman Miller</a>
+										>{{ comment.user.name }}</a>
 										<a
 											href="#comments"
 											class="inner-link btn-reply text-uppercase alt-font text-extra-dark-gray"
 										>Reply</a>
 										<div
 											class="text-small text-medium-gray text-uppercase margin-10px-bottom"
-										>17 july 2017, 6:05 pm</div>
-										<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
+										>{{ comment.created_at }}</div>
+										<p>{{ comment.body }}.</p>
 									</div>
 								</div>
 								<ul class="child-comment">
-									<li>
+									<li v-for="(reply, i) in comment.replies" :key="i">
 										<div class="d-block d-md-flex width-100 width-100">
 											<div class="width-110px sm-width-50px text-center sm-margin-10px-bottom">
 												<img
-													src="/images/avtar-01.jpg"
+													:src="'/images/'+reply.user.avatar+''"
 													class="rounded-circle width-85 sm-width-100"
 													alt
 													data-no-retina
@@ -435,45 +435,19 @@
 												<a
 													href="#"
 													class="text-extra-dark-gray text-uppercase alt-font font-weight-600 text-small"
-												>Alexander Harvard</a>
+												>{{ reply.user.name }}</a>
 												<a
 													href="#comments"
 													class="inner-link btn-reply text-uppercase alt-font text-extra-dark-gray"
 												>Reply</a>
 												<div
 													class="text-small text-medium-gray text-uppercase margin-10px-bottom"
-												>17 july 2017, 6:05 pm</div>
-												<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
+												>{{ reply.created_at}}</div>
+												<p>{{ reply.body }}.</p>
 											</div>
 										</div>
 									</li>
 								</ul>
-							</li>
-							<li>
-								<div class="d-block d-md-flex width-100 width-100">
-									<div class="width-110px sm-width-50px text-center sm-margin-10px-bottom">
-										<img
-											src="/images/avtar-04.jpg"
-											class="rounded-circle width-85 sm-width-100"
-											alt
-											data-no-retina
-										/>
-									</div>
-									<div class="width-100 padding-40px-left last-paragraph-no-margin sm-no-padding-left">
-										<a
-											href="#"
-											class="text-extra-dark-gray text-uppercase alt-font font-weight-600 text-small"
-										>Jennifer Freeman</a>
-										<a
-											href="#comments"
-											class="inner-link btn-reply text-uppercase alt-font text-extra-dark-gray"
-										>Reply</a>
-										<div
-											class="text-small text-medium-gray text-uppercase margin-10px-bottom"
-										>17 july 2017, 6:05 pm</div>
-										<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
-									</div>
-								</div>
 							</li>
 						</ul>
 					</div>
@@ -501,19 +475,23 @@
 				<div class="row">
 					<div class="col-12 col-lg-10 p-0 d-flex flex-wrap mx-auto text-center">
 						<div class="col-12 col-lg-4">
-							<input type="text" placeholder="Name *" class="medium-input" />
-						</div>
-						<div class="col-12 col-lg-4">
-							<input type="text" placeholder="E-mail *" class="medium-input" />
-						</div>
-						<div class="col-12 col-lg-4">
-							<input type="url" placeholder="Website" class="medium-input" />
+							<input type="hidden" v-model="post_id" />
 						</div>
 						<div class="col-12">
-							<textarea placeholder="Enter your comment here.." rows="8" class="medium-textarea"></textarea>
+							<textarea
+								type="text"
+								v-model="body"
+								placeholder="Enter your comment here.."
+								rows="8"
+								class="medium-textarea"
+							></textarea>
 						</div>
 						<div class="col-12 text-center">
-							<button class="btn btn-dark-gray btn-small margin-15px-top" type="submit">Send message</button>
+							<button
+								class="btn btn-dark-gray btn-small margin-15px-top"
+								type="submit"
+								v-on:click="send()"
+							>Send message</button>
 						</div>
 					</div>
 				</div>
@@ -529,13 +507,37 @@ export default {
 		post: {}
 	},
 	data() {
-		return {}
+		return {
+			postData: {},
+			body: '',
+			post_id: ''
+		}
 	},
-	created() {},
+	created() {
+		this.postData = this.post
+		this.post_id = this.postData.id
+	},
 	computed: {},
 	mounted() {
 		console.log('Component mounted.')
 	},
-	methods: {}
+	methods: {
+		send: function() {
+			// this.errors = []
+			let data = {
+				body: this.body,
+				post_id: this.post_id
+			}
+			axios
+				.post('/comment/store', data)
+				.then(response => {
+					this.postData = {}
+					this.postData = response.data.post
+				})
+				.catch(error => {
+					console.log(error)
+				})
+		}
+	}
 }
 </script>
