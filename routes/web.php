@@ -27,6 +27,7 @@ Route::resource('/category', 'PortfolioCategoryController');
 
 // Blog
 Route::get('/blog', 'PagesController@postList')->name('blog');
+Route::get('/post/get_all', 'PostController@getAllPosts');
 Route::get('/blog/{post}', 'PagesController@singlePost')->name('post')->middleware('auth');
 Route::post('/comment/store', 'CommentController@store');
 Route::post('/reply/store', 'CommentController@replyStore')->name('reply.add');

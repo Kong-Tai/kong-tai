@@ -60517,7 +60517,7 @@ vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vuex__WEBPACK_IMPORTED_MODULE_1__
   actions: {
     getAllPosts: function getAllPosts(_ref) {
       var commit = _ref.commit;
-      axios.get("/api/post/get_all").then(function (response) {
+      axios.get("/post/get_all").then(function (response) {
         commit("setPosts", response.data);
         console.log(response.data);
       });

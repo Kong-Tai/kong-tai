@@ -13,7 +13,7 @@ export default new Vuex.Store({
             commit
         }) {
             axios
-                .get("/api/post/get_all")
+                .get("/post/get_all")
                 .then(response => {
                     commit("setPosts", response.data)
                     console.log(response.data)

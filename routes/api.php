@@ -16,10 +16,3 @@ use Illuminate\Http\Request;
 Route::post('/login', 'Api\Auth\LoginController@store');
 Route::delete('/logout', 'Api\Auth\LoginController@destroy')->middleware('auth:api');
 Route::post('/register', 'Api\Auth\RegisterController');
-
-
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
-
-Route::get('/post/get_all', 'PostController@getAllPosts');
