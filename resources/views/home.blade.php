@@ -13,7 +13,7 @@
                                 <div class="text-white-2-transparent mb-3 text-leftside-line text-medium-gray">YOUNG-BLOOD</div>
                                 <h5 class="font-weight-500">Kong-Tai</h5>
                                 <h1 class="font-weight-500 margin-40px-bottom demo-heading" style="background: linear-gradient(to right, #B21F1F 3%, #F6C81D 40%,  #296330 90%);">Humble African Tech</h1>
-                                <a class="btn btn-small btn-rounded btn-transparent-deep-pink inner-link" href="#demos">About Kong-Tai<i class="ti-arrow-right"></i></a>
+                                <a class="btn btn-small btn-rounded btn-transparent-deep-pink inner-link" href="/team">About Kong-Tai<i class="ti-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
