@@ -1955,11 +1955,22 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'all-posts',
   data: function data() {
-    return {};
+    return {
+      name: '',
+      password: ''
+    };
   },
+  created: function created() {},
   computed: {},
   mounted: function mounted() {
     // jQuery & Velocity.js
@@ -1983,7 +1994,19 @@ __webpack_require__.r(__webpack_exports__);
       shake();
     });
   },
-  methods: {}
+  methods: {
+    login: function login() {
+      // this.errors = []
+      var data = {
+        name: this.name,
+        password: this.password
+      };
+      axios.post('/api/login', data).then(function (response) {// window.location = '/blog'
+      })["catch"](function (error) {
+        console.log(error);
+      });
+    }
+  }
 });
 
 /***/ }),
@@ -8194,25 +8217,6 @@ __webpack_require__.r(__webpack_exports__);
 
 }));
 //# sourceMappingURL=bootstrap.js.map
-
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/auth/LoginComponent.vue?vue&type=style&index=0&lang=css&":
-/*!*************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/auth/LoginComponent.vue?vue&type=style&index=0&lang=css& ***!
-  \*************************************************************************************************************************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
-// imports
-
-
-// module
-exports.push([module.i, "\n*,\n*:before,\n*:after {\n\tbox-sizing: border-box;\n}\nhtml,\nbody {\n\theight: 100%;\n\twidth: 100%;\n\toverflow: hidden;\n}\n.auth-container {\n\tpadding: 200px 0;\n\theight: 100%;\n\twidth: 100%;\n\tbackground-size: cover;\n\tcolor: #fff;\n\tfont-family: 'Comfortaa', 'Helvetica', sans-serif;\n}\n.login {\n\tmax-width: 280px;\n\tmin-height: 500px;\n\tmargin: 30px auto;\n\tbackground-color: rgba(10, 10, 10, 0.68);\n}\n.login-icon-field {\n\theight: 250px;\n\twidth: 100%;\n\t/*background-color: red;*/\n}\n.login-icon {\n\tmargin: 50px 65px;\n}\n.login-form {\n\tpadding: 8px 20px 20px;\n\theight: 120px;\n\twidth: 100%;\n\t/*background-color: green;*/\n}\n.login-row {\n\tdisplay: none;\n}\n.username-row {\n\tposition: relative;\n\theight: 40px;\n\t/*background-color: pink;*/\n\tborder-bottom: 1px solid;\n\tmargin-bottom: 10px;\n}\n.password-row {\n\tposition: relative;\n\theight: 40px;\n\t/* background-color: grey;*/\n\tborder-bottom: 1px solid;\n}\n.password-icon,\n.user-icon {\n\tmargin: 5px;\n}\n.password-icon .key-path,\n.user-icon .user-path {\n\tfill: rgba(10, 10, 10, 0);\n\tstroke: #fff;\n\tstroke-width: 3.5;\n\tstroke-linecap: round;\n\tstroke-linejoin: round;\n\tstroke-miterlimit: 10;\n\tstroke-dasharray: 300;\n\tstroke-dashoffset: 300;\n\t-webkit-animation: dash 3s 0.3s linear forwards;\n\tanimation: dash 3s 0.3s linear forwards;\n}\n.user-icon .user-path {\n\t-webkit-animation: dash 3s 0.8s linear forwards;\n\tanimation: dash 3s 0.8s linear forwards;\n}\ninput {\n\tposition: absolute;\n\twidth: 195px;\n\theight: 30px;\n\tmargin: 5px 0;\n\tbackground: transparent;\n\tborder: none;\n}\ninput:focus,\nbutton:focus {\n\toutline: none;\n}\ninput::-webkit-input-placeholder {\n\tcolor: rgba(255, 255, 255, 0.4);\n}\ninput::-moz-placeholder {\n\tcolor: rgba(255, 255, 255, 0.4);\n}\n.call-to-action {\n\tmargin: 22px 0;\n\theight: 130px;\n\twidth: 100%;\n\t/*background-color: blue;*/\n}\nbutton {\n\tdisplay: block;\n\twidth: 240px;\n\theight: 40px;\n\tpadding: 0;\n\tmargin: 10px 20px 10px;\n\tfont-weight: 700;\n\tcolor: #fff;\n\tbackground-color: #22c08a;\n\tborder: none;\n\tborder-radius: 20px;\n\t-webkit-transition: background-color 0.1s ease-in-out;\n\ttransition: background-color 0.1s ease-in-out;\n\t-webkit-user-select: none;\n\t-moz-user-select: none;\n\t-ms-user-select: none;\n\tuser-select: none;\n}\nbutton:hover {\n\tbackground-color: #26d69a;\n}\nbutton:active {\n\tbackground-color: #1eaa7a;\n}\np {\n\tdisplay: inline-block;\n\twidth: 200px;\n\tmargin: 0 40px;\n\tfont-size: 0.8rem;\n\tcolor: rgba(255, 255, 255, 0.4);\n\t/*background-color: yellow;*/\n}\np a {\n\tcolor: #fff;\n}\nlabel,\np a:hover {\n\t-webkit-cursor: pointer;\n\tcursor: pointer;\n}\n@-webkit-keyframes dash {\nto {\n\t\tstroke-dashoffset: 0;\n}\n}\n@keyframes dash {\nto {\n\t\tstroke-dashoffset: 0;\n}\n}\n", ""]);
-
-// exports
 
 
 /***/ }),
@@ -39597,36 +39601,6 @@ process.umask = function() { return 0; };
 
 /***/ }),
 
-/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/auth/LoginComponent.vue?vue&type=style&index=0&lang=css&":
-/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/style-loader!./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/auth/LoginComponent.vue?vue&type=style&index=0&lang=css& ***!
-  \*****************************************************************************************************************************************************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-var content = __webpack_require__(/*! !../../../../node_modules/css-loader??ref--6-1!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--6-2!../../../../node_modules/vue-loader/lib??vue-loader-options!./LoginComponent.vue?vue&type=style&index=0&lang=css& */ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/auth/LoginComponent.vue?vue&type=style&index=0&lang=css&");
-
-if(typeof content === 'string') content = [[module.i, content, '']];
-
-var transform;
-var insertInto;
-
-
-
-var options = {"hmr":true}
-
-options.transform = transform
-options.insertInto = undefined;
-
-var update = __webpack_require__(/*! ../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
-
-if(content.locals) module.exports = content.locals;
-
-if(false) {}
-
-/***/ }),
-
 /***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/blog/CreatePost.vue?vue&type=style&index=0&lang=css&":
 /*!*************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/style-loader!./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/blog/CreatePost.vue?vue&type=style&index=0&lang=css& ***!
@@ -40360,11 +40334,28 @@ var render = function() {
                         ]),
                         _vm._v(" "),
                         _c("input", {
+                          directives: [
+                            {
+                              name: "model",
+                              rawName: "v-model",
+                              value: _vm.name,
+                              expression: "name"
+                            }
+                          ],
                           staticClass: "username-input",
                           attrs: {
                             type: "text",
                             id: "username_input",
                             placeholder: "Username"
+                          },
+                          domProps: { value: _vm.name },
+                          on: {
+                            input: function($event) {
+                              if ($event.target.composing) {
+                                return
+                              }
+                              _vm.name = $event.target.value
+                            }
                           }
                         })
                       ]),
@@ -40397,17 +40388,49 @@ var render = function() {
                         ]),
                         _vm._v(" "),
                         _c("input", {
+                          directives: [
+                            {
+                              name: "model",
+                              rawName: "v-model",
+                              value: _vm.password,
+                              expression: "password"
+                            }
+                          ],
                           staticClass: "password-input input",
                           attrs: {
                             type: "password",
                             id: "password_input",
                             placeholder: "Password"
+                          },
+                          domProps: { value: _vm.password },
+                          on: {
+                            input: function($event) {
+                              if ($event.target.composing) {
+                                return
+                              }
+                              _vm.password = $event.target.value
+                            }
                           }
                         })
                       ])
                     ]),
                     _vm._v(" "),
-                    _vm._m(0)
+                    _c("div", { staticClass: "call-to-action" }, [
+                      _c(
+                        "button",
+                        {
+                          attrs: { id: "login-button", type: "button" },
+                          on: {
+                            click: function($event) {
+                              return _vm.login()
+                            }
+                          }
+                        },
+                        [_vm._v("Log In")]
+                      ),
+                      _vm._v(" "),
+                      _vm._m(0)
+                    ])
                   ])
                 ])
               ]
@@ -40423,17 +40446,11 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "call-to-action" }, [
-      _c("button", { attrs: { id: "login-button", type: "button" } }, [
-        _vm._v("Log In")
-      ]),
-      _vm._v(" "),
-      _c("p", [
-        _vm._v(
-          "\n\t\t\t\t\t\t\t\t\t\tDon't have an account?\n\t\t\t\t\t\t\t\t\t\t"
-        ),
-        _c("a", [_vm._v("Sign Up")])
-      ])
+    return _c("p", [
+      _vm._v(
+        "\n\t\t\t\t\t\t\t\t\t\tDon't have an account?\n\t\t\t\t\t\t\t\t\t\t"
+      ),
+      _c("a", { attrs: { href: "/register" } }, [_vm._v("Sign Up")])
     ])
   }
 ]
@@ -57211,9 +57228,7 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _LoginComponent_vue_vue_type_template_id_5a228f80___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./LoginComponent.vue?vue&type=template&id=5a228f80& */ "./resources/js/components/auth/LoginComponent.vue?vue&type=template&id=5a228f80&");
 /* harmony import */ var _LoginComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./LoginComponent.vue?vue&type=script&lang=js& */ "./resources/js/components/auth/LoginComponent.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _LoginComponent_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./LoginComponent.vue?vue&type=style&index=0&lang=css& */ "./resources/js/components/auth/LoginComponent.vue?vue&type=style&index=0&lang=css&");
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
-
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
 
@@ -57221,7 +57236,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /* normalize component */
 
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
   _LoginComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
   _LoginComponent_vue_vue_type_template_id_5a228f80___WEBPACK_IMPORTED_MODULE_0__["render"],
   _LoginComponent_vue_vue_type_template_id_5a228f80___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
@@ -57250,22 +57265,6 @@ component.options.__file = "resources/js/components/auth/LoginComponent.vue"
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_LoginComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./LoginComponent.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/auth/LoginComponent.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_LoginComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
-
-/***/ }),
-
-/***/ "./resources/js/components/auth/LoginComponent.vue?vue&type=style&index=0&lang=css&":
-/*!******************************************************************************************!*\
-  !*** ./resources/js/components/auth/LoginComponent.vue?vue&type=style&index=0&lang=css& ***!
-  \******************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_LoginComponent_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/style-loader!../../../../node_modules/css-loader??ref--6-1!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--6-2!../../../../node_modules/vue-loader/lib??vue-loader-options!./LoginComponent.vue?vue&type=style&index=0&lang=css& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/auth/LoginComponent.vue?vue&type=style&index=0&lang=css&");
-/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_LoginComponent_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_LoginComponent_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__);
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_LoginComponent_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_LoginComponent_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
- /* harmony default export */ __webpack_exports__["default"] = (_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_LoginComponent_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
 
 /***/ }),
 

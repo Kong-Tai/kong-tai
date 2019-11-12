@@ -47,9 +47,19 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col col-md-auto col-lg-2 pr-0 text-right">
-                        <a href="/admin" class="btn btn-very-small btn-rounded btn-white box-shadow-dark">Admin<i class="ti-user"></i></a>
-                    </div>
+                    <ul class="nav navbar-nav alt-font text-normal">
+                        <li>
+                            <div class="col col-md-auto col-lg-2 pr-0 text-right">
+                                <a href="/login" class="btn btn-very-small btn-rounded btn-white box-shadow-dark">User<i class="ti-user"></i></a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="col col-md-auto col-lg-2 pr-0 text-right">
+                                <a href="/admin" class="btn btn-very-small btn-rounded btn-white box-shadow-dark">Admin<i class="ti-user"></i></a>
+                            </div>
+                        </li>
+                    </ul>
+
                 </div>
             </nav>
             <!-- end navigation -->

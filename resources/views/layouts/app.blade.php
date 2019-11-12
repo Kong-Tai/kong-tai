@@ -104,7 +104,5 @@
         <script  src="/js/jquery.themepunch.tools.min.js"></script>
         <script  src="/js/jquery.themepunch.revolution.min.js"></script>
         {{-- <script src="/js/main.js"></script> --}}
-  {{-- <script src="https://cdn.jsdelivr.net/velocity/1.2.3/velocity.min.js"></script>
-<script src="https://cdn.jsdelivr.net/velocity/1.2.3/velocity.ui.min.js"></script> --}}
     </body>
 </html>

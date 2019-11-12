@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+{{-- <login-view></login-view> --}}
         <!-- start hero section -->
         <section class="p-0 parallax mobile-height md-position-relative wow fadeIn" data-stellar-background-ratio="0.5" style="background-image:url('images/pofo-demo-parallax.jpg');">
             <div class="opacity-medium bg-extra-dark-gray d-xl-none"></div>
