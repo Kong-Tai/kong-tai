@@ -35,49 +35,39 @@
                                 <!-- start menu item -->
                                 <li><a href="/blog" class="inner-link">Blog</a></li>
                                 <!-- end menu item -->
-                                {{-- <!-- start menu item -->
-                                <li><a href="#features" class="inner-link">Features</a></li>
-                                <!-- end menu item -->
-                                <!-- start menu item -->
-                                <li><a href="http://www.themezaa.com/html/pofo/documentation/" target="_blank">Documentation</a></li>
-                                <!-- end menu item -->
-                                <!-- start menu item -->
-                                <li><a href="http://www.themezaa.com/support.php" target="_blank">Support</a></li>
-                                <!-- end menu item --> --}}
+
+                                <li class="dropdown simple-dropdown">
+                                    <a href style="color: #fff;" >Sign in  <i class="fa fa-angle-down dropdown-toggle" data-toggle="dropdown"></i></a>
+                                    <ul class="dropdown-menu animated" style="display: none; opacity: 1; pull-left">
+                                        <a href="#" class="dropdown-header">SIGN IN TO</a>
+                                        @guest
+                                            <li>
+                                                <a href="{{ route('login') }}"><i class="ti-user"></i> Community</a>
+                                            </li>
+                                        @else
+                                            <li>
+                                                <a  href="{{ route('logout') }}"
+                                                    onclick="event.preventDefault();
+                                                    document.getElementById('logout-form').submit();"
+                                                >
+                                                    {{ __('Logout') }}
+                                                    <i class="ti-user"></i>
+                                                </a>
+                                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                                    @csrf
+                                                </form>
+                                            </li>
+                                        @endguest
+                                        <li class="dropdown">
+                                            <a href="/admin"> Control Panel</a>
+                                        </li>
+                                    </ul>
+                                </li>
                             </ul>
                         </div>
                     </div>
-                    <ul class="nav navbar-nav alt-font text-normal">
-                         @guest
-                            <li>
-                                <div class="col col-md-auto col-lg-2 pr-0 text-right">
-                                    <a href="{{ route('login') }}" class="btn btn-very-small btn-rounded btn-white box-shadow-dark">{{ __('Login') }}<i class="ti-user"></i></a>
-                                </div>
-                            </li>
-                        @else
-                            <li>
-                                <div class="col col-md-auto col-lg-2 pr-0 text-right">
-                                    <a  href="{{ route('logout') }}"
-                                        class="btn btn-very-small btn-rounded btn-white box-shadow-dark"
-                                        onclick="event.preventDefault();
-                                        document.getElementById('logout-form').submit();"
-                                    >
-                                        {{ __('Logout') }}
-                                        <i class="ti-user"></i>
-                                    </a>
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                        @csrf
-                                    </form>
-                                </div>
-                            </li>
-                        @endauth
-                        <li>
-                            <div class="col col-md-auto col-lg-2 pr-0 text-right">
-                                <a href="/admin" class="btn btn-very-small btn-rounded btn-white box-shadow-dark">Admin<i class="ti-user"></i></a>
-                            </div>
-                        </li>
+                    <ul class="nav navbar-nav alt-font text-normal navbar-left">
                     </ul>
-
                 </div>
             </nav>
             <!-- end navigation -->
