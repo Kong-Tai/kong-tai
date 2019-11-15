@@ -21,13 +21,18 @@
                         <div class="navbar-collapse collapse justify-content-center" id="navbar-collapse-toggle-1">
                             <ul class="nav navbar-nav alt-font text-normal">
                                 <!-- start menu item -->
-                                <li><a href="/" class="inner-link">Home</a></li>
-                                <!-- end menu item -->
-                                <!-- start menu item -->
-                                <li><a href="#portfolio" class="inner-link point-portfolio">Portfolio</a></li>
-                                <!-- end menu item -->
-                                <!-- start menu item -->
-                                <li><a href="#gallery" class="inner-link point-gallery">Gallery</a></li>
+                                <li class="dropdown simple-dropdown">
+                                    <a href style="color: #fff;" >Home <i class="fa fa-angle-down dropdown-toggle" data-toggle="dropdown"></i></a>
+                                    <ul class="dropdown-menu animated" style="display: none; opacity: 1; pull-left">
+                                        <a href class="dropdown-header">SKIP TO</a>
+                                        <li>
+                                            <a href="#portfolio"> Portfolio</a>
+                                        </li>
+                                        <li>
+                                            <a href="#gallery"> Gallery</a>
+                                        </li>
+                                    </ul>
+                                </li>
                                 <!-- end menu item -->
                                 <!-- start menu item -->
                                 <li><a href="/team" class="inner-link">Our Team</a></li>
@@ -49,10 +54,10 @@
                                         </li>
                                     </ul>
                                     @else
-                                    <a href style="color: #fff;" > <i class="ti-user"></i> Profile  <i class="fa fa-angle-down dropdown-toggle" data-toggle="dropdown"></i></a>
+                                    <a href style="color: #fff;" > <i class="ti-user"></i> {{ Auth::user()->name }} <i class="fa fa-angle-down dropdown-toggle" data-toggle="dropdown"></i></a>
                                         <ul class="dropdown-menu animated" style="display: none; opacity: 1; pull-left">
                                             <li>
-                                                <a href="#"><i class="ti-heart"></i> Favorite posts</a>
+                                                <a href="/"><i class="ti-heart"></i> Favorite posts</a>
                                             </li>
                                             <li>
                                                 <a  href="{{ route('logout') }}"
