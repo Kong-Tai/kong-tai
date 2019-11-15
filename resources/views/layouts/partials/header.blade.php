@@ -37,31 +37,37 @@
                                 <!-- end menu item -->
 
                                 <li class="dropdown simple-dropdown">
+                                    @guest
                                     <a href style="color: #fff;" >Sign in  <i class="fa fa-angle-down dropdown-toggle" data-toggle="dropdown"></i></a>
                                     <ul class="dropdown-menu animated" style="display: none; opacity: 1; pull-left">
                                         <a href="#" class="dropdown-header">SIGN IN TO</a>
-                                        @guest
+                                        <li>
+                                            <a href="{{ route('login') }}"><i class="ti-user"></i> Community</a>
+                                        </li>
+                                        <li>
+                                            <a href="/admin"> Control Panel</a>
+                                        </li>
+                                    </ul>
+                                    @else
+                                    <a href style="color: #fff;" > <i class="ti-user"></i> Profile  <i class="fa fa-angle-down dropdown-toggle" data-toggle="dropdown"></i></a>
+                                        <ul class="dropdown-menu animated" style="display: none; opacity: 1; pull-left">
                                             <li>
-                                                <a href="{{ route('login') }}"><i class="ti-user"></i> Community</a>
+                                                <a href="#"><i class="ti-heart"></i> Favorite posts</a>
                                             </li>
-                                        @else
                                             <li>
                                                 <a  href="{{ route('logout') }}"
                                                     onclick="event.preventDefault();
                                                     document.getElementById('logout-form').submit();"
                                                 >
+                                                    <i class="ti-lock"></i>
                                                     {{ __('Logout') }}
-                                                    <i class="ti-user"></i>
                                                 </a>
                                                 <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                                     @csrf
                                                 </form>
                                             </li>
-                                        @endguest
-                                        <li class="dropdown">
-                                            <a href="/admin"> Control Panel</a>
-                                        </li>
-                                    </ul>
+                                        </ul>
+                                    @endguest
                                 </li>
                             </ul>
                         </div>
